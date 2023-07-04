@@ -1,0 +1,102 @@
+{
+  "name": "Aladdine Abdou",
+  "@name": {
+    "description": "My name"
+  },
+  "homeSectionTitle": "Home",
+  "@homeSectionTitle": {
+    "description": "Title of Home section"
+  },
+  "aboutSectionTitle": "About",
+  "@aboutSectionTitle": {
+    "description": "Title of About section"
+  },
+  "aboutSectionTitleAlt": "About Me",
+  "@aboutSectionTitleAlt": {
+    "description": "Title of About section"
+  },
+  "experienceSectionTitle": "Experience",
+  "@experienceSectionTitle": {
+    "description": "Title of Experience section"
+  },
+  "projectsSectionTitle": "Projects",
+  "@projectsSectionTitle": {
+    "description": "Title of Projects section"
+  },
+  "resume": "Resume",
+  "@resume": {
+    "description": "Resume"
+  },
+  "downloadResume": "Download resume",
+  "@downloadResume": {
+    "description": "Resume download dialog"
+  },
+  "resumePresent": "Present",
+  "@resumePresent": {
+    "description": "Current job or education"
+  },
+  "description": "Software Imagineer",
+  "@description": {
+    "description": "My description"
+  },
+  "subDescription": "Flutter Enthusiast",
+  "@subDescription": {
+    "description": "My sub description"
+  },
+  "about": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+  "@about": {
+    "description": "My introduction"
+  },
+  "mobileDevJobTitle": "Mobile Developer",
+  "@mobileDevJobTitle": {
+    "description": "Mobile Developer job title"
+  },
+  "mobileWebDevJobTitle": "Mobile Web Developer",
+  "@mobileWebDevJobTitle": {
+    "description": "Mobile Web Developer job title"
+  },
+  "webDevJobTitle": "Web Developer",
+  "@webDevJobTitle": {
+    "description": "Web Developer job title"
+  },
+  "wdiJobDescription": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.",
+  "@wdiJobDescription": {
+    "description": "Description of the job at Walt Disney Imagineering"
+  },
+  "smtJobDescription": "Development of a Progressive Web App for security systems technicians, that allows them to generate comprehensive quotes in PDF format including photos. This enables immediate delivery of quotes to customers after the visit.",
+  "@smtJobDescription": {
+    "description": "Description of the job at Solutions Multi Techniques"
+  },
+  "faireJobDescription": "Development of the association's website, in collaboration with a group of developers. It provides visitors with the opportunity to learn more about the association and become members.\nTo date, the website has attracted over 10,000 visits.",
+  "@faireJobDescription": {
+    "description": "Description of the job at Association Faire"
+  },
+  "portfolioDescription": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
+  "@portfolioDescription": {
+    "description": "Description of the Portfolio project"
+  },
+  "learnFlowApiDescription": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
+  "@learnFlowApiDescription": {
+    "description": "Description of the Learn Flow API project"
+  },
+  "learnFlowBackOfficeDescription": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
+  "@learnFlowBackOfficeDescription": {
+    "description": "Description of the Learn Flow Back-office project"
+  },
+  "gsbFraisDescription": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
+  "@gsbFraisDescription": {
+    "description": "Description of the GSB-Frais project"
+  },
+  "gsbRvVisiteurServeurDescription": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
+  "@gsbRvVisiteurServeurDescription": {
+    "description": "Description of the GSB-RV-Visiteur-Serveur project"
+  },
+  "gsbRvDr": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
+  "@gsbRvDr": {
+  "description": "Description of the GSB-RV-DR project"
+  },
+  "credit": "Design inspired by",
+  "@credit": {
+  "description": "Credit to"
+  }
+}
