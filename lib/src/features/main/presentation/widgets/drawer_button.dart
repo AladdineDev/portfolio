@@ -31,7 +31,7 @@ class MyDrawerButtonsState extends ConsumerState<MyDrawerButton> {
       onHover: (_) {
         setState(() {
           titleStyle = Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Theme.of(context).colorScheme.inversePrimary,
+                color: Theme.of(context).colorScheme.onSecondary,
               );
         });
       },
