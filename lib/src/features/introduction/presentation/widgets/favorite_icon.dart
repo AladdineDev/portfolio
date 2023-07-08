@@ -10,8 +10,8 @@ class FavoriteIcon extends ConsumerWidget {
     return Icon(
       Icons.favorite,
       color: ref.watch(darkModeProvider)
-          ? const Color(0xff2cb7f6)
-          : const Color(0xff02539a),
+          ? const Color(0xff13b9fd)
+          : const Color(0xff0175c2),
     );
   }
 }
