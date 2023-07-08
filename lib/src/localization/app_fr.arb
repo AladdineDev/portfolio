@@ -23,6 +23,14 @@
   "@projectsSectionTitle": {
     "description": "Titre de la section Projets"
   },
+  "englishLanguage": "Anglais",
+  "@englishLanguage": {
+    "description": "CV en Anglais"
+  },
+  "frenchLanguage": "Français",
+  "@frenchLanguage": {
+    "description": "CV en Français"
+  },
   "resume": "CV",
   "@resume": {
     "description": "CV"

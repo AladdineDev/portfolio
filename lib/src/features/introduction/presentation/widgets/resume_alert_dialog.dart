@@ -25,7 +25,7 @@ class ResumeAlertDialog extends ConsumerWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
-                  "English",
+                  context.localized.englishLanguage,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
@@ -41,7 +41,7 @@ class ResumeAlertDialog extends ConsumerWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
-                  "Français",
+                  context.localized.frenchLanguage,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),

@@ -23,6 +23,14 @@
   "@projectsSectionTitle": {
     "description": "Title of Projects section"
   },
+  "englishLanguage": "English",
+  "@englishLanguage": {
+    "description": "English language resume"
+  },
+  "frenchLanguage": "French",
+  "@frenchLanguage": {
+    "description": "French language resume"
+  },
   "resume": "Resume",
   "@resume": {
     "description": "Resume"
