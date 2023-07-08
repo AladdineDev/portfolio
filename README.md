@@ -5,8 +5,8 @@ Flutter Portfolio [![Licence](https://img.shields.io/badge/licence-MIT-a51931.sv
 
 [Flutter Portfolio](https://aladdine.dev) – by [@Aaldn](https://github.com/Aaldn)
 
-[![Flutter 3](https://img.shields.io/badge/Flutter-3.10-02539a.svg?style=flat-square&logo=flutter)](https://flutter.dev/)
-[![Dart 3](https://img.shields.io/badge/Dart-3.0-2cb7f6.svg?style=flat-square&logo=dart)](https://dart.dev/)
+[![Flutter 3](https://img.shields.io/badge/Flutter-3.10-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
+[![Dart 3](https://img.shields.io/badge/Dart-3.0-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase--ffcc30.svg?style=flat-square&logo=firebase)](https://firebase.google.com/)
 
 <img src="assets/screenshots/mockups-1.png">
