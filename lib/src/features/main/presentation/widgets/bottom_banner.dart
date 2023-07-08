@@ -26,8 +26,9 @@ class BottomBanner extends ConsumerWidget {
             style: Theme.of(context).textTheme.bodyLarge!,
             child: Link(
               url: "https://brittanychiang.com",
-              displayLink: "@bchiang7",
-              hoverColor: Theme.of(context).colorScheme.onSecondary,
+              displayLink: "Brittany Chiang",
+              underlined: true,
+              hoverColor: Theme.of(context).colorScheme.onSurface,
             ),
           ),
         ],

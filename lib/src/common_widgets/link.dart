@@ -9,12 +9,14 @@ class Link extends ConsumerStatefulWidget {
     required this.url,
     this.displayLink,
     this.displayLeadingIcon = false,
+    this.underlined = false,
     this.hoverColor,
   });
 
   final String url;
   final String? displayLink;
   final bool displayLeadingIcon;
+  final bool underlined;
   final Color? hoverColor;
 
   @override
@@ -22,11 +24,13 @@ class Link extends ConsumerStatefulWidget {
 }
 
 class _LinksState extends ConsumerState<Link> {
-  TextStyle? linkStyle;
+  TextStyle? _linkStyle;
 
   @override
   void didChangeDependencies() {
-    linkStyle = const TextStyle();
+    _linkStyle = TextStyle(
+      decoration: widget.underlined ? TextDecoration.underline : null,
+    );
     super.didChangeDependencies();
   }
 
@@ -36,14 +40,17 @@ class _LinksState extends ConsumerState<Link> {
       cursor: SystemMouseCursors.click,
       onHover: (_) {
         setState(() {
-          linkStyle = const TextStyle().copyWith(
+          _linkStyle = TextStyle(
+            decoration: widget.underlined ? TextDecoration.underline : null,
             color: widget.hoverColor ?? Colors.blue,
           );
         });
       },
       onExit: (_) {
         setState(() {
-          linkStyle = const TextStyle();
+          _linkStyle = TextStyle(
+            decoration: widget.underlined ? TextDecoration.underline : null,
+          );
         });
       },
       child: GestureDetector(
@@ -64,7 +71,7 @@ class _LinksState extends ConsumerState<Link> {
                 children: [
                   Icon(
                     Icons.link,
-                    color: linkStyle?.color,
+                    color: _linkStyle?.color,
                   ),
                   gapW4,
                 ],
@@ -72,7 +79,7 @@ class _LinksState extends ConsumerState<Link> {
             Flexible(
               child: Text(
                 widget.displayLink ?? widget.url,
-                style: linkStyle,
+                style: _linkStyle,
               ),
             ),
           ],
