@@ -55,6 +55,3 @@ android/app/google-services.json
 
 # Firebase hosting
 .firebase/
-
-# Firebase storage
-storage.rules
