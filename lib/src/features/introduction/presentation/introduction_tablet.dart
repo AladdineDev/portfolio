@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/introduction/data/contact_repository.dart';
+import 'package:portfolio/src/features/introduction/data/resume_repository.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
@@ -44,12 +45,19 @@ class IntroductionTablet extends ConsumerWidget {
             const FavoriteIcon(),
           ],
         ),
-        const Padding(
-          padding: EdgeInsets.symmetric(vertical: 36),
-          child: ResumeButton(),
-        ),
+        _buildResumeButton(ref),
+        gapH8,
         ContactBar(contacts: contacts),
       ],
+    );
+  }
+
+  Widget _buildResumeButton(WidgetRef ref) {
+    final resumes = ref.watch(resumeRepositoryProvider).fetchLocalizedResumes();
+    if (resumes.isEmpty) return const SizedBox.shrink();
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: 36),
+      child: ResumeButton(),
     );
   }
 }
