@@ -22,11 +22,6 @@ class ContactRepository {
         url: "https://www.github.com/Aaldn",
         icon: FontAwesomeIcons.github,
       ),
-      // Contact(
-      //   tooltip: "Discord",
-      //   url: "",
-      //   icon: FontAwesomeIcons.discord,
-      // ),
       Contact(
         tooltip: "aladdine.abdou@gmail.com",
         url: "mailto:aladdine.abdou@gmail.com",
