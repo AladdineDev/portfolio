@@ -67,7 +67,7 @@
   "@webDevJobTitle": {
     "description": "Intitulé du poste de Développeur Web"
   },
-  "wdiJobDescription": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant la collecte d'informations pour les experts techniques sur le terrain et améliorant la communication avec les services de maintenance pour la résolution des problèmes.",
+  "wdiJobDescription": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant aux experts techniques la prise d'informations sur le terrain et fluidifiant la communication avec les services de maintenance pour la résolution des problèmes.",
   "@wdiJobDescription": {
     "description": "Description du travail chez Walt Disney Imagineering"
   },
