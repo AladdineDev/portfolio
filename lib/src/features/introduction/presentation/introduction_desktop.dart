@@ -7,7 +7,6 @@ import 'package:portfolio/src/features/introduction/presentation/widgets/contact
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
 
 class IntroductionDesktop extends ConsumerWidget {
   const IntroductionDesktop({super.key});
@@ -20,7 +19,7 @@ class IntroductionDesktop extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          context.localized.name,
+          'Tolulope Christopher Olaniyan', //context.localized.name,
           style: Theme.of(context).textTheme.displayLarge,
         ),
         gapH4,
@@ -28,7 +27,7 @@ class IntroductionDesktop extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "${context.localized.description} ",
+              'Software Engineer ', //"${context.localized.description} ",
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const MagicIcon(),
@@ -39,7 +38,7 @@ class IntroductionDesktop extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "${context.localized.subDescription} ",
+              'Flutter Developer ', //"${context.localized.subDescription} ",
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const FavoriteIcon(),

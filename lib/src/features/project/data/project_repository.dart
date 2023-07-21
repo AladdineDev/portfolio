@@ -1,5 +1,5 @@
-import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/localization/app_localizations_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -18,59 +18,114 @@ class ProjectRepository {
 
   List<Project> fetchProjects() {
     return [
-      Project(
-        title: "Portfolio",
-        description: _appLocalizations.portfolioDescription,
-        technologies: ["Flutter", "Dart", "Firebase"],
-        url: "https://github.com/Aaldn/portfolio#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
-      ),
-      Project(
-        title: "Learn Flow API",
-        description: _appLocalizations.learnFlowApiDescription,
+      const Project(
+        title: 'Manyactive',
+        description: 'A fitness app allowing users to create and join various '
+            'fitness challenges. It includes features such as mood tracking, '
+            'comprehensive reports, stories, and communities.',
+        url: 'https://apps.apple.com/us/app/manyactive/id6444879591',
+        photoUrl: 'assets/screenshots/manyactive.png',
         technologies: [
-          "Node.js",
-          "Express",
-          "TypeScript",
-          "MongoDB",
-          "Docker",
+          'Flutter',
+          'Dart',
+          'Kotlin',
+          'Android',
+          'iOS',
+          'REST',
+          'Firebase',
+          'Flutterwave',
         ],
-        url: "https://github.com/Aaldn/learnflow-api/tree/development#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png",
       ),
-      Project(
-        title: "Learn Flow Backoffice",
-        description: _appLocalizations.learnFlowBackOfficeDescription,
-        technologies: ["Flutter", "Dart"],
-        url: "https://github.com/Aaldn/learnflow_backoffice/tree/development",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png",
+      const Project(
+        title: 'Twinku',
+        description: 'A modern wealth management application that is aimed at '
+            'solving the problem of unclaimed assets after death due to '
+            'unavailability of enough paper-works to process claims by relatives.',
+        url: 'https://apps.apple.com/us/app/twinku/id1599968399',
+        photoUrl: 'assets/screenshots/twinku.png',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'GRAPHQL',
+          'Firebase',
+          'PayStack',
+          'AppsFlyer',
+        ],
       ),
-      Project(
-        title: "GSB-Frais",
-        description: _appLocalizations.gsbFraisDescription,
-        technologies: ["Symfony", "PHP", "Bootstrap", "MariaDB", "Apache"],
-        url: "https://github.com/Aaldn/GSB-Frais#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png",
+      const Project(
+        title: 'Beere',
+        description:
+            'An application connecting buyers with vendors. It displays '
+            'a list of vendors based on proximity, allowing vendors to upload '
+            'products, make promotions, and view performance statistics. '
+            'Buyers can search for and request products.',
+        url:
+            'https://play.google.com/store/apps/details?id=com.squirrellabs.beere.beere_mobile',
+        photoUrl: 'assets/screenshots/beere.png',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'REST',
+          'Google Places',
+          'Google SignIn',
+        ],
       ),
-      Project(
-        title: "GSB-RV-Visiteur-Serveur",
-        description: _appLocalizations.gsbRvVisiteurServeurDescription,
-        technologies: ["Flask", "Python", "MariaDB", "Docker"],
-        url: "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png",
+      const Project(
+        title: 'Uniflow',
+        description: 'A financial advisory and management application. It '
+            'decentralizes user data and ensure no user personal data is stored. '
+            'Currently in testing stage.',
+        url: 'https://universalflow.io',
+        photoUrl: 'assets/screenshots/uniflow.png',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'REST',
+          'WebSocket',
+          'SumSub',
+          'Firebase',
+          'Web3',
+        ],
       ),
-      Project(
-        title: "GSB-RV-DR",
-        description: _appLocalizations.gsbRvDr,
-        technologies: ["JavaFX", "Java", "MariaDB"],
-        url: "https://github.com/Aaldn/GSB-RV-DR#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png",
+      const Project(
+        title: 'OpsManager',
+        description: 'An application used by the technical staff of '
+            'Ibadan Electricity Distribution Company (IBEDC) to perform '
+            'various functions like customer enumeration, evaluation, bill '
+            'distribution, meter reading, disconnection/reconnection, etc.',
+        url:
+            'https://play.google.com/store/apps/details?id=com.monarchtechnologies.opsmanagerapp',
+        photoUrl: 'assets/screenshots/ops_manager.png',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'REST',
+          'SQFLITE',
+        ],
+      ),
+      const Project(
+        title: 'Power Supply Monitoring System (PSMS)',
+        description: 'Developed for IBEDC to monitor power supply on injection '
+            'substations and feeders across different regions and business hubs.',
+        url:
+            'https://play.google.com/store/apps/details?id=com.monarchtechnologies.tcn1',
+        photoUrl: 'assets/screenshots/psms.png',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'REST',
+          'SQFLITE',
+        ],
       ),
     ];
   }

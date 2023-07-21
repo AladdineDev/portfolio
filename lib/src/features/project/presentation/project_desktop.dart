@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/data/project_repository.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_card.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
 
 class ProjectDesktop extends ConsumerWidget {
   const ProjectDesktop({super.key});
@@ -19,7 +18,7 @@ class ProjectDesktop extends ConsumerWidget {
         Padding(
           padding: const EdgeInsets.only(left: 12, bottom: 20),
           child: Text(
-            context.localized.projectsSectionTitle,
+            'Projects', //context.localized.projectsSectionTitle,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),

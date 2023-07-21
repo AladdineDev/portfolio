@@ -7,7 +7,6 @@ import 'package:portfolio/src/features/introduction/presentation/widgets/contact
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
 
 class IntroductionMobile extends ConsumerWidget {
   const IntroductionMobile({super.key});
@@ -20,7 +19,7 @@ class IntroductionMobile extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          context.localized.name,
+          'Tolulope C. Olaniyan', //context.localized.name,
           style: Theme.of(context).textTheme.displayMedium,
         ),
         gapH4,
@@ -28,7 +27,7 @@ class IntroductionMobile extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "${context.localized.description} ",
+              'Software Engineer ',
               style: Theme.of(context)
                   .textTheme
                   .titleLarge
@@ -42,7 +41,7 @@ class IntroductionMobile extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "${context.localized.subDescription} ",
+              'Flutter Developer ',
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const FavoriteIcon(),

@@ -13,23 +13,23 @@ class ContactRepository {
   List<Contact> fetchContacts() {
     return const [
       Contact(
-        tooltip: "LinkedIn",
-        url: "https://www.linkedin.com/in/aladdine-abdou/",
+        tooltip: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/tolulope-olaniyan-589089167',
         icon: FontAwesomeIcons.linkedin,
       ),
       Contact(
-        tooltip: "Github",
-        url: "https://www.github.com/Aaldn",
+        tooltip: 'Github',
+        url: 'https://www.github.com/oltoch',
         icon: FontAwesomeIcons.github,
       ),
       Contact(
-        tooltip: "aladdine.abdou@gmail.com",
-        url: "mailto:aladdine.abdou@gmail.com",
+        tooltip: 'otchrisola@gmail.com',
+        url: 'mailto:otchrisola@gmail.com',
         icon: FontAwesomeIcons.solidEnvelope,
       ),
       Contact(
-        tooltip: "+33 7 82 54 34 70",
-        url: "tel:+33782543470",
+        tooltip: '+234 813 8349 445',
+        url: 'tel:+2348138349445',
         icon: FontAwesomeIcons.phone,
       ),
     ];

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
-import 'package:portfolio/src/common_widgets/link.dart';
 
 class BottomBanner extends ConsumerWidget {
   const BottomBanner({super.key, this.bannerHeight = 48});
@@ -19,18 +17,18 @@ class BottomBanner extends ConsumerWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "${context.localized.credit} ",
+            'Copyright (c) 2023 Tolulope Olaniyan', //'${context.localized.credit} ',
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          DefaultTextStyle(
-            style: Theme.of(context).textTheme.bodyLarge!,
-            child: Link(
-              url: "https://brittanychiang.com",
-              displayLink: "Brittany Chiang",
-              underlined: true,
-              hoverColor: Theme.of(context).colorScheme.onSurface,
-            ),
-          ),
+          // DefaultTextStyle(
+          //   style: Theme.of(context).textTheme.bodyLarge!,
+          //   child: Link(
+          //     url: 'https://brittanychiang.com',
+          //     displayLink: 'Brittany Chiang',
+          //     underlined: true,
+          //     hoverColor: Theme.of(context).colorScheme.onSurface,
+          //   ),
+          // ),
         ],
       ),
     );

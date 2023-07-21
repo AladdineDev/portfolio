@@ -58,44 +58,47 @@ class ProjectImage extends ConsumerWidget {
                         ..scale(1.2)
                         ..translate(0.5 * -width, 0.5 * -width))
                       : Matrix4.identity(),
-                  child: Image.network(
+                  child: Image.asset(
                     project.photoUrl,
                     fit: BoxFit.cover,
                     cacheWidth: 1920,
-                    loadingBuilder: (context, child, loadingProgress) {
-                      if (loadingProgress != null) {
-                        return const Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      }
-                      return child;
-                    },
+                    // loadingBuilder: (context, child, loadingProgress) {
+                    //   if (loadingProgress != null) {
+                    //     return const Center(
+                    //       child: CircularProgressIndicator(),
+                    //     );
+                    //   }
+                    //   return child;
+                    // },
                   ),
                 );
               },
             ),
           ),
         ),
-        Positioned(
-          bottom: 20,
-          right: 20,
-          child: SizedBox.square(
-            dimension: 32,
-            child: AnimatedCrossFade(
-              alignment: Alignment.center,
-              firstCurve: Curves.decelerate,
-              secondCurve: Curves.decelerate,
-              sizeCurve: Curves.decelerate,
-              crossFadeState: isHovered
-                  ? CrossFadeState.showSecond
-                  : CrossFadeState.showFirst,
-              duration: const Duration(seconds: 1),
-              reverseDuration: const Duration(milliseconds: 500),
-              firstChild: const SizedBox.shrink(),
-              secondChild: const Icon(
-                FontAwesomeIcons.github,
-                color: Colors.white,
-                size: 32,
+        Visibility(
+          visible: false,
+          child: Positioned(
+            bottom: 20,
+            right: 20,
+            child: SizedBox.square(
+              dimension: 32,
+              child: AnimatedCrossFade(
+                alignment: Alignment.center,
+                firstCurve: Curves.decelerate,
+                secondCurve: Curves.decelerate,
+                sizeCurve: Curves.decelerate,
+                crossFadeState: isHovered
+                    ? CrossFadeState.showSecond
+                    : CrossFadeState.showFirst,
+                duration: const Duration(seconds: 1),
+                reverseDuration: const Duration(milliseconds: 500),
+                firstChild: const SizedBox.shrink(),
+                secondChild: const Icon(
+                  FontAwesomeIcons.github,
+                  color: Colors.white,
+                  size: 32,
+                ),
               ),
             ),
           ),

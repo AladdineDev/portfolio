@@ -45,7 +45,7 @@ dependencies:
   collection: ^1.17.1
   url_launcher: ^6.1.11
   envied: ^0.3.0+3
-  firebase_core: ^2.14.0
+#  firebase_core: ^2.14.0
   url_strategy: ^0.2.0
   flutter_localizations:
     sdk: flutter
@@ -83,6 +83,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/images/
+    - assets/screenshots/
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

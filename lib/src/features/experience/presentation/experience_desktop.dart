@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/data/experience_repository.dart';
 import 'package:portfolio/src/features/experience/presentation/widgets/experience_card.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
 
 class ExperienceDesktop extends ConsumerWidget {
   const ExperienceDesktop({super.key});
@@ -20,7 +19,7 @@ class ExperienceDesktop extends ConsumerWidget {
         Padding(
           padding: const EdgeInsets.only(left: 12, bottom: 20),
           child: Text(
-            context.localized.experienceSectionTitle,
+            'Work Experience', //context.localized.experienceSectionTitle,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),

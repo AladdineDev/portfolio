@@ -1,7 +1,7 @@
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:portfolio/src/localization/app_localizations_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 part 'resume_repository.g.dart';
 
@@ -21,13 +21,13 @@ class ResumeRepository {
       Resume(
         language: _appLocalizations.englishLanguage,
         url:
-            "https://drive.google.com/file/d/1pVg6EjpZvixMcOkgRMGrhrkmAeIaSn3t/view?usp=sharing",
+            'https://drive.google.com/file/d/1b1DgHigJoYxaww5gp74FzpcnB0V8ohMb/view?usp=sharing',
       ),
-      Resume(
-        language: _appLocalizations.frenchLanguage,
-        url:
-            "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing",
-      ),
+      // Resume(
+      //   language: _appLocalizations.frenchLanguage,
+      //   url:
+      //       'https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing',
+      // ),
     ];
   }
 }
