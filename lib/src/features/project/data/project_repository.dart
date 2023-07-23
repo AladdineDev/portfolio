@@ -36,7 +36,7 @@ class ProjectRepository {
           "MongoDB",
           "Docker",
         ],
-        url: "https://github.com/Aaldn/learnflow-api/tree/development#readme",
+        url: "https://github.com/Aaldn/learnflow-api#readme",
         photoUrl:
             "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png",
       ),
@@ -44,7 +44,7 @@ class ProjectRepository {
         title: "Learn Flow Backoffice",
         description: _appLocalizations.learnFlowBackOfficeDescription,
         technologies: ["Flutter", "Dart"],
-        url: "https://github.com/Aaldn/learnflow_backoffice/tree/development",
+        url: "https://github.com/Aaldn/learnflow_backoffice#readme",
         photoUrl:
             "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png",
       ),
