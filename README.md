@@ -67,8 +67,7 @@ $ firebase projects:create
 $ firebase use --add
 ? Which project do you want to add? (Use arrow keys)
 ❯ <my-unique-project-id>
-? What alias do you want to use for this project? (e.g. 
-staging) default
+? What alias do you want to use for this project? (e.g. staging) default
 ```
 
 **5. Configure your apps to use Firebase:**
