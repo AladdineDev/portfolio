@@ -23,7 +23,7 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 
 ## Deploy your own version with Firebase 🚀
 
-Clone the repository:
+**Clone the repository:**
 ```bash
 $ git clone https://github.com/Aaldn/portfolio
 $ cd portfolio
@@ -33,7 +33,7 @@ $ cd portfolio
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-Run the code generator:
+**Run the code generator:**
 ```bash
 $ dart run build_runner build
 ```
@@ -44,17 +44,17 @@ $ dart run build_runner build
 
 If you haven't already, install [Firebase CLI](https://firebase.google.com/docs/cli#install_the_firebase_cli)
 
-1. Log into Firebase:
+**1. Log into Firebase:**
 ```bash
 $ firebase login
 ```
 
-2. Install the FlutterFire CLI:
+**2. Install the FlutterFire CLI:**
 ```bash
 $ dart pub global activate flutterfire_cli
 ```
 
-3. Create a new Firebase project:
+**3. Create a new Firebase project:**
 ```bash
 $ firebase projects:create
 ? Please specify a unique project id (warning: cannot be modified afterward) [6-30 characters]:
@@ -62,7 +62,7 @@ $ firebase projects:create
 ? What would you like to call your project? (defaults to your project ID) <my-unique-project-id>
 ```
 
-4. Set the Firebase project for your portfolio:
+**4. Set the Firebase project for your portfolio:**
 ```bash
 $ firebase use --add
 ? Which project do you want to add? (Use arrow keys)
@@ -71,7 +71,7 @@ $ firebase use --add
 staging) default
 ```
 
-5. Configure your apps to use Firebase:
+**5. Configure your apps to use Firebase:**
 ```bash
 $ flutterfire configure
 i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
@@ -84,7 +84,7 @@ i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
 
 > For more info, see the [Firebase setup](https://firebase.google.com/docs/flutter/setup?platform=ios) documentation
 
-6. Initialize Firebase Hosting:
+**6. Initialize Firebase Hosting:**
 ```bash
 $ firebase init hosting
 ? What do you want to use as your public directory? (public) build/web
@@ -92,7 +92,7 @@ $ firebase init hosting
 ? Set up automatic builds and deploys with GitHub? (y/N) N
 ```
 
-7. Deploy:
+**7. Deploy:**
 ```bash
 $ flutter build web --web-renderer canvaskit --release
 $ firebase deploy --only hosting
