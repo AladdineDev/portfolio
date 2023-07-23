@@ -57,8 +57,8 @@ class ResumeButton extends ConsumerWidget {
       try {
         await launchUrl(Uri.parse(resumes.first.url));
       } catch (e) {
-        const snackBar = SnackBar(
-          content: Text("Could not open resume"),
+        final snackBar = SnackBar(
+          content: Text(context.localized.openResumeError),
         );
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -68,8 +68,8 @@ class ResumeButton extends ConsumerWidget {
         Navigator.of(context).pop();
       }
     } else {
-      const snackBar = SnackBar(
-        content: Text("Could not open resume"),
+      final snackBar = SnackBar(
+        content: Text(context.localized.openResumeError),
       );
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(snackBar);

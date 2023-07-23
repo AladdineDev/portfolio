@@ -5,6 +5,7 @@ import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_description.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_image.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
+import 'package:portfolio/src/localization/localized_build_context.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends ConsumerStatefulWidget {
@@ -34,10 +35,11 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
           child: InkWell(
             onTap: () async {
               if (!await launchUrl(Uri.parse(widget.project.url))) {
-                final snackBar = SnackBar(
-                  content: Text("Could not launch ${widget.project.url}"),
-                );
                 if (context.mounted) {
+                  final snackBar = SnackBar(
+                    content: Text(
+                        "${context.localized.openUrlError} ${widget.project.url}"),
+                  );
                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 }
               }

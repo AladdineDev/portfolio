@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/introduction/domain/resume.dart';
+import 'package:portfolio/src/localization/localized_build_context.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ResumeLanguageDialogTile extends ConsumerWidget {
@@ -31,8 +32,8 @@ void _onPressed(BuildContext context, {required String resumeUrl}) async {
   try {
     await launchUrl(Uri.parse(resumeUrl));
   } catch (e) {
-    const snackBar = SnackBar(
-      content: Text("Could not open resume"),
+    final snackBar = SnackBar(
+      content: Text(context.localized.openResumeError),
     );
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(snackBar);

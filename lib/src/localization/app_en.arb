@@ -149,10 +149,18 @@
   },
   "gsbRvDr": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
   "@gsbRvDr": {
-  "description": "Description of the GSB-RV-DR project"
+    "description": "Description of the GSB-RV-DR project"
   },
   "credit": "Design inspired by",
   "@credit": {
-  "description": "Credit to"
+    "description": "Credit to"
+  },
+  "openResumeError": "Could not open the resume",
+  "@openResumeError": {
+    "description": "Error displayed in case resume could not be opened"
+  },
+  "openUrlError": "Could not open the url",
+  "@openUrlError": {
+    "description": "Error displayed in case url could not be opened"
   }
 }

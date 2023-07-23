@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/src/features/introduction/domain/contact.dart';
+import 'package:portfolio/src/localization/localized_build_context.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactBar extends ConsumerWidget {
@@ -17,10 +18,11 @@ class ContactBar extends ConsumerWidget {
           tooltip: contact.tooltip,
           onPressed: () async {
             if (!await launchUrl(Uri.parse(contact.url))) {
-              final snackBar = SnackBar(
-                content: Text("Could not launch ${contact.url}"),
-              );
               if (context.mounted) {
+                final snackBar = SnackBar(
+                  content:
+                      Text("${context.localized.openUrlError} ${contact.url}"),
+                );
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               }
             }

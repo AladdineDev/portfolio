@@ -153,6 +153,14 @@
   },
   "credit": "Design inspiré par",
   "@credit": {
-  "description": "Credit à"
+    "description": "Credit à"
+  },
+  "openResumeError": "Impossible d'ouvrir le CV",
+  "@openResumeError": {
+    "description": "Erreur affiché dans le cas où le CV n'aurait pas pu être ouvert"
+  },
+  "openUrlError": "Impossible d'ouvrir l'url",
+  "@openUrlError": {
+    "description": "Erreur affiché dans le cas où le lien n'aurait pas pu être ouvert"
   }
 }
