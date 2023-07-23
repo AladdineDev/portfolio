@@ -55,6 +55,54 @@
   "@about": {
     "description": "Mon introduction"
   },
+  "januaryAbreviation": "Janv.",
+  "@januaryAbreviation": {
+    "description": "januaryAbreviation"
+  },
+  "februaryAbreviation": "Févr.",
+  "@februaryAbreviation": {
+    "description": "februaryAbreviation"
+  },
+  "marchAbreviation": "Mars",
+  "@marchAbreviation": {
+    "description": "marchAbreviation"
+  },
+  "aprilAbreviation": "Avr.",
+  "@aprilAbreviation": {
+    "description": "aprilAbreviation"
+  },
+  "mayAbreviation": "Mai",
+  "@mayAbreviation": {
+    "description": "mayAbreviation"
+  },
+  "juneAbreviation": "Juin",
+  "@juneAbreviation": {
+    "description": "juneAbreviation"
+  },
+  "julyAbreviation": "Juill",
+  "@julyAbreviation": {
+    "description": "julyAbreviation"
+  },
+  "augustAbreviation": "Août.",
+  "@augustAbreviation": {
+    "description": "augustAbreviation"
+  },
+  "septemberAbreviation": "Sept.",
+  "@septemberAbreviation": {
+    "description": "septemberAbreviation"
+  },
+  "octoberAbreviation": "Oct.",
+  "@octoberAbreviation": {
+    "description": "octoberAbreviation"
+  },
+  "novemberAbreviation": "Nov.",
+  "@novemberAbreviation": {
+    "description": "novemberAbreviation"
+  },
+  "decemberAbreviation": "Déc.",
+  "@decemberAbreviation": {
+    "description": "decemberAbreviation"
+  },
   "mobileDevJobTitle": "Développeur Mobile",
   "@mobileDevJobTitle": {
     "description": "Intitulé du poste de Développeur Mobile"

@@ -63,6 +63,54 @@
   "@mobileWebDevJobTitle": {
     "description": "Mobile Web Developer job title"
   },
+  "januaryAbreviation": "Jan.",
+  "@januaryAbreviation": {
+    "description": "januaryAbreviation"
+  },
+  "februaryAbreviation": "Feb.",
+  "@februaryAbreviation": {
+    "description": "februaryAbreviation"
+  },
+  "marchAbreviation": "Mar.",
+  "@marchAbreviation": {
+    "description": "marchAbreviation"
+  },
+  "aprilAbreviation": "Apr.",
+  "@aprilAbreviation": {
+    "description": "aprilAbreviation"
+  },
+  "mayAbreviation": "May",
+  "@mayAbreviation": {
+    "description": "mayAbreviation"
+  },
+  "juneAbreviation": "June",
+  "@juneAbreviation": {
+    "description": "juneAbreviation"
+  },
+  "julyAbreviation": "July",
+  "@julyAbreviation": {
+    "description": "julyAbreviation"
+  },
+  "augustAbreviation": "Aug.",
+  "@augustAbreviation": {
+    "description": "augustAbreviation"
+  },
+  "septemberAbreviation": "Sept.",
+  "@septemberAbreviation": {
+    "description": "septemberAbreviation"
+  },
+  "octoberAbreviation": "Oct.",
+  "@octoberAbreviation": {
+    "description": "octoberAbreviation"
+  },
+  "novemberAbreviation": "Nov.",
+  "@novemberAbreviation": {
+    "description": "novemberAbreviation"
+  },
+  "decemberAbreviation": "Dec.",
+  "@decemberAbreviation": {
+    "description": "decemberAbreviation"
+  },
   "webDevJobTitle": "Web Developer",
   "@webDevJobTitle": {
     "description": "Web Developer job title"
