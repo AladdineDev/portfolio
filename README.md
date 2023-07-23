@@ -21,7 +21,7 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 💙 Supports multi languages\
 💙 Supports multi themes
 
-## Deploy your own version with Firebase 🚀
+## Clone and deploy with Firebase 🚀
 
 **Clone the repository:**
 ```bash
