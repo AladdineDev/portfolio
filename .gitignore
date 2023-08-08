@@ -45,6 +45,7 @@ app.*.map.json
 
 # Dart generated files
 *.g.dart
+*.freezed.dart
 
 # Firebase configuration files
 .firebaserc
