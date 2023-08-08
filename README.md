@@ -101,7 +101,7 @@ $ firebase init hosting
 
 **7. Deploy:**
 ```bash
-$ flutter build web --web-renderer canvaskit --release
+$ flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
 $ firebase deploy --only hosting
 ```
 
