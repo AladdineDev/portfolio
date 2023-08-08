@@ -1,0 +1,192 @@
+{
+    "name": "Aladdine Abdou",
+    "description": "Développeur Imagineer",
+    "subDescription": "Passionné de Flutter",
+    "contacts": [
+        {
+            "tooltip": "LinkedIn",
+            "url": "https://www.linkedin.com/in/aladdine-abdou/",
+            "iconCodePoint": "0xf08c",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "Github",
+            "url": "https://www.github.com/Aaldn",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "aladdine.abdou@gmail.com",
+            "url": "mailto:aladdine.abdou@gmail.com",
+            "iconCodePoint": "0xf0e0",
+            "iconFontFamily": "FontAwesomeSolid",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "+33 7 82 54 34 70",
+            "url": "tel:+33782543470",
+            "iconCodePoint": "0xf095",
+            "iconFontFamily": "FontAwesomeSolid",
+            "iconFontPackage": "font_awesome_flutter"
+        }
+    ],
+    "resumes": [
+        {
+            "languageCode": "en",
+            "url": "https://drive.google.com/file/d/1pVg6EjpZvixMcOkgRMGrhrkmAeIaSn3t/view?usp=sharing"
+        },
+        {
+            "languageCode": "fr",
+            "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
+        }
+    ],
+    "about": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en troisième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
+    "experiences": [
+        {
+            "job": "Développeur Mobile",
+            "company": "Walt Disney Imagineering",
+            "description": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant aux experts techniques la prise d'informations sur le terrain et fluidifiant la communication avec les services de maintenance pour la résolution des problèmes.",
+            "isPresent": true,
+            "startYear": 2022,
+            "endYear": 2023,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Django",
+                "Python",
+                "PostgreSQL",
+                "SQLite",
+                "Docker"
+            ]
+        },
+        {
+            "job": "Développeur Web Mobile",
+            "company": "Solutions Multi Techniques",
+            "description": "Développement d'une Progressive Web App à destination des techniciens en systèmes de sécurité, leur permettant de générer des devis complets au format PDF en y incluant des photos. Cela permet de délivrer les devis aux clients immédiatement après la visite.",
+            "startYear": 2022,
+            "endYear": 2022,
+            "startMonth": 1,
+            "endMonth": 2,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ]
+        },
+        {
+            "job": "Développeur Web",
+            "company": "Solutions Multi Techniques",
+            "description": "Développement du site web de l'association, en collaboration au sein d'un groupe de développeurs. Ce site web offre à ses visiteurs la possibilité d'en savoir plus sur l'association et de la rejoindre en tant que membres.\nÀ ce jour, le site web a attiré plus de 10 000 visites.",
+            "startYear": 2021,
+            "endYear": 2021,
+            "startMonth": 5,
+            "endMonth": 6,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
+            "url": "https://www.association-faire.fr"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Portfolio",
+            "description": "Oui, il s'agit de CE portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
+            "url": "https://github.com/Aaldn/portfolio#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png"
+        },
+        {
+            "title": "Learn Flow API",
+            "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification (JWT).",
+            "technologies": [
+                "Node.js",
+                "Express",
+                "TypeScript",
+                "MongoDB",
+                "Docker"
+            ],
+            "url": "https://github.com/Aaldn/learnflow-api#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
+        },
+        {
+            "title": "Learn Flow Backoffice",
+            "description": "Il s'agit du back-office conçu pour les managers du projet Learn Flow. Cette Single-Page App leur permet de surveiller l'activité de leurs applications et utilisateurs (trafic, factures...).",
+            "technologies": [
+                "Flutter",
+                "Dart"
+            ],
+            "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
+        },
+        {
+            "title": "GSB-Frais",
+            "description": "GSB-Frais est une application web de gestion des frais, développée pour les délégués médicaux et les comptables de l'entreprise fictive GSB. Elle facilite la saisie et la vérification des rapports mensuels des délégués médicaux, tout en permettant aux comptables de les traiter.",
+            "technologies": [
+                "Symfony",
+                "PHP",
+                "Bootstrap",
+                "MariaDB",
+                "Apache"
+            ],
+            "url": "https://github.com/Aaldn/GSB-Frais#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
+        },
+        {
+            "title": "GSB-RV-Visiteur-Serveur",
+            "description": "L'API REST du projet GSB sert d'interface pour les différents clients du projet (Android, Desktop et Web).",
+            "technologies": [
+                "Flask",
+                "Python",
+                "MariaDB",
+                "Docker"
+            ],
+            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
+        },
+        {
+            "title": "GSB-RV-DR",
+            "description": "GSB-RV-DR est une application de bureau conçue pour les délégués régionaux de l'entreprise fictive GSB. Elle permet de suivre les rapports de visite et de monitorer les activités des délégués médicaux. Les délégués régionaux peuvent accéder à la liste des rapports et y appliquer des filtres ou les trier.",
+            "technologies": [
+                "JavaFX",
+                "Java",
+                "MariaDB"
+            ],
+            "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
+        }
+    ],
+    "portfolio": "Portfolio",
+    "homeSectionTitle": "Accueil",
+    "aboutSectionTitle": "À propos",
+    "aboutSectionTitleAlt": "À propos de moi",
+    "experienceSectionTitle": "Expériences",
+    "projectsSectionTitle": "Projets",
+    "resume": "CV",
+    "downloadResume": "Télécharger le CV",
+    "present": "Présent",
+    "credit": {
+        "message": "Design inspiré par",
+        "to": "Brittany Chiang",
+        "url": "https://brittanychiang.com"
+    },
+    "openResumeError": "Impossible d'ouvrir le CV",
+    "openUrlError": "Impossible d'ouvrir l'url",
+    "localeInfos": [
+        {
+            "languageCode": "en",
+            "languageName": "English"
+        },
+        {
+            "languageCode": "fr",
+            "languageName": "Français"
+        }
+    ]
+}

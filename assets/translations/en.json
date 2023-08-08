@@ -1,0 +1,192 @@
+{
+    "name": "Aladdine Abdou",
+    "description": "Software Imagineer",
+    "subDescription": "Flutter Enthusiast",
+    "contacts": [
+        {
+            "tooltip": "LinkedIn",
+            "url": "https://www.linkedin.com/in/aladdine-abdou/",
+            "iconCodePoint": "0xf08c",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "Github",
+            "url": "https://www.github.com/Aaldn",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "aladdine.abdou@gmail.com",
+            "url": "mailto:aladdine.abdou@gmail.com",
+            "iconCodePoint": "0xf0e0",
+            "iconFontFamily": "FontAwesomeSolid",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "+33 7 82 54 34 70",
+            "url": "tel:+33782543470",
+            "iconCodePoint": "0xf095",
+            "iconFontFamily": "FontAwesomeSolid",
+            "iconFontPackage": "font_awesome_flutter"
+        }
+    ],
+    "resumes": [
+        {
+            "languageCode": "en",
+            "url": "https://drive.google.com/file/d/1pVg6EjpZvixMcOkgRMGrhrkmAeIaSn3t/view?usp=sharing"
+        },
+        {
+            "languageCode": "fr",
+            "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
+        }
+    ],
+    "about": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+    "experiences": [
+        {
+            "job": "Mobile Developer",
+            "company": "Walt Disney Imagineering",
+            "description": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.",
+            "isPresent": true,
+            "startYear": 2022,
+            "endYear": 2023,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Django",
+                "Python",
+                "PostgreSQL",
+                "SQLite",
+                "Docker"
+            ]
+        },
+        {
+            "job": "Mobile Web Developer",
+            "company": "Solutions Multi Techniques",
+            "description": "Development of a Progressive Web App for security systems technicians, that allows them to generate comprehensive quotes in PDF format including photos. This enables immediate delivery of quotes to customers after the visit.",
+            "startYear": 2022,
+            "endYear": 2022,
+            "startMonth": 1,
+            "endMonth": 2,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ]
+        },
+        {
+            "job": "Web Developer",
+            "company": "Solutions Multi Techniques",
+            "description": "Development of the association's website, in collaboration with a group of developers. It provides visitors with the opportunity to learn more about the association and become members.\nTo date, the website has attracted over 10,000 visits.",
+            "startYear": 2021,
+            "endYear": 2021,
+            "startMonth": 5,
+            "endMonth": 6,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
+            "url": "https://www.association-faire.fr"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Portfolio",
+            "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
+            "url": "https://github.com/Aaldn/portfolio#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png"
+        },
+        {
+            "title": "Learn Flow API",
+            "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
+            "technologies": [
+                "Node.js",
+                "Express",
+                "TypeScript",
+                "MongoDB",
+                "Docker"
+            ],
+            "url": "https://github.com/Aaldn/learnflow-api#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
+        },
+        {
+            "title": "Learn Flow Backoffice",
+            "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
+            "technologies": [
+                "Flutter",
+                "Dart"
+            ],
+            "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
+        },
+        {
+            "title": "GSB-Frais",
+            "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
+            "technologies": [
+                "Symfony",
+                "PHP",
+                "Bootstrap",
+                "MariaDB",
+                "Apache"
+            ],
+            "url": "https://github.com/Aaldn/GSB-Frais#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
+        },
+        {
+            "title": "GSB-RV-Visiteur-Serveur",
+            "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
+            "technologies": [
+                "Flask",
+                "Python",
+                "MariaDB",
+                "Docker"
+            ],
+            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
+        },
+        {
+            "title": "GSB-RV-DR",
+            "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
+            "technologies": [
+                "JavaFX",
+                "Java",
+                "MariaDB"
+            ],
+            "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
+        }
+    ],
+    "portfolio": "Portfolio",
+    "homeSectionTitle": "Home",
+    "aboutSectionTitle": "About",
+    "aboutSectionTitleAlt": "About Me",
+    "experienceSectionTitle": "Experience",
+    "projectsSectionTitle": "Projects",
+    "resume": "Resume",
+    "downloadResume": "Download resume",
+    "present": "Present",
+    "credit": {
+        "message": "Design inspired by",
+        "to": "Brittany Chiang",
+        "url": "https://brittanychiang.com"
+    },
+    "openResumeError": "Could not open the resume",
+    "openUrlError": "Could not open the url",
+    "localeInfos": [
+        {
+            "languageCode": "en",
+            "languageName": "English"
+        },
+        {
+            "languageCode": "fr",
+            "languageName": "Français"
+        }
+    ]
+}
