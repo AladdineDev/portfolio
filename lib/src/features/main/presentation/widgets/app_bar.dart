@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -5,8 +6,8 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/app_bar_button.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switch.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/locale_button.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
-import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
 
 class MyAppBar extends ConsumerWidget {
@@ -21,11 +22,11 @@ class MyAppBar extends ConsumerWidget {
       titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
-      title: const Row(
+      title: Row(
         children: [
-          Icon(FontAwesomeIcons.terminal),
-          SizedBox(width: 12),
-          Text("Portfolio"),
+          const Icon(FontAwesomeIcons.terminal),
+          const SizedBox(width: 12),
+          Text(tr(LocaleKeys.portfolio)),
         ],
       ),
       actions: [
@@ -33,7 +34,7 @@ class MyAppBar extends ConsumerWidget {
           Row(
             children: [
               AppBarButton(
-                title: context.localized.aboutSectionTitle,
+                title: tr(LocaleKeys.aboutSectionTitle),
                 onPressed: () {
                   final aboutSectionKey = ref.watch(aboutSectionKeyProvider);
                   if (aboutSectionKey.currentContext != null) {
@@ -46,7 +47,7 @@ class MyAppBar extends ConsumerWidget {
                 },
               ),
               AppBarButton(
-                title: context.localized.experienceSectionTitle,
+                title: tr(LocaleKeys.experienceSectionTitle),
                 onPressed: () {
                   final experienceSectionKey =
                       ref.watch(experienceSectionKeyProvider);
@@ -60,7 +61,7 @@ class MyAppBar extends ConsumerWidget {
                 },
               ),
               AppBarButton(
-                title: context.localized.projectsSectionTitle,
+                title: tr(LocaleKeys.projectsSectionTitle),
                 onPressed: () {
                   final projectSectionKey =
                       ref.watch(projectSectionKeyProvider);

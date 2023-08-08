@@ -1,10 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_desktop.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_tablet.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/bottom_banner.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/end_drawer.dart';
-import 'package:portfolio/src/features/main/presentation/provider/scroll_controller.dart';
+import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
 
 class MainSection extends ConsumerStatefulWidget {
@@ -27,6 +28,7 @@ class _MainSectionState extends ConsumerState<MainSection> {
 
   @override
   Widget build(BuildContext context) {
+    print(context.locale);
     ref.watch(scrollControllerProvider).addListener(_checkEndOfScroll);
 
     return Scaffold(

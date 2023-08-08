@@ -1,14 +1,18 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/features/introduction/data/resume_repository.dart';
+import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_language_dialog.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class ResumeButton extends ConsumerWidget {
-  const ResumeButton({super.key});
+  const ResumeButton({super.key, required this.resumes});
+
+  final List<Resume> resumes;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -35,7 +39,7 @@ class ResumeButton extends ConsumerWidget {
           ),
           gapW12,
           Text(
-            context.localized.resume,
+            tr(LocaleKeys.resume),
             style: Theme.of(context)
                 .textTheme
                 .titleMedium
@@ -46,34 +50,33 @@ class ResumeButton extends ConsumerWidget {
     );
   }
 
-  void _onPressed(BuildContext context, WidgetRef ref) async {
-    final resumes = ref.watch(resumeRepositoryProvider).fetchLocalizedResumes();
+  Future<void> _onPressed(BuildContext context, WidgetRef ref) async {
     if (resumes.length > 1) {
       showDialog(
         context: context,
         builder: (context) => ResumeLanguageDialog(resumes: resumes),
       );
     } else if (resumes.length == 1) {
-      try {
-        await launchUrl(Uri.parse(resumes.first.url));
-      } catch (e) {
-        final snackBar = SnackBar(
-          content: Text(context.localized.openResumeError),
-        );
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        }
+      final resumeFirstUrl = resumes.first.url;
+      if (resumeFirstUrl == null) {
+        _showSnackBarResumeError(context);
+        return;
       }
+      await launchUrl(Uri.parse(resumeFirstUrl));
       if (context.mounted) {
         Navigator.of(context).pop();
       }
     } else {
-      final snackBar = SnackBar(
-        content: Text(context.localized.openResumeError),
-      );
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
-      }
+      _showSnackBarResumeError(context);
+    }
+  }
+
+  void _showSnackBarResumeError(BuildContext context) {
+    final snackBar = SnackBar(
+      content: Text(tr(LocaleKeys.openResumeError)),
+    );
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
     }
   }
 }

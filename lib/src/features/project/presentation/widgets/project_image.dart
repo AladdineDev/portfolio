@@ -36,6 +36,7 @@ class ProjectImage extends ConsumerWidget {
             child: LayoutBuilder(
               builder: (context, constraints) {
                 final width = constraints.maxWidth;
+                final screenshotUrl = project.screenshotUrl;
                 return AnimatedContainer(
                   foregroundDecoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -58,19 +59,21 @@ class ProjectImage extends ConsumerWidget {
                         ..scale(1.2)
                         ..translate(0.5 * -width, 0.5 * -width))
                       : Matrix4.identity(),
-                  child: Image.network(
-                    project.photoUrl,
-                    fit: BoxFit.cover,
-                    cacheWidth: 1920,
-                    loadingBuilder: (context, child, loadingProgress) {
-                      if (loadingProgress != null) {
-                        return const Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      }
-                      return child;
-                    },
-                  ),
+                  child: screenshotUrl == null
+                      ? const Icon(Icons.code)
+                      : Image.network(
+                          screenshotUrl,
+                          fit: BoxFit.cover,
+                          cacheWidth: 1920,
+                          loadingBuilder: (context, child, loadingProgress) {
+                            if (loadingProgress != null) {
+                              return const Center(
+                                child: CircularProgressIndicator(),
+                              );
+                            }
+                            return child;
+                          },
+                        ),
                 );
               },
             ),

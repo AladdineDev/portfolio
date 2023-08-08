@@ -1,6 +1,15 @@
-class Resume {
-  final String language;
-  final String url;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  Resume({required this.language, required this.url});
+part 'resume.freezed.dart';
+part 'resume.g.dart';
+
+@freezed
+class Resume with _$Resume {
+  const factory Resume({
+    String? languageCode,
+    String? language,
+    String? url,
+  }) = _Resume;
+
+  factory Resume.fromJson(Map<String, dynamic> json) => _$ResumeFromJson(json);
 }

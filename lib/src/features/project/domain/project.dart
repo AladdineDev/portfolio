@@ -1,15 +1,18 @@
-class Project {
-  final String title;
-  final String description;
-  final List<String>? technologies;
-  final String url;
-  final String photoUrl;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  const Project({
-    required this.title,
-    required this.description,
-    this.technologies,
-    required this.url,
-    required this.photoUrl,
-  });
+part 'project.freezed.dart';
+part 'project.g.dart';
+
+@freezed
+class Project with _$Project {
+  const factory Project({
+    String? title,
+    String? description,
+    List<String>? technologies,
+    String? url,
+    String? screenshotUrl,
+  }) = _Project;
+
+  factory Project.fromJson(Map<String, dynamic> json) =>
+      _$ProjectFromJson(json);
 }

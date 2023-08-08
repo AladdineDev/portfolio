@@ -31,7 +31,7 @@ class ProjectDescription extends ConsumerWidget {
           children: [
             Expanded(
               child: Text(
-                project.description,
+                project.description ?? "Description",
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),

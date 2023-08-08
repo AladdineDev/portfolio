@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class Link extends ConsumerStatefulWidget {
@@ -59,7 +61,7 @@ class _LinksState extends ConsumerState<Link> {
           if (!await launchUrl(Uri.parse(widget.url))) {
             if (!mounted) return;
             final snackBar = SnackBar(
-              content: Text("${context.localized.openUrlError} ${widget.url}"),
+              content: Text("${LocaleKeys.openUrlError.tr()} ${widget.url}"),
             );
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
           }

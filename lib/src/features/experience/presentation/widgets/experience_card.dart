@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
@@ -5,6 +6,9 @@ import 'package:portfolio/src/features/experience/domain/experience.dart';
 import 'package:portfolio/src/common_widgets/link.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+import 'package:portfolio/src/localization/localized_date.dart';
+import 'package:portfolio/utils/string_extension.dart';
 
 class ExperienceCard extends ConsumerWidget {
   const ExperienceCard({super.key, required this.experience});
@@ -34,7 +38,7 @@ class ExperienceCard extends ConsumerWidget {
                   children: [
                     Flexible(
                       child: Text(
-                        experience.job,
+                        experience.job ?? "Job",
                         style: Theme.of(context)
                             .textTheme
                             .titleMedium
@@ -43,10 +47,7 @@ class ExperienceCard extends ConsumerWidget {
                     ),
                     gapW24,
                     if (!Responsive.isMobile(context))
-                      Text(
-                        "${experience.startDate} - ${experience.endDate}",
-                        style: Theme.of(context).textTheme.bodyMedium,
-                      ),
+                      _buildExperienceDateText(context, ref),
                   ],
                 ),
                 if (Responsive.isMobile(context))
@@ -54,19 +55,16 @@ class ExperienceCard extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        experience.company,
+                        experience.company ?? "Company",
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       gapH4,
-                      Text(
-                        "${experience.startDate} - ${experience.endDate}",
-                        style: Theme.of(context).textTheme.bodyMedium,
-                      ),
+                      _buildExperienceDateText(context, ref),
                     ],
                   )
                 else
                   Text(
-                    experience.company,
+                    experience.company ?? "Company",
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                 gapH8,
@@ -74,7 +72,7 @@ class ExperienceCard extends ConsumerWidget {
                   children: [
                     Expanded(
                       child: Text(
-                        experience.description,
+                        experience.description ?? "Description",
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ),
@@ -94,6 +92,25 @@ class ExperienceCard extends ConsumerWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Text _buildExperienceDateText(BuildContext context, WidgetRef ref) {
+    final locale = context.locale;
+    final startMonth = experience.startMonth?.localizedMonth(locale) ?? "";
+    final startYear = experience.startYear?.localizedYear(locale);
+    final startDate = startMonth.isEmpty ? startYear : "$startMonth $startYear";
+    final endMonth = experience.endMonth?.localizedMonth(locale) ?? "";
+    final endYear = experience.endYear?.localizedYear(locale);
+    String? endDate;
+    if (experience.isPresent == true) {
+      endDate = tr(LocaleKeys.present);
+    } else {
+      endDate = endMonth.isEmpty ? endYear : "$endMonth $endYear";
+    }
+    return Text(
+      "${startDate?.capitalize() ?? "Start Date"} - ${endDate?.capitalize() ?? "End Date"}",
+      style: Theme.of(context).textTheme.bodyMedium,
     );
   }
 

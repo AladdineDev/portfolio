@@ -1,26 +1,40 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/features/introduction/data/contact_repository.dart';
-import 'package:portfolio/src/features/introduction/data/resume_repository.dart';
+import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
+import 'package:portfolio/src/features/introduction/domain/contact.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+import 'package:portfolio/src/localization/json_list_translation.dart';
 
 class IntroductionMobile extends ConsumerWidget {
   const IntroductionMobile({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final contacts = ref.read(contactRepositoryProvider).fetchContacts();
-
+    final jsonResumes = trList(
+      context.locale,
+      LocaleKeys.resumes,
+    );
+    final resumes = jsonResumes.map((jsonResume) {
+      return Resume.fromJson(jsonResume);
+    });
+    final jsonContacts = trList(
+      context.locale,
+      LocaleKeys.contacts,
+    );
+    final contacts = jsonContacts.map((jsonContact) {
+      return Contact.fromJson(jsonContact);
+    });
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          context.localized.name,
+          tr(LocaleKeys.name),
           style: Theme.of(context).textTheme.displayMedium,
         ),
         gapH4,
@@ -28,7 +42,7 @@ class IntroductionMobile extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "${context.localized.description} ",
+              "${tr(LocaleKeys.description)} ",
               style: Theme.of(context)
                   .textTheme
                   .titleLarge
@@ -42,25 +56,24 @@ class IntroductionMobile extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "${context.localized.subDescription} ",
+              "${tr(LocaleKeys.subDescription)} ",
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const FavoriteIcon(),
           ],
         ),
-        _buildResumeButton(ref),
+        _buildResumeButton(ref, resumes: resumes.toList()),
         gapH8,
-        ContactBar(contacts: contacts),
+        ContactBar(contacts: contacts.toList()),
       ],
     );
   }
 
-  Widget _buildResumeButton(WidgetRef ref) {
-    final resumes = ref.watch(resumeRepositoryProvider).fetchLocalizedResumes();
+  Widget _buildResumeButton(WidgetRef ref, {required List<Resume> resumes}) {
     if (resumes.isEmpty) return const SizedBox.shrink();
-    return const Padding(
-      padding: EdgeInsets.symmetric(vertical: 28),
-      child: ResumeButton(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 28),
+      child: ResumeButton(resumes: resumes),
     );
   }
 }

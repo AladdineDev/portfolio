@@ -1,13 +1,18 @@
-import 'package:flutter/material.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class Contact {
-  final String tooltip;
-  final String url;
-  final IconData icon;
+part 'contact.freezed.dart';
+part 'contact.g.dart';
 
-  const Contact({
-    required this.tooltip,
-    required this.url,
-    required this.icon,
-  });
+@freezed
+class Contact with _$Contact {
+  const factory Contact({
+    String? tooltip,
+    String? url,
+    String? iconCodePoint,
+    String? iconFontFamily,
+    String? iconFontPackage,
+  }) = _Contact;
+
+  factory Contact.fromJson(Map<String, dynamic> json) =>
+      _$ContactFromJson(json);
 }

@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
+
 import 'package:portfolio/src/common_widgets/link.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
 class BottomBanner extends ConsumerWidget {
   const BottomBanner({super.key, this.bannerHeight = 48});
@@ -19,14 +21,14 @@ class BottomBanner extends ConsumerWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "${context.localized.credit} ",
+            "${tr(LocaleKeys.credit_message)} ",
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           DefaultTextStyle(
             style: Theme.of(context).textTheme.bodyLarge!,
             child: Link(
-              url: "https://brittanychiang.com",
-              displayLink: "Brittany Chiang",
+              url: tr(LocaleKeys.credit_url),
+              displayLink: tr(LocaleKeys.credit_to),
               underlined: true,
               hoverColor: Theme.of(context).colorScheme.onSurface,
             ),

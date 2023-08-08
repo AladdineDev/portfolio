@@ -2,10 +2,9 @@ import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/src/features/main/presentation/main_section.dart';
-import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
-import 'package:portfolio/src/localization/localization_provider.dart';
+import 'package:portfolio/src/features/main/provider/dark_mode_controller.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
@@ -15,9 +14,9 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       title: "Aladdine Abdou",
       debugShowCheckedModeBanner: false,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      locale: ref.watch(localizationProvider),
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       // Made for FlexColorScheme version 7.0.0. Make sure you
       // use same or higher package version, but still same major version.
       // If you use a lower version, some properties may not be supported.

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
+import 'package:portfolio/src/features/main/provider/dark_mode_controller.dart';
 
 class FavoriteIcon extends ConsumerWidget {
   const FavoriteIcon({super.key});

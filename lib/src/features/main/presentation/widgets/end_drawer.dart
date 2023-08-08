@@ -1,12 +1,14 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switch.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/drawer_button.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/locale_button.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
-import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
+
+import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
 class EndDrawer extends ConsumerWidget {
   const EndDrawer({super.key});
@@ -43,22 +45,22 @@ class EndDrawer extends ConsumerWidget {
                     const DarkModeSwitch(),
                     gapH80,
                     MyDrawerButton(
-                      title: context.localized.homeSectionTitle,
+                      title: tr(LocaleKeys.homeSectionTitle),
                       sectionKey: ref.watch(homeSectionKeyProvider),
                     ),
                     gapH40,
                     MyDrawerButton(
-                      title: context.localized.aboutSectionTitle,
+                      title: tr(LocaleKeys.aboutSectionTitle),
                       sectionKey: ref.watch(aboutSectionKeyProvider),
                     ),
                     gapH40,
                     MyDrawerButton(
-                      title: context.localized.experienceSectionTitle,
+                      title: tr(LocaleKeys.experienceSectionTitle),
                       sectionKey: ref.watch(experienceSectionKeyProvider),
                     ),
                     gapH40,
                     MyDrawerButton(
-                      title: context.localized.projectsSectionTitle,
+                      title: tr(LocaleKeys.projectsSectionTitle),
                       sectionKey: ref.watch(projectSectionKeyProvider),
                     ),
                     gapH80,

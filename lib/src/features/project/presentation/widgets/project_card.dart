@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
@@ -5,7 +6,8 @@ import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_description.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_image.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
-import 'package:portfolio/src/localization/localized_build_context.dart';
+import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends ConsumerStatefulWidget {
@@ -33,17 +35,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(20),
           child: InkWell(
-            onTap: () async {
-              if (!await launchUrl(Uri.parse(widget.project.url))) {
-                if (context.mounted) {
-                  final snackBar = SnackBar(
-                    content: Text(
-                        "${context.localized.openUrlError} ${widget.project.url}"),
-                  );
-                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                }
-              }
-            },
+            onTap: _onTap,
             borderRadius: BorderRadius.circular(20),
             hoverColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
             splashColor: Theme.of(context).colorScheme.tertiary.withAlpha(30),
@@ -57,6 +49,21 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
         ),
       ),
     );
+  }
+
+  void _onTap() async {
+    final url = widget.project.url;
+    if (url == null) return;
+    if (!await launchUrl(Uri.parse(url))) {
+      if (context.mounted) {
+        final snackBar = SnackBar(
+          content: Text(
+            "${tr(LocaleKeys.openUrlError)} ${widget.project.url}",
+          ),
+        );
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      }
+    }
   }
 
   Widget _buildResponsiveProjectCardContent(BuildContext context) {
