@@ -33,12 +33,20 @@ $ cd portfolio
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-**Run the code generator:**
+**1. Run the code generator:**
 ```bash
 $ dart run build_runner build
 ```
 > For more info, see the [build_runner](https://pub.dev/packages/build_runner) documentation
 
+
+**2. Generate localization files:**
+```bash
+$ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
+$ dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
+```
+>  Re-generate after making changes in the `assets/translations` folder.
+> For more info, see the [build_runner](https://pub.dev/packages/build_runner) documentation
 
 ### Firebase 🔥
 
