@@ -121,7 +121,7 @@ If you add or remove a JSON translation file, remember to update the supported l
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
-Then, you can re-deploy your portfolio ([Firebase step "7: Deploy"](#Firebase-🔥))
+Then, you can re-deploy your portfolio ([Firebase step "7: Deploy"](#firebase-))
 
 ## License 📄
 
