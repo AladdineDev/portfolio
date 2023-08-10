@@ -69,6 +69,7 @@ $ dart pub global activate flutterfire_cli
 **3. Create a new Firebase project:**
 ```bash
 $ firebase projects:create
+
 ? Please specify a unique project id (warning: cannot be modified afterward) [6-30 characters]:
  <my-unique-project-id>
 ? What would you like to call your project? (defaults to your project ID) <my-unique-project-id>
@@ -77,6 +78,7 @@ $ firebase projects:create
 **4. Set the Firebase project for your portfolio:**
 ```bash
 $ firebase use --add
+
 ? Which project do you want to add? (Use arrow keys)
 ❯ <my-unique-project-id>
 ? What alias do you want to use for this project? (e.g. staging) default
@@ -85,6 +87,7 @@ $ firebase use --add
 **5. Configure your apps to use Firebase:**
 ```bash
 $ flutterfire configure
+
 i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
 ? Which platforms should your configuration support (use arrow keys & space to select)? › 
 ✔ android                                                
@@ -98,6 +101,7 @@ i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
 **6. Initialize Firebase Hosting:**
 ```bash
 $ firebase init hosting
+
 ? What do you want to use as your public directory? (public) build/web
 ? Configure as a single-page app (rewrite all urls to /index.html)? (y/N) y
 ? Set up automatic builds and deploys with GitHub? (y/N) N
