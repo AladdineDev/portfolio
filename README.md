@@ -8,12 +8,12 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 [![Dart 3](https://img.shields.io/badge/Dart-3.0-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase--ffcc30.svg?style=flat-square&logo=firebase)](https://firebase.google.com/)
 
-## [Live Demo](https://aladdine.dev) ✨
+## [Live Demo](https://aladdine.dev)
 
 <img src="assets/screenshots/mockups-1.png">
 <img src="assets/screenshots/mockups-2.png">
 
-## Features 🪄
+## Features ✨
 
 💙 Responsive and adaptive design, inspired by [Brittany Chiang](https://brittanychiang.com)\
 💙 Implements the [Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/) by [Andrea Bizzotto](https://github.com/bizz84)\
@@ -37,16 +37,15 @@ If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/i
 ```bash
 $ dart run build_runner build
 ```
-> For more info, see the [build_runner](https://pub.dev/packages/build_runner) documentation
+
+> For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
 
 
-**2. Generate localization files:**
+<a id="generate-localization-files">**2. Generate localization files:**</a>
 ```bash
 $ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
 $ dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
 ```
->  Re-generate after making changes in the `assets/translations` folder.
-> For more info, see the [build_runner](https://pub.dev/packages/build_runner) documentation
 
 ### Firebase 🔥
 
@@ -89,7 +88,7 @@ i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
 ✔ web                                                    
 ```
 
-> For more info, see the [Firebase setup](https://firebase.google.com/docs/flutter/setup?platform=ios) documentation
+> For additional information, refer to the [Firebase setup](https://firebase.google.com/docs/flutter/setup?platform=ios) documentation
 
 **6. Initialize Firebase Hosting:**
 ```bash
@@ -99,14 +98,22 @@ $ firebase init hosting
 ? Set up automatic builds and deploys with GitHub? (y/N) N
 ```
 
-**7. Deploy:**
+<a id="deploy">**7. Deploy:**</a>
 ```bash
 $ flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
 $ firebase deploy --only hosting
 ```
 
-> Re-deploy whenever you need
+### Content Personalization 🖋
 
-## License
+Modify or add JSON translation files in the [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files)
+
+If you add or remove a JSON translation file, remember to update the supported locales in [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
+
+> For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
+
+Then, you can [re-deploy your portfolio](#deploy)
+
+## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/Aaldn/portfolio/blob/main/LICENSE.md) file for details
