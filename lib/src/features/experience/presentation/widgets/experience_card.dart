@@ -8,7 +8,7 @@ import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/localization/localized_date.dart';
-import 'package:portfolio/utils/string_extension.dart';
+import 'package:portfolio/src/utils/string_extension.dart';
 
 class ExperienceCard extends ConsumerWidget {
   const ExperienceCard({super.key, required this.experience});
