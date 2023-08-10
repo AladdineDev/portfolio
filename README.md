@@ -121,6 +121,11 @@ If you add or remove a JSON translation file, remember to update the supported l
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
+Change the content of your description in [`build/web/index.html`](build/web/index.html)
+```html
+<meta name="description" content="...">
+```
+
 Then, you can re-deploy your portfolio ([Firebase step "7: Deploy"](#firebase-))
 
 ## License 📄
