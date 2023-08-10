@@ -115,16 +115,26 @@ $ firebase deploy --only hosting
 
 ### Content Personalization 🖋
 
-Modify or add JSON translation files in the [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files)
+Edit the title of your MaterialApp in the [`lib/src/app.dart`](lib/src/app.dart):
+```dart
+Widget build(BuildContext context, WidgetRef ref) {
+    return MaterialApp(
+      title: "...",
+      ...
+    )
+}
+```
 
-If you add or remove a JSON translation file, remember to update the `localeInfos` key in your other translation files, and the supported locales in [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart) and
-
-> For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
-
-Change the content of your description in [`build/web/index.html`](build/web/index.html)
+Change the content of your description in the [`build/web/index.html`](build/web/index.html):
 ```html
 <meta name="description" content="...">
 ```
+
+Modify or add JSON translation files in the [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files)
+
+If you add or remove a JSON translation file, remember to update the `localeInfos` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
+
+> For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
 Then, you can re-deploy your portfolio ([Firebase step "7: Deploy"](#firebase-))
 
