@@ -119,7 +119,7 @@ Edit the title of your MaterialApp in the [`lib/src/app.dart`](lib/src/app.dart)
 ```dart
 Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
-      title: "...",
+      title: "Aladdine Abdou",
       ...
     )
 }
