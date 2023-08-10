@@ -29,6 +29,11 @@ $ git clone https://github.com/Aaldn/portfolio
 $ cd portfolio
 ```
 
+**Get the current package's dependencies:**
+```bash
+$ flutter pub get
+```
+
 ### Generator 🤖
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
