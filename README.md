@@ -117,7 +117,7 @@ $ firebase deploy --only hosting
 
 Modify or add JSON translation files in the [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files)
 
-If you add or remove a JSON translation file, remember to update the supported locales in [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
+If you add or remove a JSON translation file, remember to update the `localeInfos` key in your other translation files, and the supported locales in [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart) and
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
