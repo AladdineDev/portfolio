@@ -173,9 +173,9 @@
     "downloadResume": "Télécharger le CV",
     "present": "Présent",
     "credit": {
-        "message": "Design inspiré par",
-        "to": "Brittany Chiang",
-        "url": "https://brittanychiang.com"
+        "message": "Inspiré par",
+        "to": "Aladdine Abdou",
+        "url": "https://aladdine.dev"
     },
     "openResumeError": "Impossible d'ouvrir le CV",
     "openUrlError": "Impossible d'ouvrir l'url",

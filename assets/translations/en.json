@@ -173,9 +173,9 @@
     "downloadResume": "Download resume",
     "present": "Present",
     "credit": {
-        "message": "Design inspired by",
-        "to": "Brittany Chiang",
-        "url": "https://brittanychiang.com"
+        "message": "Inspired by",
+        "to": "Aladdine Abdou",
+        "url": "https://aladdine.dev"
     },
     "openResumeError": "Could not open the resume",
     "openUrlError": "Could not open the url",
