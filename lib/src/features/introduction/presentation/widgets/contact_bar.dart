@@ -47,8 +47,9 @@ class ContactBar extends ConsumerWidget {
               }
             }
           },
-          icon: iconData == null
-              ? Row(
+          icon: iconData != null
+              ? Icon(iconData)
+              : Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(Icons.link),
@@ -57,8 +58,7 @@ class ContactBar extends ConsumerWidget {
                       contactTooltip ?? "Tooltip",
                     ),
                   ],
-                )
-              : Icon(iconData),
+                ),
           padding: iconData == null ? null : _fixGithubIconPadding(iconData),
         );
       }).toList(),

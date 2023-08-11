@@ -11,6 +11,9 @@ class Project with _$Project {
     String? description,
     List<String>? technologies,
     String? url,
+    String? iconCodePoint,
+    String? iconFontFamily,
+    String? iconFontPackage,
     String? screenshotUrl,
     Link? link,
   }) = _Project;

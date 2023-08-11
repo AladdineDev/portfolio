@@ -103,6 +103,9 @@
                 "Firebase"
             ],
             "url": "https://github.com/Aaldn/portfolio#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
             "link": {
                 "url": "https://brittanychiang.com",
@@ -120,6 +123,9 @@
                 "Docker"
             ],
             "url": "https://github.com/Aaldn/learnflow-api#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
         },
         {
@@ -130,6 +136,9 @@
                 "Dart"
             ],
             "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
         },
         {
@@ -143,6 +152,9 @@
                 "Apache"
             ],
             "url": "https://github.com/Aaldn/GSB-Frais#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
         },
         {
@@ -155,6 +167,9 @@
                 "Docker"
             ],
             "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
         },
         {
@@ -166,6 +181,9 @@
                 "MariaDB"
             ],
             "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
         }
     ],

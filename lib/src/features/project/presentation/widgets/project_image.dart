@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 
 class ProjectImage extends ConsumerWidget {
@@ -15,6 +14,20 @@ class ProjectImage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    IconData? iconData;
+    final projectIconCodePoint = project.iconCodePoint;
+    final projectIconFontFamily = project.iconFontFamily;
+    final projectIconFontPackage = project.iconFontPackage;
+    if (projectIconCodePoint != null && projectIconFontFamily != null) {
+      final projectIconCodePointHexa = int.tryParse(projectIconCodePoint);
+      if (projectIconCodePointHexa != null) {
+        iconData = IconData(
+          projectIconCodePointHexa,
+          fontFamily: projectIconFontFamily,
+          fontPackage: projectIconFontPackage,
+        );
+      }
+    }
     return Stack(
       children: [
         Container(
@@ -95,11 +108,13 @@ class ProjectImage extends ConsumerWidget {
               duration: const Duration(seconds: 1),
               reverseDuration: const Duration(milliseconds: 500),
               firstChild: const SizedBox.shrink(),
-              secondChild: const Icon(
-                FontAwesomeIcons.github,
-                color: Colors.white,
-                size: 32,
-              ),
+              secondChild: iconData == null
+                  ? const SizedBox.shrink()
+                  : Icon(
+                      iconData,
+                      color: Colors.white,
+                      size: 32,
+                    ),
             ),
           ),
         ),
