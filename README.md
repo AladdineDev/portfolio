@@ -29,7 +29,7 @@ $ git clone https://github.com/Aaldn/portfolio
 $ cd portfolio
 ```
 
-**Get the current package's dependencies:**
+**Install dependencies:**
 ```bash
 $ flutter pub get
 ```
