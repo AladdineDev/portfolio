@@ -125,7 +125,7 @@ Widget build(BuildContext context, WidgetRef ref) {
 }
 ```
 
-Change the content of your description in the [`build/web/index.html`](build/web/index.html):
+Change the content of your description in the `build/web/index.html`:
 ```html
 <meta name="description" content="...">
 ```
@@ -136,7 +136,7 @@ If you add or remove a JSON translation file, remember to update the `localeInfo
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
-Then, you can ([re-deploy your portfolio"](#deploy))
+Then, you can [re-deploy your portfolio](#deploy)
 
 ## License 📄
 
