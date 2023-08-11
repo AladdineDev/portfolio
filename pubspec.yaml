@@ -36,8 +36,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   flex_color_scheme: ^7.1.2
   google_fonts: ^4.0.4
-  flutter_native_splash: ^2.3.1
-  flutter_launcher_icons: ^0.13.1
   font_awesome_flutter: ^10.4.0
   flutter_riverpod: ^2.3.6
   riverpod_annotation: ^2.1.1
@@ -66,6 +64,8 @@ dev_dependencies:
   riverpod_generator: ^2.2.3
   freezed: ^2.4.1
   json_serializable: ^6.7.1
+  flutter_native_splash: ^2.3.1
+  flutter_launcher_icons: ^0.13.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
