@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_desktop.dart';
@@ -28,7 +27,6 @@ class _MainSectionState extends ConsumerState<MainSection> {
 
   @override
   Widget build(BuildContext context) {
-    print(context.locale);
     ref.watch(scrollControllerProvider).addListener(_checkEndOfScroll);
 
     return Scaffold(
