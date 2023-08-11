@@ -43,7 +43,7 @@ class ProjectDescription extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _buildLink(context),
-            if (project.url != null) gapH12 else gapH4,
+            if (project.link?.url != null) gapH12 else gapH4,
             _buildChips(context),
           ],
         ),

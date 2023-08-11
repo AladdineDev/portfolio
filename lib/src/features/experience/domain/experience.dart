@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:portfolio/src/shared/domain/link.dart';
 
 part 'experience.freezed.dart';
 part 'experience.g.dart';
@@ -14,7 +15,7 @@ class Experience with _$Experience {
     int? endYear,
     int? startMonth,
     int? endMonth,
-    String? url,
+    Link? link,
     List<String>? technologies,
   }) = _Experience;
 

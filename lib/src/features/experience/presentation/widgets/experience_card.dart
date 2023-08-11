@@ -83,7 +83,7 @@ class ExperienceCard extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _buildLink(),
-                    if (experience.url != null) gapH12 else gapH4,
+                    if (experience.link?.url != null) gapH12 else gapH4,
                     _buildChips(context),
                   ],
                 ),
@@ -128,9 +128,12 @@ class ExperienceCard extends ConsumerWidget {
   }
 
   Widget _buildLink() {
-    if (experience.url == null) return const SizedBox.shrink();
+    final experienceLinkUrl = experience.link?.url;
+    final experienceLinkDisplay = experience.link?.display;
+    if (experienceLinkUrl == null) return const SizedBox.shrink();
     return Link(
-      url: experience.url!,
+      url: experienceLinkUrl,
+      displayLink: experienceLinkDisplay ?? experienceLinkUrl,
       displayLeadingIcon: true,
     );
   }
