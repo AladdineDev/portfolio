@@ -113,7 +113,7 @@ $ flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
 $ firebase deploy --only hosting
 ```
 
-### Content Personalization 🖋
+## Content Personalization 🖋
 
 **1. App Title:**\
 Edit the title of your MaterialApp in the [`lib/src/app.dart`](lib/src/app.dart):
