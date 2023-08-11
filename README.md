@@ -115,6 +115,7 @@ $ firebase deploy --only hosting
 
 ### Content Personalization 🖋
 
+**1. App Title:**\
 Edit the title of your MaterialApp in the [`lib/src/app.dart`](lib/src/app.dart):
 ```dart
 Widget build(BuildContext context, WidgetRef ref) {
@@ -125,18 +126,32 @@ Widget build(BuildContext context, WidgetRef ref) {
 }
 ```
 
+**2. Your description:**\
 Change the content of your description in the `build/web/index.html`:
 ```html
 <meta name="description" content="...">
 ```
 
+**3. Portfolio Content:**\
 Modify or add JSON translation files in the [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files)
 
 If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
-Then, you can [re-deploy your portfolio](#deploy)
+**4. Launcher Icon and Splash Screen:**\
+Update your launcher icon and your splash screen in the [`flutter_launcher_icons-production.yaml`](flutter_launcher_icons-production.yaml) and the [`flutter_native_splash-production.yaml`](flutter_native_splash-production.yaml)
+
+Then, run:
+```bash
+$ dart run flutter_launcher_icons -f flutter_launcher_icons-production.yaml
+$ dart run flutter_native_splash:create --path=flutter_native_splash-production.yaml
+```
+
+> For additional information, refer to the [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) and [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) documentations
+
+**5. Update your live portfolio:**\
+You are ready to [re-deploy your custom portfolio](#deploy) !
 
 ## License 📄
 
