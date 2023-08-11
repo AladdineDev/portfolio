@@ -3,7 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/localization/locale_info.dart';
+import 'package:portfolio/src/localization/language.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/localization/json_list_translation.dart';
 
@@ -12,12 +12,12 @@ class LocaleButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jsonLocaleInfos = trList(
+    final jsonLanguages = trList(
       context.locale,
-      LocaleKeys.localeInfos,
+      LocaleKeys.languages,
     );
-    final localeInfos = jsonLocaleInfos.map((jsonLocaleInfo) {
-      return LocaleInfo.fromJson(jsonLocaleInfo);
+    final languages = jsonLanguages.map((jsonLocaleInfo) {
+      return Language.fromJson(jsonLocaleInfo);
     });
 
     return DropdownButton<Locale>(
@@ -26,16 +26,16 @@ class LocaleButton extends ConsumerWidget {
       dropdownColor: Theme.of(context).colorScheme.primary,
       focusNode: FocusNode(canRequestFocus: false),
       focusColor: Colors.transparent,
-      items: localeInfos.mapIndexed((index, localeInfo) {
+      items: languages.mapIndexed((index, language) {
         return DropdownMenuItem<Locale>(
-          value: Locale(localeInfo.languageCode ?? ""),
+          value: Locale(language.code ?? ""),
           child: Row(
             children: [
               const Icon(Icons.translate),
               gapW8,
               Text(
-                localeInfo.languageName ??
-                    localeInfo.languageCode ??
+                language.nativeName ??
+                    language.name ??
                     "Language Name ${index + 1}",
               ),
             ],

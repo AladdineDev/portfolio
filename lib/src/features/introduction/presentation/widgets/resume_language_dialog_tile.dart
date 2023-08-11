@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/introduction/domain/resume.dart';
-import 'package:portfolio/src/localization/locale_info.dart';
+import 'package:portfolio/src/localization/language.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/localization/json_list_translation.dart';
 
@@ -38,21 +38,21 @@ Text _buildResumeLanguageText(
   WidgetRef ref, {
   required Resume resume,
 }) {
-  final jsonLocaleInfos = trList(
+  final jsonLanguages = trList(
     context.locale,
-    LocaleKeys.localeInfos,
+    LocaleKeys.languages,
   );
-  final localeInfos = jsonLocaleInfos.map((jsonLocaleInfo) {
-    return LocaleInfo.fromJson(jsonLocaleInfo);
+  final languages = jsonLanguages.map((jsonLocaleInfo) {
+    return Language.fromJson(jsonLocaleInfo);
   });
 
   final resumeLanguageCode = resume.languageCode;
   if (resumeLanguageCode != null) {
-    final localeInfo = localeInfos.firstWhere((localeInfo) {
-      return localeInfo.languageCode == resumeLanguageCode;
+    final language = languages.firstWhere((language) {
+      return language.code == resumeLanguageCode;
     });
     return Text(
-      localeInfo.languageName ?? "Language unknown",
+      language.name ?? "Language unknown",
       style: Theme.of(context).textTheme.titleMedium,
     );
   }

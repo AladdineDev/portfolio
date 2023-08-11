@@ -86,8 +86,8 @@ class MyAppBar extends ConsumerWidget {
   }
 
   Widget _buildLocaleButton(BuildContext context) {
-    final jsonLocaleInfos = trList(context.locale, LocaleKeys.localeInfos);
-    if (jsonLocaleInfos.length > 1) {
+    final jsonLanguages = trList(context.locale, LocaleKeys.languages);
+    if (jsonLanguages.length > 1) {
       return const LocaleButton();
     }
     return const SizedBox.shrink();

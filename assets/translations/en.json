@@ -179,14 +179,16 @@
     },
     "openResumeError": "Could not open the resume",
     "openUrlError": "Could not open the url",
-    "localeInfos": [
+    "languages": [
         {
-            "languageCode": "en",
-            "languageName": "English"
+            "code": "en",
+            "name": "English",
+            "nativeName": "English"
         },
         {
-            "languageCode": "fr",
-            "languageName": "Français"
+            "code": "fr",
+            "name": "French",
+            "nativeName": "Français"
         }
     ]
 }

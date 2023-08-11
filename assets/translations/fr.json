@@ -179,14 +179,16 @@
     },
     "openResumeError": "Impossible d'ouvrir le CV",
     "openUrlError": "Impossible d'ouvrir l'url",
-    "localeInfos": [
+    "languages": [
         {
-            "languageCode": "en",
-            "languageName": "English"
+            "code": "en",
+            "name": "Anglais",
+            "nativeName": "English"
         },
         {
-            "languageCode": "fr",
-            "languageName": "Français"
+            "code": "fr",
+            "name": "Français",
+            "nativeName": "Français"
         }
     ]
 }
