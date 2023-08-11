@@ -61,7 +61,7 @@ class _LinksState extends ConsumerState<Link> {
           if (!await launchUrl(Uri.parse(widget.url))) {
             if (!mounted) return;
             final snackBar = SnackBar(
-              content: Text("${LocaleKeys.openUrlError.tr()} ${widget.url}"),
+              content: Text("${tr(LocaleKeys.openUrlError)} ${widget.url}"),
             );
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
           }
