@@ -101,7 +101,11 @@
                 "Firebase"
             ],
             "url": "https://github.com/Aaldn/portfolio#readme",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png"
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
+            "link": {
+                "url": "https://brittanychiang.com",
+                "display": "Design inspired by Brittany Chiang"
+            }
         },
         {
             "title": "Learn Flow API",

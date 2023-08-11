@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/link.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
@@ -37,15 +38,38 @@ class ProjectDescription extends ConsumerWidget {
             ),
           ],
         ),
-        gapH16,
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: project.technologies!.map((technology) {
-            return TechnologyChip(name: technology);
-          }).toList(),
+        gapH12,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildLink(context),
+            if (project.url != null) gapH12 else gapH4,
+            _buildChips(context),
+          ],
         ),
       ],
+    );
+  }
+
+  Widget _buildChips(BuildContext context) {
+    if (project.technologies == null) return const SizedBox.shrink();
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: project.technologies!.map((technology) {
+        return TechnologyChip(name: technology);
+      }).toList(),
+    );
+  }
+
+  Widget _buildLink(BuildContext context) {
+    final projectCreditUrl = project.link?.url;
+    final projectCreditDisplay = project.link?.display;
+    if (projectCreditUrl == null) return const SizedBox.shrink();
+    return Link(
+      url: projectCreditUrl,
+      displayLink: projectCreditDisplay ?? projectCreditUrl,
+      displayLeadingIcon: true,
     );
   }
 }

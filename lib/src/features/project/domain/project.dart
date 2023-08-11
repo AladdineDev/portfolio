@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:portfolio/src/shared/domain/link.dart';
 
 part 'project.freezed.dart';
 part 'project.g.dart';
@@ -11,6 +12,7 @@ class Project with _$Project {
     List<String>? technologies,
     String? url,
     String? screenshotUrl,
+    Link? link,
   }) = _Project;
 
   factory Project.fromJson(Map<String, dynamic> json) =>
