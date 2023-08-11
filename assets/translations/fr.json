@@ -12,7 +12,7 @@
         },
         {
             "tooltip": "Github",
-            "url": "https://www.github.com/Aaldn",
+            "url": "https://github.com/Aaldn",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter"
