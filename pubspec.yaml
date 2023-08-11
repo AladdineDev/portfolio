@@ -44,7 +44,6 @@ dependencies:
   build_runner: ^2.4.5
   collection: ^1.17.1
   url_launcher: ^6.1.11
-  envied: ^0.3.0+3
   firebase_core: ^2.14.0
   url_strategy: ^0.2.0
   intl: ^0.18.0
