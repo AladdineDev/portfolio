@@ -132,7 +132,7 @@ Change the content of your description in the `build/web/index.html`:
 
 Modify or add JSON translation files in the [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files)
 
-If you add or remove a JSON translation file, remember to update the `localeInfos` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
+If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
