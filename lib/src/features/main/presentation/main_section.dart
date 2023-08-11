@@ -5,7 +5,7 @@ import 'package:portfolio/src/features/main/presentation/main_section_tablet.dar
 import 'package:portfolio/src/features/main/presentation/widgets/bottom_banner.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/end_drawer.dart';
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
+import 'package:portfolio/src/shared/widgets/responsive.dart';
 
 class MainSection extends ConsumerStatefulWidget {
   const MainSection({super.key});

@@ -8,7 +8,7 @@ import 'package:portfolio/src/features/main/presentation/widgets/sliver_app_bar.
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
 import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
+import 'package:portfolio/src/shared/widgets/responsive.dart';
 
 class MainTablet extends ConsumerStatefulWidget {
   const MainTablet({super.key});

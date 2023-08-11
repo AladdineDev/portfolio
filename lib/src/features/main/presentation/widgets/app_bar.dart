@@ -8,7 +8,7 @@ import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switc
 import 'package:portfolio/src/features/main/presentation/widgets/locale_button.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
+import 'package:portfolio/src/shared/widgets/responsive.dart';
 import 'package:portfolio/src/localization/json_list_translation.dart';
 
 class MyAppBar extends ConsumerWidget {

@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
-import 'package:portfolio/src/common_widgets/link.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
-import 'package:portfolio/src/common_widgets/technology_chip.dart';
+import 'package:portfolio/src/shared/widgets/link.dart';
+import 'package:portfolio/src/shared/widgets/responsive.dart';
+import 'package:portfolio/src/shared/widgets/technology_chip.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-import 'package:portfolio/src/localization/localized_date.dart';
+import 'package:portfolio/src/localization/localized_date_extension.dart';
 import 'package:portfolio/src/utils/string_extension.dart';
 
 class ExperienceCard extends ConsumerWidget {

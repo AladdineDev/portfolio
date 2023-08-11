@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/src/common_widgets/link.dart';
+import 'package:portfolio/src/shared/widgets/link.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
-import 'package:portfolio/src/common_widgets/technology_chip.dart';
+import 'package:portfolio/src/shared/widgets/technology_chip.dart';
 
 class ProjectDescription extends ConsumerWidget {
   const ProjectDescription({super.key, required this.project});

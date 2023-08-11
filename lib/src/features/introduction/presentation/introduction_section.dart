@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/introduction/presentation/introduction_desktop.dart';
 import 'package:portfolio/src/features/introduction/presentation/introduction_mobile.dart';
 import 'package:portfolio/src/features/introduction/presentation/introduction_tablet.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
+import 'package:portfolio/src/shared/widgets/responsive.dart';
 
 class IntroductionSection extends ConsumerWidget {
   const IntroductionSection({super.key});
