@@ -37,42 +37,19 @@ class MyAppBar extends ConsumerWidget {
               AppBarButton(
                 title: tr(LocaleKeys.aboutSectionTitle),
                 onPressed: () {
-                  final aboutSectionKey = ref.watch(aboutSectionKeyProvider);
-                  if (aboutSectionKey.currentContext != null) {
-                    Scrollable.ensureVisible(
-                      aboutSectionKey.currentContext!,
-                      duration: const Duration(milliseconds: 500),
-                      curve: Curves.decelerate,
-                    );
-                  }
+                  _onAppBarButtonTap(ref.watch(aboutSectionKeyProvider));
                 },
               ),
               AppBarButton(
                 title: tr(LocaleKeys.experienceSectionTitle),
                 onPressed: () {
-                  final experienceSectionKey =
-                      ref.watch(experienceSectionKeyProvider);
-                  if (experienceSectionKey.currentContext != null) {
-                    Scrollable.ensureVisible(
-                      experienceSectionKey.currentContext!,
-                      duration: const Duration(milliseconds: 500),
-                      curve: Curves.decelerate,
-                    );
-                  }
+                  _onAppBarButtonTap(ref.watch(experienceSectionKeyProvider));
                 },
               ),
               AppBarButton(
                 title: tr(LocaleKeys.projectsSectionTitle),
                 onPressed: () {
-                  final projectSectionKey =
-                      ref.watch(projectSectionKeyProvider);
-                  if (projectSectionKey.currentContext != null) {
-                    Scrollable.ensureVisible(
-                      projectSectionKey.currentContext!,
-                      duration: const Duration(milliseconds: 500),
-                      curve: Curves.decelerate,
-                    );
-                  }
+                  _onAppBarButtonTap(ref.watch(projectSectionKeyProvider));
                 },
               ),
               _buildLocaleButton(context),
@@ -83,6 +60,16 @@ class MyAppBar extends ConsumerWidget {
           ),
       ],
     );
+  }
+
+  void _onAppBarButtonTap(GlobalKey key) {
+    if (key.currentContext != null) {
+      Scrollable.ensureVisible(
+        key.currentContext!,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.decelerate,
+      );
+    }
   }
 
   Widget _buildLocaleButton(BuildContext context) {

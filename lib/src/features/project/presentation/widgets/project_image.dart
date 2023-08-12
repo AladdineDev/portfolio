@@ -14,20 +14,6 @@ class ProjectImage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    IconData? iconData;
-    final projectIconCodePoint = project.iconCodePoint;
-    final projectIconFontFamily = project.iconFontFamily;
-    final projectIconFontPackage = project.iconFontPackage;
-    if (projectIconCodePoint != null && projectIconFontFamily != null) {
-      final projectIconCodePointHexa = int.tryParse(projectIconCodePoint);
-      if (projectIconCodePointHexa != null) {
-        iconData = IconData(
-          projectIconCodePointHexa,
-          fontFamily: projectIconFontFamily,
-          fontPackage: projectIconFontPackage,
-        );
-      }
-    }
     return Stack(
       children: [
         Container(
@@ -108,17 +94,35 @@ class ProjectImage extends ConsumerWidget {
               duration: const Duration(seconds: 1),
               reverseDuration: const Duration(milliseconds: 500),
               firstChild: const SizedBox.shrink(),
-              secondChild: iconData == null
-                  ? const SizedBox.shrink()
-                  : Icon(
-                      iconData,
-                      color: Colors.white,
-                      size: 32,
-                    ),
+              secondChild: _buildIcon(),
             ),
           ),
         ),
       ],
     );
+  }
+
+  Widget _buildIcon() {
+    final projectIconCodePoint = project.iconCodePoint;
+    final projectIconFontFamily = project.iconFontFamily;
+    final projectIconFontPackage = project.iconFontPackage;
+    if (projectIconCodePoint != null &&
+        projectIconFontFamily != null &&
+        projectIconFontPackage != null) {
+      final projectIconCodePointHexa = int.tryParse(projectIconCodePoint);
+      if (projectIconCodePointHexa != null) {
+        final iconData = IconData(
+          projectIconCodePointHexa,
+          fontFamily: projectIconFontFamily,
+          fontPackage: projectIconFontPackage,
+        );
+        return Icon(
+          color: Colors.white,
+          size: 32,
+          iconData,
+        );
+      }
+    }
+    return const SizedBox.shrink();
   }
 }

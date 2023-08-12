@@ -12,24 +12,31 @@ class ContactBar extends ConsumerWidget {
 
   final List<Contact> contacts;
 
+  IconData? _getIconData(Contact contact) {
+    final contactIconCodePoint = contact.iconCodePoint;
+    final contactIconFontFamily = contact.iconFontFamily;
+    final contactIconFontPackage = contact.iconFontPackage;
+    if (contactIconCodePoint != null &&
+        contactIconFontFamily != null &&
+        contactIconFontPackage != null) {
+      final contactIconCodePointHexa = int.tryParse(contactIconCodePoint);
+      if (contactIconCodePointHexa != null) {
+        final iconData = IconData(
+          contactIconCodePointHexa,
+          fontFamily: contactIconFontFamily,
+          fontPackage: contactIconFontPackage,
+        );
+        return iconData;
+      }
+    }
+    return null;
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Wrap(
       children: contacts.map((contact) {
-        IconData? iconData;
-        final contactIconCodePoint = contact.iconCodePoint;
-        final contactIconFontFamily = contact.iconFontFamily;
-        final contactIconFontPackage = contact.iconFontPackage;
-        if (contactIconCodePoint != null && contactIconFontFamily != null) {
-          final contactIconCodePointHexa = int.tryParse(contactIconCodePoint);
-          if (contactIconCodePointHexa != null) {
-            iconData = IconData(
-              contactIconCodePointHexa,
-              fontFamily: contactIconFontFamily,
-              fontPackage: contactIconFontPackage,
-            );
-          }
-        }
+        final iconData = _getIconData(contact);
         final contactTooltip = contact.tooltip;
         return IconButton(
           tooltip: contact.tooltip,

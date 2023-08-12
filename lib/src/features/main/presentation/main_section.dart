@@ -4,6 +4,7 @@ import 'package:portfolio/src/features/main/presentation/main_section_desktop.da
 import 'package:portfolio/src/features/main/presentation/main_section_tablet.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/bottom_banner.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/end_drawer.dart';
+import 'package:portfolio/src/features/main/presentation/widgets/safe_area.dart';
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
 
@@ -31,16 +32,10 @@ class _MainSectionState extends ConsumerState<MainSection> {
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.secondary,
-      endDrawer: const SafeArea(
-        left: false,
-        right: false,
-        bottom: false,
+      endDrawer: const MySafeArea(
         child: EndDrawer(),
       ),
-      body: SafeArea(
-        left: false,
-        right: false,
-        bottom: false,
+      body: MySafeArea(
         child: Stack(
           children: [
             const Responsive(
