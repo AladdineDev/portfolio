@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/about/presentation/about_desktop.dart';
-import 'package:portfolio/src/shared/widgets/responsive.dart';
+import 'package:portfolio/src/common/widgets/responsive.dart';
 
 class AboutSection extends ConsumerWidget {
   const AboutSection({super.key});

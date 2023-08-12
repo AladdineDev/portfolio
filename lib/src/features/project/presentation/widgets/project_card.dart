@@ -5,7 +5,7 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_description.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_image.dart';
-import 'package:portfolio/src/shared/widgets/responsive.dart';
+import 'package:portfolio/src/common/widgets/responsive.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
 import 'package:url_launcher/url_launcher.dart';

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:portfolio/src/shared/domain/link.dart';
+import 'package:portfolio/src/common/domain/link.dart';
 
 part 'project.freezed.dart';
 part 'project.g.dart';

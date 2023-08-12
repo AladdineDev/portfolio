@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:portfolio/src/shared/widgets/link.dart';
+import 'package:portfolio/src/common/widgets/link.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
 class BottomBanner extends ConsumerWidget {
