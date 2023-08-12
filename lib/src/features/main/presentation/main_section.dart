@@ -17,7 +17,7 @@ class MainSection extends ConsumerStatefulWidget {
 class _MainSectionState extends ConsumerState<MainSection> {
   double _bottomBannerHeight = 0;
 
-  void _checkEndOfScroll() {
+  void _displayBottomBanner() {
     if (ref.watch(scrollControllerProvider.notifier).checkEndOfScroll()) {
       setState(() => _bottomBannerHeight = 48);
     } else {
@@ -27,7 +27,7 @@ class _MainSectionState extends ConsumerState<MainSection> {
 
   @override
   Widget build(BuildContext context) {
-    ref.watch(scrollControllerProvider).addListener(_checkEndOfScroll);
+    ref.watch(scrollControllerProvider).addListener(_displayBottomBanner);
 
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.secondary,
