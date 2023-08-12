@@ -21,11 +21,12 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 💙 Supports multi languages\
 💙 Supports multi themes
 
-## Clone and deploy with Firebase 🚀
+## Fork and deploy with Firebase 🚀
 
-**Clone the repository:**
+Fork and clone this repository (see how to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
+
+**Navigate to your portfolio directory :**
 ```bash
-$ git clone https://github.com/Aaldn/portfolio
 $ cd portfolio
 ```
 
