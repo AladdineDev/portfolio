@@ -39,7 +39,6 @@ dependencies:
   font_awesome_flutter: ^10.4.0
   flutter_riverpod: ^2.3.6
   riverpod_annotation: ^2.1.1
-  build_runner: ^2.4.5
   collection: ^1.17.1
   url_launcher: ^6.1.11
   firebase_core: ^2.14.0
@@ -61,6 +60,7 @@ dev_dependencies:
   flutter_lints: ^2.0.1
   custom_lint: ^0.4.0
   riverpod_lint: ^1.3.2
+  build_runner: ^2.4.5
   riverpod_generator: ^2.2.3
   freezed: ^2.4.1
   json_serializable: ^6.7.1
