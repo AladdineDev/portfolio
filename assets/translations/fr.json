@@ -88,9 +88,11 @@
                 "Dart",
                 "Firebase"
             ],
-            "link": {
-                "url": "https://www.association-faire.fr"
-            }
+            "links": [
+                {
+                    "url": "https://www.association-faire.fr"
+                }
+            ]
         }
     ],
     "projects": [
@@ -107,10 +109,12 @@
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
-            "link": {
-                "url": "https://brittanychiang.com",
-                "display": "Design inspiré par Brittany Chiang"
-            }
+            "links": [
+                {
+                    "url": "https://brittanychiang.com",
+                    "display": "Design inspiré par Brittany Chiang"
+                }
+            ]
         },
         {
             "title": "Learn Flow API",
@@ -187,22 +191,6 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
         }
     ],
-    "portfolio": "Portfolio",
-    "homeSectionTitle": "Accueil",
-    "aboutSectionTitle": "À propos",
-    "aboutSectionTitleAlt": "À propos de moi",
-    "experienceSectionTitle": "Expériences",
-    "projectsSectionTitle": "Projets",
-    "resume": "CV",
-    "downloadResume": "Télécharger le CV",
-    "present": "Présent",
-    "credit": {
-        "message": "Inspiré par",
-        "to": "Aladdine Abdou",
-        "url": "https://aladdine.dev"
-    },
-    "openResumeError": "Impossible d'ouvrir le CV",
-    "openUrlError": "Impossible d'ouvrir l'url",
     "languages": [
         {
             "code": "en",
@@ -214,5 +202,21 @@
             "name": "Français",
             "nativeName": "Français"
         }
-    ]
+    ],
+    "credit": {
+        "message": "Inspiré par",
+        "to": "Aladdine Abdou",
+        "url": "https://aladdine.dev"
+    },
+    "portfolio": "Portfolio",
+    "homeSectionTitle": "Accueil",
+    "aboutSectionTitle": "À propos",
+    "aboutSectionTitleAlt": "À propos de moi",
+    "experienceSectionTitle": "Expériences",
+    "projectsSectionTitle": "Projets",
+    "resume": "CV",
+    "downloadResume": "Télécharger le CV",
+    "present": "Présent",
+    "openResumeError": "Impossible d'ouvrir le CV",
+    "openUrlError": "Impossible d'ouvrir l'url"
 }

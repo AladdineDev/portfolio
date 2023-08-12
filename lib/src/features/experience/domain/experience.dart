@@ -15,7 +15,7 @@ class Experience with _$Experience {
     int? endYear,
     int? startMonth,
     int? endMonth,
-    Link? link,
+    List<Link>? links,
     List<String>? technologies,
   }) = _Experience;
 

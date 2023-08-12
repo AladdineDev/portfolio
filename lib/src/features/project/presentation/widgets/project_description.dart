@@ -42,8 +42,8 @@ class ProjectDescription extends ConsumerWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildLink(context),
-            if (project.link?.url != null) gapH12 else gapH4,
+            _buildLinks(context),
+            if (project.links?.isNotEmpty == true) gapH12 else gapH4,
             _buildChips(context),
           ],
         ),
@@ -52,24 +52,33 @@ class ProjectDescription extends ConsumerWidget {
   }
 
   Widget _buildChips(BuildContext context) {
-    if (project.technologies == null) return const SizedBox.shrink();
+    final projectTechnologies = project.technologies;
+    if (projectTechnologies == null) return const SizedBox.shrink();
     return Wrap(
       spacing: 8,
       runSpacing: 8,
-      children: project.technologies!.map((technology) {
+      children: projectTechnologies.map((technology) {
         return TechnologyChip(name: technology);
       }).toList(),
     );
   }
 
-  Widget _buildLink(BuildContext context) {
-    final projectCreditUrl = project.link?.url;
-    final projectCreditDisplay = project.link?.display;
-    if (projectCreditUrl == null) return const SizedBox.shrink();
-    return Link(
-      url: projectCreditUrl,
-      displayLink: projectCreditDisplay ?? projectCreditUrl,
-      displayLeadingIcon: true,
+  Widget _buildLinks(BuildContext context) {
+    final projectLinks = project.links;
+    if (projectLinks == null) return const SizedBox.shrink();
+    return Wrap(
+      spacing: 16,
+      runSpacing: 4,
+      children: projectLinks.map((link) {
+        final projectLinkUrl = link.url;
+        final projectLinkDisplay = link.display;
+        if (projectLinkUrl == null) return const SizedBox.shrink();
+        return Link(
+          url: projectLinkUrl,
+          displayLink: projectLinkDisplay ?? projectLinkUrl,
+          displayLeadingIcon: true,
+        );
+      }).toList(),
     );
   }
 }

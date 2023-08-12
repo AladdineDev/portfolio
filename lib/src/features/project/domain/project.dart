@@ -15,7 +15,7 @@ class Project with _$Project {
     String? iconFontFamily,
     String? iconFontPackage,
     String? screenshotUrl,
-    Link? link,
+    List<Link>? links,
   }) = _Project;
 
   factory Project.fromJson(Map<String, dynamic> json) =>

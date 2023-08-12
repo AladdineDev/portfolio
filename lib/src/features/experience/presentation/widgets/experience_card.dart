@@ -82,8 +82,8 @@ class ExperienceCard extends ConsumerWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _buildLink(),
-                    if (experience.link?.url != null) gapH12 else gapH4,
+                    _buildLinks(),
+                    if (experience.links?.isNotEmpty == true) gapH12 else gapH4,
                     _buildChips(context),
                   ],
                 ),
@@ -115,11 +115,12 @@ class ExperienceCard extends ConsumerWidget {
   }
 
   Widget _buildChips(BuildContext context) {
-    if (experience.technologies == null) return const SizedBox.shrink();
+    final experienceTechnologies = experience.technologies;
+    if (experienceTechnologies == null) return const SizedBox.shrink();
     return Wrap(
       spacing: 8,
       runSpacing: 8,
-      children: experience.technologies!.map((technology) {
+      children: experienceTechnologies.map((technology) {
         return IgnorePointer(
           child: TechnologyChip(name: technology),
         );
@@ -127,14 +128,22 @@ class ExperienceCard extends ConsumerWidget {
     );
   }
 
-  Widget _buildLink() {
-    final experienceLinkUrl = experience.link?.url;
-    final experienceLinkDisplay = experience.link?.display;
-    if (experienceLinkUrl == null) return const SizedBox.shrink();
-    return Link(
-      url: experienceLinkUrl,
-      displayLink: experienceLinkDisplay ?? experienceLinkUrl,
-      displayLeadingIcon: true,
+  Widget _buildLinks() {
+    final experienceLinks = experience.links;
+    if (experienceLinks == null) return const SizedBox.shrink();
+    return Wrap(
+      spacing: 16,
+      runSpacing: 4,
+      children: experienceLinks.map((link) {
+        final experienceLinkUrl = link.url;
+        final experienceLinkDisplay = link.display;
+        if (experienceLinkUrl == null) return const SizedBox.shrink();
+        return Link(
+          url: experienceLinkUrl,
+          displayLink: experienceLinkDisplay ?? experienceLinkUrl,
+          displayLeadingIcon: true,
+        );
+      }).toList(),
     );
   }
 }

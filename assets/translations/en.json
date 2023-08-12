@@ -88,9 +88,11 @@
                 "Dart",
                 "Firebase"
             ],
-            "link": {
-                "url": "https://www.association-faire.fr"
-            }
+            "links": [
+                {
+                    "url": "https://www.association-faire.fr"
+                }
+            ]
         }
     ],
     "projects": [
@@ -107,10 +109,12 @@
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
-            "link": {
-                "url": "https://brittanychiang.com",
-                "display": "Design inspired by Brittany Chiang"
-            }
+            "links": [
+                {
+                    "url": "https://brittanychiang.com",
+                    "display": "Design inspired by Brittany Chiang"
+                }
+            ]
         },
         {
             "title": "Learn Flow API",
@@ -187,22 +191,6 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
         }
     ],
-    "portfolio": "Portfolio",
-    "homeSectionTitle": "Home",
-    "aboutSectionTitle": "About",
-    "aboutSectionTitleAlt": "About Me",
-    "experienceSectionTitle": "Experience",
-    "projectsSectionTitle": "Projects",
-    "resume": "Resume",
-    "downloadResume": "Download resume",
-    "present": "Present",
-    "credit": {
-        "message": "Inspired by",
-        "to": "Aladdine Abdou",
-        "url": "https://aladdine.dev"
-    },
-    "openResumeError": "Could not open the resume",
-    "openUrlError": "Could not open the url",
     "languages": [
         {
             "code": "en",
@@ -214,5 +202,21 @@
             "name": "French",
             "nativeName": "Français"
         }
-    ]
+    ],
+    "credit": {
+        "message": "Inspired by",
+        "to": "Aladdine Abdou",
+        "url": "https://aladdine.dev"
+    },
+    "portfolio": "Portfolio",
+    "homeSectionTitle": "Home",
+    "aboutSectionTitle": "About",
+    "aboutSectionTitleAlt": "About Me",
+    "experienceSectionTitle": "Experience",
+    "projectsSectionTitle": "Projects",
+    "resume": "Resume",
+    "downloadResume": "Download resume",
+    "present": "Present",
+    "openResumeError": "Could not open the resume",
+    "openUrlError": "Could not open the url"
 }
