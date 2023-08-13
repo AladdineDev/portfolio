@@ -63,9 +63,10 @@ class MyAppBar extends ConsumerWidget {
   }
 
   void _onAppBarButtonTap(GlobalKey key) {
-    if (key.currentContext != null) {
+    final keyCurrentContext = key.currentContext;
+    if (keyCurrentContext != null) {
       Scrollable.ensureVisible(
-        key.currentContext!,
+        keyCurrentContext,
         duration: const Duration(milliseconds: 500),
         curve: Curves.decelerate,
       );
