@@ -16,17 +16,11 @@ class IntroductionMobile extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jsonResumes = trList(
-      context.locale,
-      LocaleKeys.resumes,
-    );
+    final jsonResumes = trList(context.locale, LocaleKeys.resumes);
     final resumes = jsonResumes.map((jsonResume) {
       return Resume.fromJson(jsonResume);
     });
-    final jsonContacts = trList(
-      context.locale,
-      LocaleKeys.contacts,
-    );
+    final jsonContacts = trList(context.locale, LocaleKeys.contacts);
     final contacts = jsonContacts.map((jsonContact) {
       return Contact.fromJson(jsonContact);
     });

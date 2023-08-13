@@ -18,10 +18,7 @@ class ExperienceDesktop extends ConsumerStatefulWidget {
 class _ExperienceDesktopState extends ConsumerState<ExperienceDesktop> {
   @override
   Widget build(BuildContext context) {
-    final jsonExperiences = trList(
-      context.locale,
-      LocaleKeys.experiences,
-    );
+    final jsonExperiences = trList(context.locale, LocaleKeys.experiences);
     final experiences = jsonExperiences.map((jsonExperience) {
       return Experience.fromJson(jsonExperience);
     });

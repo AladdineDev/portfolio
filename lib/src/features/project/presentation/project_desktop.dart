@@ -13,10 +13,7 @@ class ProjectDesktop extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jsonProjects = trList(
-      context.locale,
-      LocaleKeys.projects,
-    );
+    final jsonProjects = trList(context.locale, LocaleKeys.projects);
     final projects = jsonProjects.map((jsonProject) {
       return Project.fromJson(jsonProject);
     });

@@ -12,10 +12,7 @@ class LocaleButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jsonLanguages = trList(
-      context.locale,
-      LocaleKeys.languages,
-    );
+    final jsonLanguages = trList(context.locale, LocaleKeys.languages);
     final languages = jsonLanguages.map((jsonLocaleInfo) {
       return Language.fromJson(jsonLocaleInfo);
     });

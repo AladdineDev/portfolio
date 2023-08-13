@@ -38,10 +38,7 @@ Text _buildResumeLanguageText(
   WidgetRef ref, {
   required Resume resume,
 }) {
-  final jsonLanguages = trList(
-    context.locale,
-    LocaleKeys.languages,
-  );
+  final jsonLanguages = trList(context.locale, LocaleKeys.languages);
   final languages = jsonLanguages.map((jsonLocaleInfo) {
     return Language.fromJson(jsonLocaleInfo);
   });
