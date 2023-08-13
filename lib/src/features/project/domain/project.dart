@@ -9,12 +9,12 @@ class Project with _$Project {
   const factory Project({
     String? name,
     String? description,
-    List<String>? technologies,
     String? url,
     String? iconCodePoint,
     String? iconFontFamily,
     String? iconFontPackage,
     String? screenshotUrl,
+    List<String>? technologies,
     List<Link>? links,
   }) = _Project;
 
