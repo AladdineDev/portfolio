@@ -9,6 +9,7 @@ import 'package:portfolio/src/common/widgets/technology_chip.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/localization/localized_date_extension.dart';
 import 'package:portfolio/src/utils/string_extension.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ExperienceCard extends ConsumerWidget {
   const ExperienceCard({super.key, required this.experience});
@@ -21,7 +22,7 @@ class ExperienceCard extends ConsumerWidget {
       color: Theme.of(context).colorScheme.primary,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
-        onTap: () {},
+        onTap: () => _onTap(context),
         borderRadius: BorderRadius.circular(20),
         hoverColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
         splashColor: Theme.of(context).colorScheme.tertiary.withAlpha(30),
@@ -93,6 +94,21 @@ class ExperienceCard extends ConsumerWidget {
         ),
       ),
     );
+  }
+
+  void _onTap(BuildContext context) async {
+    final url = experience.url;
+    if (url == null) return;
+    if (!await launchUrl(Uri.parse(url))) {
+      if (context.mounted) {
+        final snackBar = SnackBar(
+          content: Text(
+            "${tr(LocaleKeys.openUrlError)} ${experience.url}",
+          ),
+        );
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      }
+    }
   }
 
   Text _buildExperienceDateText(BuildContext context, WidgetRef ref) {

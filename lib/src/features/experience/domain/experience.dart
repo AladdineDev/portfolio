@@ -10,13 +10,14 @@ class Experience with _$Experience {
     String? job,
     String? company,
     String? description,
+    String? url,
     bool? isPresent,
     int? startYear,
     int? startMonth,
     int? endYear,
     int? endMonth,
-    List<Link>? links,
     List<String>? technologies,
+    List<Link>? links,
   }) = _Experience;
 
   factory Experience.fromJson(Map<String, dynamic> json) =>
