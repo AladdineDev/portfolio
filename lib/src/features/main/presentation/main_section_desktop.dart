@@ -63,8 +63,9 @@ class _MainDesktopState extends ConsumerState<MainDesktop> {
                         child: Column(
                           children: [
                             Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                              ),
                               child: AboutSection(
                                 key: ref.watch(aboutSectionKeyProvider),
                               ),

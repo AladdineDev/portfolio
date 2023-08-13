@@ -41,16 +41,18 @@ class _MainTabletState extends ConsumerState<MainTablet> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                              ),
                               child: IntroductionSection(
                                 key: ref.watch(homeSectionKeyProvider),
                               ),
                             ),
                             gapH100,
                             Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                              ),
                               child: AboutSection(
                                 key: ref.watch(aboutSectionKeyProvider),
                               ),

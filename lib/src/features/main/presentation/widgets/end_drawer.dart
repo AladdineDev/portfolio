@@ -79,9 +79,7 @@ class EndDrawer extends ConsumerWidget {
 
   Widget _buildLocaleButton(BuildContext context) {
     final jsonLanguages = trList(context.locale, LocaleKeys.languages);
-    if (jsonLanguages.length > 1) {
-      return const LocaleButton();
-    }
+    if (jsonLanguages.length > 1) return const LocaleButton();
     return const SizedBox.shrink();
   }
 }
