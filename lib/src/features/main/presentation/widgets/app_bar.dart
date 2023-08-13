@@ -62,11 +62,11 @@ class MyAppBar extends ConsumerWidget {
     );
   }
 
-  void _onAppBarButtonTap(GlobalKey key) {
-    final keyCurrentContext = key.currentContext;
-    if (keyCurrentContext != null) {
+  void _onAppBarButtonTap(GlobalKey sectionKey) {
+    final sectionKeyCurrentContext = sectionKey.currentContext;
+    if (sectionKeyCurrentContext != null) {
       Scrollable.ensureVisible(
-        keyCurrentContext,
+        sectionKeyCurrentContext,
         duration: const Duration(milliseconds: 500),
         curve: Curves.decelerate,
       );
@@ -75,9 +75,7 @@ class MyAppBar extends ConsumerWidget {
 
   Widget _buildLocaleButton(BuildContext context) {
     final jsonLanguages = trList(context.locale, LocaleKeys.languages);
-    if (jsonLanguages.length > 1) {
-      return const LocaleButton();
-    }
+    if (jsonLanguages.length > 1) return const LocaleButton();
     return const SizedBox.shrink();
   }
 }

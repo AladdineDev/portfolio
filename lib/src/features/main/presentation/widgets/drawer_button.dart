@@ -51,9 +51,10 @@ class MyDrawerButtonsState extends ConsumerState<MyDrawerButton> {
   }
 
   void _onTap(BuildContext context) {
-    if (widget.sectionKey.currentContext != null) {
+    final sectionKeyCurrentContext = widget.sectionKey.currentContext;
+    if (sectionKeyCurrentContext != null) {
       Scrollable.ensureVisible(
-        widget.sectionKey.currentContext!,
+        sectionKeyCurrentContext,
         duration: const Duration(milliseconds: 500),
         curve: Curves.decelerate,
       );
