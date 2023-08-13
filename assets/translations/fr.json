@@ -66,8 +66,8 @@
             "company": "Solutions Multi Techniques",
             "description": "Développement d'une Progressive Web App à destination des techniciens en systèmes de sécurité, leur permettant de générer des devis complets au format PDF en y incluant des photos. Cela permet de délivrer les devis aux clients immédiatement après la visite.",
             "startYear": 2022,
-            "endYear": 2022,
             "startMonth": 1,
+            "endYear": 2022,
             "endMonth": 2,
             "technologies": [
                 "Flutter",
@@ -80,8 +80,8 @@
             "company": "Association FAIRE",
             "description": "Développement du site web de l'association, en collaboration au sein d'un groupe de développeurs. Ce site web offre à ses visiteurs la possibilité d'en savoir plus sur l'association et de la rejoindre en tant que membres.\nÀ ce jour, le site web a attiré plus de 10 000 visites.",
             "startYear": 2021,
-            "endYear": 2021,
             "startMonth": 5,
+            "endYear": 2021,
             "endMonth": 6,
             "technologies": [
                 "Flutter",
@@ -97,7 +97,7 @@
     ],
     "projects": [
         {
-            "title": "Portfolio",
+            "name": "Portfolio",
             "description": "Oui, il s'agit de CE portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
             "technologies": [
                 "Flutter",
@@ -117,7 +117,7 @@
             ]
         },
         {
-            "title": "Learn Flow API",
+            "name": "Learn Flow API",
             "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification (JWT).",
             "technologies": [
                 "Node.js",
@@ -133,7 +133,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
         },
         {
-            "title": "Learn Flow Backoffice",
+            "name": "Learn Flow Backoffice",
             "description": "Il s'agit du back-office conçu pour les managers du projet Learn Flow. Cette Single-Page App leur permet de surveiller l'activité de leurs applications et utilisateurs (trafic, factures...).",
             "technologies": [
                 "Flutter",
@@ -146,7 +146,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
         },
         {
-            "title": "GSB-Frais",
+            "name": "GSB-Frais",
             "description": "GSB-Frais est une application web de gestion des frais, développée pour les délégués médicaux et les comptables de l'entreprise fictive GSB. Elle facilite la saisie et la vérification des rapports mensuels des délégués médicaux, tout en permettant aux comptables de les traiter.",
             "technologies": [
                 "Symfony",
@@ -162,7 +162,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
         },
         {
-            "title": "GSB-RV-Visiteur-Serveur",
+            "name": "GSB-RV-Visiteur-Serveur",
             "description": "L'API REST du projet GSB sert d'interface pour les différents clients du projet (Android, Desktop et Web).",
             "technologies": [
                 "Flask",
@@ -177,7 +177,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
         },
         {
-            "title": "GSB-RV-DR",
+            "name": "GSB-RV-DR",
             "description": "GSB-RV-DR est une application de bureau conçue pour les délégués régionaux de l'entreprise fictive GSB. Elle permet de suivre les rapports de visite et de monitorer les activités des délégués médicaux. Les délégués régionaux peuvent accéder à la liste des rapports et y appliquer des filtres ou les trier.",
             "technologies": [
                 "JavaFX",

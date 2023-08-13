@@ -7,7 +7,7 @@ part 'project.g.dart';
 @freezed
 class Project with _$Project {
   const factory Project({
-    String? title,
+    String? name,
     String? description,
     List<String>? technologies,
     String? url,

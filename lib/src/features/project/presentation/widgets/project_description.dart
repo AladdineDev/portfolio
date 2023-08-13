@@ -18,7 +18,7 @@ class ProjectDescription extends ConsumerWidget {
         Row(
           children: [
             Text(
-              "${project.title} ",
+              "${project.name} ",
               style: Theme.of(context)
                   .textTheme
                   .titleMedium

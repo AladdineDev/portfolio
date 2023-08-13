@@ -66,8 +66,8 @@
             "company": "Solutions Multi Techniques",
             "description": "Development of a Progressive Web App for security systems technicians, that allows them to generate comprehensive quotes in PDF format including photos. This enables immediate delivery of quotes to customers after the visit.",
             "startYear": 2022,
-            "endYear": 2022,
             "startMonth": 1,
+            "endYear": 2022,
             "endMonth": 2,
             "technologies": [
                 "Flutter",
@@ -80,8 +80,8 @@
             "company": "Association FAIRE",
             "description": "Development of the association's website, in collaboration with a group of developers. It provides visitors with the opportunity to learn more about the association and become members.\nTo date, the website has attracted over 10,000 visits.",
             "startYear": 2021,
-            "endYear": 2021,
             "startMonth": 5,
+            "endYear": 2021,
             "endMonth": 6,
             "technologies": [
                 "Flutter",
@@ -97,7 +97,7 @@
     ],
     "projects": [
         {
-            "title": "Portfolio",
+            "name": "Portfolio",
             "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
             "technologies": [
                 "Flutter",
@@ -117,7 +117,7 @@
             ]
         },
         {
-            "title": "Learn Flow API",
+            "name": "Learn Flow API",
             "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
             "technologies": [
                 "Node.js",
@@ -133,7 +133,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
         },
         {
-            "title": "Learn Flow Backoffice",
+            "name": "Learn Flow Backoffice",
             "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
             "technologies": [
                 "Flutter",
@@ -146,7 +146,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
         },
         {
-            "title": "GSB-Frais",
+            "name": "GSB-Frais",
             "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
             "technologies": [
                 "Symfony",
@@ -162,7 +162,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
         },
         {
-            "title": "GSB-RV-Visiteur-Serveur",
+            "name": "GSB-RV-Visiteur-Serveur",
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
             "technologies": [
                 "Flask",
@@ -177,7 +177,7 @@
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
         },
         {
-            "title": "GSB-RV-DR",
+            "name": "GSB-RV-DR",
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
             "technologies": [
                 "JavaFX",
