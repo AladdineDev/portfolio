@@ -218,5 +218,6 @@
     "resume": "CV",
     "downloadResume": "Télécharger le CV",
     "openResumeError": "Impossible d'ouvrir le CV",
-    "openUrlError": "Impossible d'ouvrir l'url"
+    "openUrlError": "Impossible d'ouvrir l'url",
+    "unknownLanguageError": "Langue inconnue"
 }
