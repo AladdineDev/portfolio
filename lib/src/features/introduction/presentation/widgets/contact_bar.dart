@@ -12,6 +12,46 @@ class ContactBar extends ConsumerWidget {
 
   final List<Contact> contacts;
 
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Wrap(
+      children: contacts.map((contact) {
+        final iconData = _getIconData(contact);
+        final contactTooltip = contact.tooltip;
+        final contactUrl = contact.url;
+        if (contactTooltip == null || contactUrl == null) {
+          return const SizedBox.shrink();
+        }
+        return IconButton(
+          tooltip: contact.tooltip,
+          onPressed: () async {
+            if (!await launchUrl(Uri.parse(contactUrl))) {
+              if (context.mounted) {
+                final snackBar = SnackBar(
+                  content: Text(
+                    "${tr(LocaleKeys.openUrlError)} $contactUrl",
+                  ),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              }
+            }
+          },
+          icon: iconData != null
+              ? Icon(iconData)
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.link),
+                    const SizedBox(width: 4),
+                    Text(contactTooltip),
+                  ],
+                ),
+          padding: iconData == null ? null : _fixGithubIconPadding(iconData),
+        );
+      }).toList(),
+    );
+  }
+
   IconData? _getIconData(Contact contact) {
     final contactIconCodePoint = contact.iconCodePoint;
     final contactIconFontFamily = contact.iconFontFamily;
@@ -30,46 +70,6 @@ class ContactBar extends ConsumerWidget {
       }
     }
     return null;
-  }
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Wrap(
-      children: contacts.map((contact) {
-        final iconData = _getIconData(contact);
-        final contactTooltip = contact.tooltip;
-        return IconButton(
-          tooltip: contact.tooltip,
-          onPressed: () async {
-            final contactUrl = contact.url;
-            if (contactUrl == null) return;
-            if (!await launchUrl(Uri.parse(contactUrl))) {
-              if (context.mounted) {
-                final snackBar = SnackBar(
-                  content: Text(
-                    "${tr(LocaleKeys.openUrlError)} ${contact.url}",
-                  ),
-                );
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
-              }
-            }
-          },
-          icon: iconData != null
-              ? Icon(iconData)
-              : Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.link),
-                    const SizedBox(width: 4),
-                    Text(
-                      contactTooltip ?? "Tooltip",
-                    ),
-                  ],
-                ),
-          padding: iconData == null ? null : _fixGithubIconPadding(iconData),
-        );
-      }).toList(),
-    );
   }
 
   EdgeInsetsGeometry? _fixGithubIconPadding(IconData iconData) {

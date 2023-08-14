@@ -30,11 +30,7 @@ class LocaleButton extends ConsumerWidget {
             children: [
               const Icon(Icons.translate),
               gapW8,
-              Text(
-                language.nativeName ??
-                    language.name ??
-                    "Language Name ${index + 1}",
-              ),
+              _buildLanguageNameText(language),
             ],
           ),
         );
@@ -45,5 +41,13 @@ class LocaleButton extends ConsumerWidget {
         }
       },
     );
+  }
+
+  Text _buildLanguageNameText(Language language) {
+    final languageName = language.name;
+    final languageNativeName = language.nativeName;
+    if (languageNativeName != null) return Text(languageNativeName);
+    if (languageName != null) return Text(languageName);
+    return Text(tr(LocaleKeys.unknownLanguageError));
   }
 }

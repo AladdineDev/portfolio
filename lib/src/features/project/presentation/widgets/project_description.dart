@@ -12,13 +12,14 @@ class ProjectDescription extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final projectName = project.name;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           children: [
             Text(
-              "${project.name} ",
+              projectName != null ? "$projectName " : "",
               style: Theme.of(context)
                   .textTheme
                   .titleMedium
@@ -32,7 +33,7 @@ class ProjectDescription extends ConsumerWidget {
           children: [
             Expanded(
               child: Text(
-                project.description ?? "Description",
+                project.description ?? "",
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),

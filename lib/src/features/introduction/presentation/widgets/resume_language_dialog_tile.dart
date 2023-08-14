@@ -49,12 +49,12 @@ Text _buildResumeLanguageText(
       return language.code == resumeLanguageCode;
     });
     return Text(
-      language.name ?? "Language unknown",
+      language.name ?? tr(LocaleKeys.unknownLanguageError),
       style: Theme.of(context).textTheme.titleMedium,
     );
   }
   return Text(
-    "Language unknown",
+    tr(LocaleKeys.unknownLanguageError),
     style: Theme.of(context).textTheme.titleMedium,
   );
 }

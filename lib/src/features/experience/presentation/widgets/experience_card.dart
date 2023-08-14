@@ -39,7 +39,7 @@ class ExperienceCard extends ConsumerWidget {
                   children: [
                     Flexible(
                       child: Text(
-                        experience.job ?? "Job",
+                        experience.job ?? "",
                         style: Theme.of(context)
                             .textTheme
                             .titleMedium
@@ -56,7 +56,7 @@ class ExperienceCard extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        experience.company ?? "Company",
+                        experience.company ?? "",
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       gapH4,
@@ -65,7 +65,7 @@ class ExperienceCard extends ConsumerWidget {
                   )
                 else
                   Text(
-                    experience.company ?? "Company",
+                    experience.company ?? "",
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                 gapH8,
@@ -73,7 +73,7 @@ class ExperienceCard extends ConsumerWidget {
                   children: [
                     Expanded(
                       child: Text(
-                        experience.description ?? "Description",
+                        experience.description ?? "",
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ),
@@ -111,7 +111,7 @@ class ExperienceCard extends ConsumerWidget {
     }
   }
 
-  Text _buildExperienceDateText(BuildContext context, WidgetRef ref) {
+  Widget _buildExperienceDateText(BuildContext context, WidgetRef ref) {
     final locale = context.locale;
     final startMonth = experience.startMonth?.localizedMonth(locale) ?? "";
     final startYear = experience.startYear?.localizedYear(locale);
@@ -124,8 +124,9 @@ class ExperienceCard extends ConsumerWidget {
     } else {
       endDate = endMonth.isEmpty ? endYear : "$endMonth $endYear";
     }
+    if (startDate == null || endDate == null) return const Text("");
     return Text(
-      "${startDate?.capitalize() ?? "Start Date"} - ${endDate?.capitalize() ?? "End Date"}",
+      "${startDate.capitalize()} - ${endDate.capitalize()}",
       style: Theme.of(context).textTheme.bodyMedium,
     );
   }
