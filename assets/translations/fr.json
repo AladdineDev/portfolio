@@ -42,7 +42,7 @@
             "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
         }
     ],
-    "about": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en troisième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
+    "aboutDescription": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en troisième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
     "experiences": [
         {
             "job": "Développeur Mobile",
@@ -95,20 +95,21 @@
             ]
         }
     ],
+    "present": "Présent",
     "projects": [
         {
             "name": "Portfolio",
             "description": "Oui, il s'agit de CE portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
-            "technologies": [
-                "Flutter",
-                "Dart",
-                "Firebase"
-            ],
             "url": "https://github.com/Aaldn/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
             "links": [
                 {
                     "url": "https://brittanychiang.com",
@@ -119,76 +120,76 @@
         {
             "name": "Learn Flow API",
             "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification (JWT).",
+            "url": "https://github.com/Aaldn/learnflow-api#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png",
             "technologies": [
                 "Node.js",
                 "Express",
                 "TypeScript",
                 "MongoDB",
                 "Docker"
-            ],
-            "url": "https://github.com/Aaldn/learnflow-api#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
+            ]
         },
         {
             "name": "Learn Flow Backoffice",
             "description": "Il s'agit du back-office conçu pour les managers du projet Learn Flow. Cette Single-Page App leur permet de surveiller l'activité de leurs applications et utilisateurs (trafic, factures...).",
-            "technologies": [
-                "Flutter",
-                "Dart"
-            ],
             "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png",
+            "technologies": [
+                "Flutter",
+                "Dart"
+            ]
         },
         {
             "name": "GSB-Frais",
             "description": "GSB-Frais est une application web de gestion des frais, développée pour les délégués médicaux et les comptables de l'entreprise fictive GSB. Elle facilite la saisie et la vérification des rapports mensuels des délégués médicaux, tout en permettant aux comptables de les traiter.",
+            "url": "https://github.com/Aaldn/GSB-Frais#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png",
             "technologies": [
                 "Symfony",
                 "PHP",
                 "Bootstrap",
                 "MariaDB",
                 "Apache"
-            ],
-            "url": "https://github.com/Aaldn/GSB-Frais#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
+            ]
         },
         {
             "name": "GSB-RV-Visiteur-Serveur",
             "description": "L'API REST du projet GSB sert d'interface pour les différents clients du projet (Android, Desktop et Web).",
+            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png",
             "technologies": [
                 "Flask",
                 "Python",
                 "MariaDB",
                 "Docker"
-            ],
-            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
+            ]
         },
         {
             "name": "GSB-RV-DR",
             "description": "GSB-RV-DR est une application de bureau conçue pour les délégués régionaux de l'entreprise fictive GSB. Elle permet de suivre les rapports de visite et de monitorer les activités des délégués médicaux. Les délégués régionaux peuvent accéder à la liste des rapports et y appliquer des filtres ou les trier.",
-            "technologies": [
-                "JavaFX",
-                "Java",
-                "MariaDB"
-            ],
             "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png",
+            "technologies": [
+                "JavaFX",
+                "Java",
+                "MariaDB"
+            ]
         }
     ],
     "languages": [
@@ -216,7 +217,6 @@
     "projectsSectionTitle": "Projets",
     "resume": "CV",
     "downloadResume": "Télécharger le CV",
-    "present": "Présent",
     "openResumeError": "Impossible d'ouvrir le CV",
     "openUrlError": "Impossible d'ouvrir l'url"
 }

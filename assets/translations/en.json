@@ -42,7 +42,7 @@
             "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
         }
     ],
-    "about": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+    "aboutDescription": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
     "experiences": [
         {
             "job": "Mobile Developer",
@@ -95,20 +95,21 @@
             ]
         }
     ],
+    "present": "Present",
     "projects": [
         {
             "name": "Portfolio",
             "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
-            "technologies": [
-                "Flutter",
-                "Dart",
-                "Firebase"
-            ],
             "url": "https://github.com/Aaldn/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
             "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
             "links": [
                 {
                     "url": "https://brittanychiang.com",
@@ -119,76 +120,76 @@
         {
             "name": "Learn Flow API",
             "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
+            "url": "https://github.com/Aaldn/learnflow-api#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png",
             "technologies": [
                 "Node.js",
                 "Express",
                 "TypeScript",
                 "MongoDB",
                 "Docker"
-            ],
-            "url": "https://github.com/Aaldn/learnflow-api#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png"
+            ]
         },
         {
             "name": "Learn Flow Backoffice",
             "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
-            "technologies": [
-                "Flutter",
-                "Dart"
-            ],
             "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png"
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png",
+            "technologies": [
+                "Flutter",
+                "Dart"
+            ]
         },
         {
             "name": "GSB-Frais",
             "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
+            "url": "https://github.com/Aaldn/GSB-Frais#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png",
             "technologies": [
                 "Symfony",
                 "PHP",
                 "Bootstrap",
                 "MariaDB",
                 "Apache"
-            ],
-            "url": "https://github.com/Aaldn/GSB-Frais#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png"
+            ]
         },
         {
             "name": "GSB-RV-Visiteur-Serveur",
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
+            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png",
             "technologies": [
                 "Flask",
                 "Python",
                 "MariaDB",
                 "Docker"
-            ],
-            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png"
+            ]
         },
         {
             "name": "GSB-RV-DR",
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
-            "technologies": [
-                "JavaFX",
-                "Java",
-                "MariaDB"
-            ],
             "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png"
+            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png",
+            "technologies": [
+                "JavaFX",
+                "Java",
+                "MariaDB"
+            ]
         }
     ],
     "languages": [
@@ -216,7 +217,6 @@
     "projectsSectionTitle": "Projects",
     "resume": "Resume",
     "downloadResume": "Download resume",
-    "present": "Present",
     "openResumeError": "Could not open the resume",
     "openUrlError": "Could not open the url"
 }
