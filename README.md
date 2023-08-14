@@ -8,7 +8,7 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 [![Dart 3](https://img.shields.io/badge/Dart-3.0-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase--ffcc30.svg?style=flat-square&logo=firebase)](https://firebase.google.com/)
 
-## [Live Preview](https://aladdine.dev)
+## [Live Preview](https://aladdine.dev) 👀
 
 <img src="assets/screenshots/mockups-1.png">
 <img src="assets/screenshots/mockups-2.png">
