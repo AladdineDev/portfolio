@@ -1,6 +1,6 @@
-# Translation Example
+# Translation Template
 
-Here's an example of the `en.json` translation:
+Here's the template of the `en.json` translation:
 
 ```json
 {
