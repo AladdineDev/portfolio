@@ -17,14 +17,16 @@ class AboutDesktop extends ConsumerWidget {
           ),
         ),
         Text(
-          'A highly skilled software engineer with 5 years of experience '
-          'specializing in mobile application and API developments. Proficient '
-          'in cross-platform development using Flutter and experienced in '
-          'native app development with Kotlin and API development with Java '
-          '(Spring boot). Demonstrates expertise in requirement gathering, '
-          'analysis, software modeling, and design. Quick learner with a track '
-          'record of mastering new technologies. Equally successful in both team '
-          'and self-directed settings.', //context.localized.about,
+          'Experienced Flutter Developer with a passion for creating intuitive '
+          'and high-performance mobile apps for both Android and iOS '
+          'platforms. With over 5 years in the tech industry, I\'ve '
+          'collaborated with multidisciplinary teams to translate user '
+          'needs into responsive applications. My core expertise lies in '
+          'Dart, REST APIs & GraphQL, Firebase, Third party APIs and SDKs '
+          'integration and custom widget development. I\'m always eager '
+          'to explore new advancements in Flutter and continuously '
+          'incorporate them into my projects. Let\'s connect and transform '
+          'your next app idea into a reality!', //context.localized.about,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
       ],

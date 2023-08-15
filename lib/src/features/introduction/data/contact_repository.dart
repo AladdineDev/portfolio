@@ -14,7 +14,7 @@ class ContactRepository {
     return const [
       Contact(
         tooltip: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/tolulope-olaniyan-589089167',
+        url: 'https://www.linkedin.com/in/tolulope-c-olaniyan',
         icon: FontAwesomeIcons.linkedin,
       ),
       Contact(
