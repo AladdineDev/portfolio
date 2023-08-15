@@ -1,6 +1,6 @@
 <img src="assets/images/logo.png" align="right" width="60px"/>
 
-# Portfolio 💙 [![Licence](https://img.shields.io/github/license/Aaldn/portfolio?color=a51931&style=flat-square)](https://github.com/Aaldn/portfolio/blob/master/LICENSE.md) ![Stars](https://img.shields.io/github/stars/Aaldn/portfolio?color=e3b341&style=flat-square) ![Forks](https://img.shields.io/github/forks/Aaldn/portfolio?color=238636&style=flat-square)
+# Portfolio 💙 [![Licence](https://img.shields.io/github/license/Aaldn/portfolio?color=a51931&style=flat-square)](https://github.com/Aaldn/portfolio/blob/master/LICENSE.md) ![Stars](https://img.shields.io/github/stars/Aaldn/portfolio?style=flat-square) ![Forks](https://img.shields.io/github/forks/Aaldn/portfolio?style=flat-square)
 
 Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 
