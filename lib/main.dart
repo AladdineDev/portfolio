@@ -18,7 +18,7 @@ void main() async {
     ProviderScope(
       child: EasyLocalization(
         supportedLocales: AppLocalizations.supportedLocales,
-        path: "assets/translations",
+        path: AppLocalizations.path,
         fallbackLocale: AppLocalizations.fallbackLocale,
         child: const MyApp(),
       ),

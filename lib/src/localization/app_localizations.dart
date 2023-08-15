@@ -6,5 +6,7 @@ class AppLocalizations {
     Locale('fr'),
   ];
 
+  static const path = "assets/translations";
+
   static final fallbackLocale = supportedLocales.first;
 }
