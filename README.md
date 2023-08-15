@@ -141,7 +141,7 @@ $ dart run flutter_native_splash:create --path=flutter_native_splash-production.
 > For additional information, refer to the [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) and [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) documentations
 
 **4. Update your live portfolio:**\
-You are ready to [re-deploy your custom portfolio](#deploy) !
+You are ready to [re-deploy your custom portfolio](#deploy)!
 
 ## License 📄
 
