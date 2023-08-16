@@ -9,11 +9,7 @@ class BrightnessController extends _$BrightnessController {
   static const brightnessKey = "brightness";
 
   @override
-  FutureOr<Brightness> build() async {
-    final platformDispatcher = PlatformDispatcher.instance;
-    platformDispatcher.onPlatformBrightnessChanged = updateBrightness;
-    return _getBrightness();
-  }
+  FutureOr<Brightness> build() async => _getBrightness();
 
   Future<void> updateBrightness() async {
     state = const AsyncValue.loading();
