@@ -7,19 +7,25 @@ class DarkModeSwitch extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final darkModeEnabled = ref.watch(darkModeProvider);
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         const Icon(Icons.wb_sunny_outlined),
         Switch(
-          value: ref.watch(darkModeProvider),
+          value: _getDarkMode(ref),
           onChanged: (_) {
-            ref.watch(darkModeProvider.notifier).updateTheme();
+            ref.read(darkModeProvider.notifier).updateTheme();
           },
         ),
-        Icon(darkModeEnabled ? Icons.mode_night : Icons.mode_night_outlined),
+        Icon(_getDarkMode(ref) ? Icons.mode_night : Icons.mode_night_outlined),
       ],
     );
+  }
+
+  bool _getDarkMode(WidgetRef ref) {
+    return ref.watch(darkModeProvider).maybeWhen(
+          data: (darkMode) => darkMode,
+          orElse: () => ThemeMode.system == ThemeMode.dark,
+        );
   }
 }

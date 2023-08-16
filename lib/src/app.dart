@@ -19,7 +19,10 @@ class MyApp extends ConsumerWidget {
       locale: context.locale,
       theme: lightTheme,
       darkTheme: darkTheme,
-      themeMode: ref.watch(darkModeProvider) ? ThemeMode.dark : ThemeMode.light,
+      themeMode: ref.watch(darkModeProvider).maybeWhen(
+            data: (darkMode) => darkMode ? ThemeMode.dark : ThemeMode.light,
+            orElse: () => ThemeMode.system,
+          ),
       home: const MainSection(),
     );
   }
