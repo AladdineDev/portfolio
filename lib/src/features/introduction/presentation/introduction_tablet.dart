@@ -2,28 +2,22 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/features/introduction/domain/contact.dart';
+import 'package:portfolio/src/features/introduction/data/introduction_repository.dart';
 import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-import 'package:portfolio/src/localization/json_list_translation.dart';
 
 class IntroductionTablet extends ConsumerWidget {
   const IntroductionTablet({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final jsonResumes = trList(context.locale, LocaleKeys.resumes);
-    final resumes = jsonResumes.map((jsonResume) {
-      return Resume.fromJson(jsonResume);
-    });
-    final jsonContacts = trList(context.locale, LocaleKeys.contacts);
-    final contacts = jsonContacts.map((jsonContact) {
-      return Contact.fromJson(jsonContact);
-    });
+    final resumes = ref.watch(introductionRepositoryProvider).getResumes();
+    final contacts = ref.watch(introductionRepositoryProvider).getContacts();
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

@@ -1,10 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common/data/language_repository.dart';
 import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-import 'package:portfolio/src/localization/json_list_translation.dart';
-import 'package:portfolio/src/common/domain/language.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
@@ -38,11 +37,7 @@ Text _buildResumeLanguageText(
   WidgetRef ref, {
   required Resume resume,
 }) {
-  final jsonLanguages = trList(context.locale, LocaleKeys.languages);
-  final languages = jsonLanguages.map((jsonLocaleInfo) {
-    return Language.fromJson(jsonLocaleInfo);
-  });
-
+  final languages = ref.watch(languageRepositoryProvider).getLanguages();
   final resumeLanguageCode = resume.languageCode;
   if (resumeLanguageCode != null) {
     final language = languages.firstWhere((language) {

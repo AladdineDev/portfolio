@@ -19,7 +19,9 @@ class _MainSectionState extends ConsumerState<MainSection> {
   double _bottomBannerHeight = 0;
 
   void _displayBottomBanner() {
-    if (ref.watch(scrollControllerProvider.notifier).checkEndOfScroll()) {
+    final scrollController = ref.watch(scrollControllerProvider);
+    final scrollPosition = scrollController.position;
+    if (scrollPosition.pixels >= scrollPosition.maxScrollExtent - 64) {
       setState(() => _bottomBannerHeight = 48);
     } else {
       setState(() => _bottomBannerHeight = 0);
