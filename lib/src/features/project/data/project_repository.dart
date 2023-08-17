@@ -15,7 +15,7 @@ ProjectRepository projectRepository(ProjectRepositoryRef ref) {
 class ProjectRepository {
   ProjectRepository(this._ref);
 
-  final Ref _ref;
+  final AutoDisposeRef _ref;
 
   List<Project> getProjects() {
     final locale = _ref.watch(localeControllerProvider).locale;
