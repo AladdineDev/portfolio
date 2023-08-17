@@ -59,6 +59,12 @@
                 "PostgreSQL",
                 "SQLite",
                 "Docker"
+            ],
+            "links": [
+                {
+                    "url": "https://sites.disney.com/waltdisneyimagineering/",
+                    "display": "Walt Disney Imagineering"
+                }
             ]
         },
         {
@@ -90,7 +96,8 @@
             ],
             "links": [
                 {
-                    "url": "https://www.association-faire.fr"
+                    "url": "https://www.association-faire.fr",
+                    "display": "Association FAIRE"
                 }
             ]
         }
