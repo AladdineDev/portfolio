@@ -1,6 +1,6 @@
 # Translation Template
 
-Here's the template of the `en.json` translation:
+Here's the template of a JSON translation file:
 
 ```json
 {
