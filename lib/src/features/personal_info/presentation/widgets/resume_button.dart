@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/features/introduction/domain/resume.dart';
-import 'package:portfolio/src/features/introduction/presentation/widgets/resume_language_dialog.dart';
+import 'package:portfolio/src/features/personal_info/domain/resume.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_language_dialog.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
 import 'package:url_launcher/url_launcher.dart';

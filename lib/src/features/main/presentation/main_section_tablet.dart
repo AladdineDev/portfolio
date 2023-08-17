@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
-import 'package:portfolio/src/features/introduction/presentation/introduction_section.dart';
+import 'package:portfolio/src/features/personal_info/presentation/personal_info_section.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/sliver_app_bar.dart';
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
@@ -44,7 +44,7 @@ class _MainTabletState extends ConsumerState<MainTablet> {
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 12,
                               ),
-                              child: IntroductionSection(
+                              child: PersonalInfoSection(
                                 key: ref.watch(homeSectionKeyProvider),
                               ),
                             ),

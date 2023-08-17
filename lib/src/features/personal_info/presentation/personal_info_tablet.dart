@@ -2,21 +2,21 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/features/introduction/data/introduction_repository.dart';
-import 'package:portfolio/src/features/introduction/domain/resume.dart';
-import 'package:portfolio/src/features/introduction/presentation/widgets/contact_bar.dart';
-import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
-import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
-import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
+import 'package:portfolio/src/features/personal_info/data/personal_info_repository.dart';
+import 'package:portfolio/src/features/personal_info/domain/resume.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/contact_bar.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/favorite_icon.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/magic_icon.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_button.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
-class IntroductionDesktop extends ConsumerWidget {
-  const IntroductionDesktop({super.key});
+class PersonalInfoTablet extends ConsumerWidget {
+  const PersonalInfoTablet({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final resumes = ref.watch(introductionRepositoryProvider).getResumes();
-    final contacts = ref.watch(introductionRepositoryProvider).getContacts();
+    final resumes = ref.watch(personalInfoRepositoryProvider).getResumes();
+    final contacts = ref.watch(personalInfoRepositoryProvider).getContacts();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +48,6 @@ class IntroductionDesktop extends ConsumerWidget {
           ],
         ),
         _buildResumeButton(ref, resumes: resumes.toList()),
-        const Spacer(),
         gapH8,
         ContactBar(contacts: contacts.toList()),
       ],
@@ -57,14 +56,9 @@ class IntroductionDesktop extends ConsumerWidget {
 
   Widget _buildResumeButton(WidgetRef ref, {required List<Resume> resumes}) {
     if (resumes.isEmpty) return const SizedBox.shrink();
-    return Column(
-      children: [
-        gapH40,
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 24),
-          child: ResumeButton(resumes: resumes),
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 36),
+      child: ResumeButton(resumes: resumes),
     );
   }
 }

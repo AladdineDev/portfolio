@@ -2,8 +2,8 @@ import 'package:collection/collection.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/src/features/introduction/domain/resume.dart';
-import 'package:portfolio/src/features/introduction/presentation/widgets/resume_language_dialog_tile.dart';
+import 'package:portfolio/src/features/personal_info/domain/resume.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_language_dialog_tile.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
 class ResumeLanguageDialog extends ConsumerWidget {

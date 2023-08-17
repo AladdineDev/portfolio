@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
-import 'package:portfolio/src/features/introduction/presentation/introduction_section.dart';
+import 'package:portfolio/src/features/personal_info/presentation/personal_info_section.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
@@ -41,7 +41,7 @@ class _MainDesktopState extends ConsumerState<MainDesktop> {
                     color: Theme.of(context).colorScheme.primary,
                     child: const Align(
                       alignment: Alignment.topRight,
-                      child: IntroductionSection(),
+                      child: PersonalInfoSection(),
                     ),
                   ),
                 ),
