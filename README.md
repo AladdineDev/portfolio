@@ -114,22 +114,25 @@ $ flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
 $ firebase deploy --only hosting
 ```
 
-### Content Personalization 🖋
+## Personalization 🛠️
 
-**1. Your description:**\
-Change the content of your description in the `build/web/index.html`:
-```html
-<meta name="description" content="...">
-```
+### Content 🖋
 
-**2. Portfolio Content:**\
+**1. Portfolio Content:**\
 Modify or add JSON translation files within [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files). For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
 
 If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
-**3. Launcher Icon and Splash Screen:**\
+**2. Your description:**\
+Change the content of your description in the `build/web/index.html`:
+```html
+<meta name="description" content="...">
+```
+
+### Theme 🎨
+**1. Launcher Icon and Splash Screen:**\
 Update your launcher icon and your splash screen in the [`flutter_launcher_icons-production.yaml`](flutter_launcher_icons-production.yaml) and the [`flutter_native_splash-production.yaml`](flutter_native_splash-production.yaml)
 
 Then, run:
