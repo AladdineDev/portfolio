@@ -186,7 +186,7 @@
         },
         {
             "name": "GSB-RV-DR",
-            "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
+            "description": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
             "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
