@@ -90,9 +90,12 @@
             "endYear": 2021,
             "endMonth": 6,
             "technologies": [
-                "Flutter",
-                "Dart",
-                "Firebase"
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "MariaDB",
+                "Apache"
             ],
             "links": [
                 {
