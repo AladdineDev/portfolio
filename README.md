@@ -4,8 +4,8 @@
 
 Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 
-[![Flutter 3](https://img.shields.io/badge/Flutter-3.10-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
-[![Dart 3](https://img.shields.io/badge/Dart-3.0-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
+[![Flutter 3](https://img.shields.io/badge/Flutter-3.13-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
+[![Dart 3](https://img.shields.io/badge/Dart-3.1-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase--ffcc30.svg?style=flat-square&logo=firebase)](https://firebase.google.com/)
 
 ## [Live Preview](https://aladdine.dev) 👀
