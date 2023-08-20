@@ -7,16 +7,11 @@ import 'package:portfolio/src/features/experience/data/experience_repository.dar
 import 'package:portfolio/src/features/experience/presentation/widgets/experience_card.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
-class ExperienceDesktop extends ConsumerStatefulWidget {
+class ExperienceDesktop extends ConsumerWidget {
   const ExperienceDesktop({super.key});
 
   @override
-  ConsumerState<ExperienceDesktop> createState() => _ExperienceDesktopState();
-}
-
-class _ExperienceDesktopState extends ConsumerState<ExperienceDesktop> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final experiences =
         ref.watch(experienceRepositoryProvider).getExperiences();
 

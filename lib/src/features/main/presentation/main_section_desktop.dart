@@ -9,16 +9,11 @@ import 'package:portfolio/src/features/project/presentation/project_section.dart
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
 import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
 
-class MainDesktop extends ConsumerStatefulWidget {
+class MainDesktop extends ConsumerWidget {
   const MainDesktop({super.key});
 
   @override
-  ConsumerState<MainDesktop> createState() => _MainDesktopState();
-}
-
-class _MainDesktopState extends ConsumerState<MainDesktop> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final scrollController = ref.watch(scrollControllerProvider);
 
     return Column(
