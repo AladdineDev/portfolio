@@ -15,7 +15,7 @@ LanguageRepository languageRepository(LanguageRepositoryRef ref) {
 class LanguageRepository {
   LanguageRepository(this._ref);
 
-  final AutoDisposeRef _ref;
+  final Ref _ref;
 
   List<Language> getLanguages() {
     final locale = _ref.watch(localeControllerProvider).locale;

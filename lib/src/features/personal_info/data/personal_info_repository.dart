@@ -16,7 +16,7 @@ PersonalInfoRepository personalInfoRepository(PersonalInfoRepositoryRef ref) {
 class PersonalInfoRepository {
   PersonalInfoRepository(this._ref);
 
-  final AutoDisposeRef _ref;
+  final Ref _ref;
 
   List<Resume> getResumes() {
     final locale = _ref.watch(localeControllerProvider).locale;

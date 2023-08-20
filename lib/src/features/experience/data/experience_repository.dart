@@ -15,7 +15,7 @@ ExperienceRepository experienceRepository(ExperienceRepositoryRef ref) {
 class ExperienceRepository {
   ExperienceRepository(this._ref);
 
-  final AutoDisposeRef _ref;
+  final Ref _ref;
 
   List<Experience> getExperiences() {
     final locale = _ref.watch(localeControllerProvider).locale;
