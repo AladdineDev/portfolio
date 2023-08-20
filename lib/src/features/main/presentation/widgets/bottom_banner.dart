@@ -22,10 +22,10 @@ class BottomBanner extends ConsumerWidget {
         children: [
           Text(
             "${tr(LocaleKeys.credit_message)} ",
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
           DefaultTextStyle(
-            style: Theme.of(context).textTheme.bodyLarge!,
+            style: Theme.of(context).textTheme.titleSmall!,
             child: Link(
               url: tr(LocaleKeys.credit_url),
               displayLink: tr(LocaleKeys.credit_to),
