@@ -6,7 +6,7 @@ part 'brightness_controller.g.dart';
 
 @riverpod
 class BrightnessController extends _$BrightnessController {
-  static const brightnessKey = "brightness";
+  static const _brightnessKey = "brightness";
 
   @override
   FutureOr<Brightness> build() async => _getBrightness();
@@ -28,7 +28,7 @@ class BrightnessController extends _$BrightnessController {
 
   Future<Brightness> _getBrightness() async {
     final sharedPreferences = await ref.watch(sharedPreferencesProvider.future);
-    final brightnessValue = sharedPreferences.getString(brightnessKey);
+    final brightnessValue = sharedPreferences.getString(_brightnessKey);
     if (brightnessValue == Brightness.dark.name) {
       return Brightness.dark;
     } else if (brightnessValue == Brightness.light.name) {
@@ -44,7 +44,7 @@ class BrightnessController extends _$BrightnessController {
 
   Future<void> _setBrightness(Brightness brightness) async {
     ref.watch(sharedPreferencesProvider).whenData((sharedPreferences) async {
-      await sharedPreferences.setString(brightnessKey, brightness.name);
+      await sharedPreferences.setString(_brightnessKey, brightness.name);
     });
   }
 }
