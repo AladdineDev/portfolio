@@ -21,7 +21,7 @@ class ProjectImage extends ConsumerWidget {
             minHeight: 200,
             minWidth: 520,
             maxHeight: 400,
-            maxWidth: 520,
+            maxWidth: 600,
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
