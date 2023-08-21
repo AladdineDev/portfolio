@@ -52,7 +52,7 @@ class ResumeButton extends ConsumerWidget {
 
   Future<void> _onPressed(BuildContext context, WidgetRef ref) async {
     if (resumes.length > 1) {
-      showDialog(
+      showAdaptiveDialog(
         context: context,
         builder: (context) => ResumeLanguageDialog(resumes: resumes),
       );
