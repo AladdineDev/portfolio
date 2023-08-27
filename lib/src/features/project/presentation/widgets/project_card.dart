@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
@@ -6,9 +5,8 @@ import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_description.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_image.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
-import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-
-import 'package:url_launcher/url_launcher.dart';
+import 'package:portfolio/src/utils/launch_url_helper.dart';
+import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
 
 class ProjectCard extends ConsumerStatefulWidget {
   const ProjectCard({super.key, required this.project});
@@ -54,14 +52,11 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
   void _onTap() async {
     final url = widget.project.url;
     if (url == null) return;
-    if (!await launchUrl(Uri.parse(url))) {
+    try {
+      await LaunchUrlHelper.launchURL(url);
+    } catch (e) {
       if (context.mounted) {
-        final snackBar = SnackBar(
-          content: Text(
-            "${tr(LocaleKeys.openUrlError)} ${widget.project.url}",
-          ),
-        );
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        ScaffoldMessengerHelper.showLaunchUrlError(context, url: url);
       }
     }
   }

@@ -227,7 +227,6 @@
     "projectsSectionTitle": "Projects",
     "resume": "Resume",
     "downloadResume": "Download resume",
-    "openResumeError": "Could not open the resume",
     "openUrlError": "Could not open the url",
     "unknownLanguageError": "Language unknown"
 }

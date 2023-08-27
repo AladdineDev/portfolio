@@ -4,8 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/common/data/language_repository.dart';
 import 'package:portfolio/src/features/personal_info/domain/resume.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-
-import 'package:url_launcher/url_launcher.dart';
+import 'package:portfolio/src/utils/launch_url_helper.dart';
+import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
 
 class ResumeLanguageDialogTile extends ConsumerWidget {
   const ResumeLanguageDialogTile({super.key, required this.resume});
@@ -56,13 +56,10 @@ Text _buildResumeLanguageText(
 
 void _onPressed(BuildContext context, {required String resumeUrl}) async {
   try {
-    await launchUrl(Uri.parse(resumeUrl));
+    await LaunchUrlHelper.launchURL(resumeUrl);
   } catch (e) {
-    final snackBar = SnackBar(
-      content: Text(tr(LocaleKeys.openResumeError)),
-    );
     if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      ScaffoldMessengerHelper.showLaunchUrlError(context, url: resumeUrl);
     }
   }
   if (context.mounted) {

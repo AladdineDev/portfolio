@@ -6,8 +6,8 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/personal_info/domain/resume.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_language_dialog.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-
-import 'package:url_launcher/url_launcher.dart';
+import 'package:portfolio/src/utils/launch_url_helper.dart';
+import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
 
 class ResumeButton extends ConsumerWidget {
   const ResumeButton({super.key, required this.resumes});
@@ -60,24 +60,21 @@ class ResumeButton extends ConsumerWidget {
     } else if (resumes.length == 1) {
       final resumeFirstUrl = resumes.first.url;
       if (resumeFirstUrl == null) {
-        _showSnackBarResumeError(context);
-        return;
-      }
-      await launchUrl(Uri.parse(resumeFirstUrl));
-      if (context.mounted) {
-        Navigator.of(context).pop();
+        ScaffoldMessengerHelper.showLaunchUrlError(context);
+      } else {
+        try {
+          await LaunchUrlHelper.launchURL(resumeFirstUrl);
+        } catch (e) {
+          if (context.mounted) {
+            ScaffoldMessengerHelper.showLaunchUrlError(
+              context,
+              url: resumeFirstUrl,
+            );
+          }
+        }
       }
     } else {
-      _showSnackBarResumeError(context);
-    }
-  }
-
-  void _showSnackBarResumeError(BuildContext context) {
-    final snackBar = SnackBar(
-      content: Text(tr(LocaleKeys.openResumeError)),
-    );
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      ScaffoldMessengerHelper.showLaunchUrlError(context);
     }
   }
 }
