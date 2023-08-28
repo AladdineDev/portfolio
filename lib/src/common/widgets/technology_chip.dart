@@ -7,14 +7,15 @@ class TechnologyChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: IgnorePointer(
-        child: Chip(
-          label: Text(name),
-          backgroundColor: Theme.of(context).colorScheme.secondary,
-          side: BorderSide.none,
-        ),
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.secondary,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Text(
+        name,
+        style: Theme.of(context).textTheme.bodySmall,
       ),
     );
   }

@@ -23,6 +23,7 @@ class ExperienceCard extends ConsumerWidget {
       color: Theme.of(context).colorScheme.primary,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
+        mouseCursor: MaterialStateMouseCursor.textable,
         onTap: () => _onTap(context),
         borderRadius: BorderRadius.circular(20),
         hoverColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
@@ -136,9 +137,7 @@ class ExperienceCard extends ConsumerWidget {
       spacing: 8,
       runSpacing: 8,
       children: experienceTechnologies.map((technology) {
-        return IgnorePointer(
-          child: TechnologyChip(name: technology),
-        );
+        return TechnologyChip(name: technology);
       }).toList(),
     );
   }

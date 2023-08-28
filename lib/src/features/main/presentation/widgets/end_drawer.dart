@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/common/data/language_repository.dart';
+import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switch.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/drawer_button.dart';
@@ -36,40 +37,42 @@ class EndDrawer extends ConsumerWidget {
             color: Theme.of(context).colorScheme.inversePrimary,
           ),
           Expanded(
-            child: ListView(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    gapH40,
-                    const DarkModeSwitch(),
-                    gapH80,
-                    MyDrawerButton(
-                      title: tr(LocaleKeys.homeSectionTitle),
-                      sectionKey: ref.watch(homeSectionKeyProvider),
-                    ),
-                    gapH40,
-                    MyDrawerButton(
-                      title: tr(LocaleKeys.aboutSectionTitle),
-                      sectionKey: ref.watch(aboutSectionKeyProvider),
-                    ),
-                    gapH40,
-                    MyDrawerButton(
-                      title: tr(LocaleKeys.experienceSectionTitle),
-                      sectionKey: ref.watch(experienceSectionKeyProvider),
-                    ),
-                    gapH40,
-                    MyDrawerButton(
-                      title: tr(LocaleKeys.projectsSectionTitle),
-                      sectionKey: ref.watch(projectSectionKeyProvider),
-                    ),
-                    gapH80,
-                    _buildLocaleButton(context, ref),
-                    gapH40,
-                  ],
-                ),
-              ],
+            child: MySelectionArea(
+              child: ListView(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      gapH40,
+                      const DarkModeSwitch(),
+                      gapH80,
+                      MyDrawerButton(
+                        title: tr(LocaleKeys.homeSectionTitle),
+                        sectionKey: ref.watch(homeSectionKeyProvider),
+                      ),
+                      gapH40,
+                      MyDrawerButton(
+                        title: tr(LocaleKeys.aboutSectionTitle),
+                        sectionKey: ref.watch(aboutSectionKeyProvider),
+                      ),
+                      gapH40,
+                      MyDrawerButton(
+                        title: tr(LocaleKeys.experienceSectionTitle),
+                        sectionKey: ref.watch(experienceSectionKeyProvider),
+                      ),
+                      gapH40,
+                      MyDrawerButton(
+                        title: tr(LocaleKeys.projectsSectionTitle),
+                        sectionKey: ref.watch(projectSectionKeyProvider),
+                      ),
+                      gapH80,
+                      _buildLocaleButton(context, ref),
+                      gapH40,
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],

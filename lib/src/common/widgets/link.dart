@@ -37,55 +37,59 @@ class _LinksState extends ConsumerState<Link> {
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onHover: (_) {
-        setState(() {
-          _linkStyle = TextStyle(
-            decoration: widget.underlined ? TextDecoration.underline : null,
-            color: widget.hoverColor ?? Colors.blue,
-          );
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          _linkStyle = TextStyle(
-            decoration: widget.underlined ? TextDecoration.underline : null,
-          );
-        });
-      },
-      child: GestureDetector(
-        onTap: () async {
-          try {
-            await LaunchUrlHelper.launchURL(widget.url);
-          } catch (e) {
-            if (!mounted) return;
-            ScaffoldMessengerHelper.showLaunchUrlError(
-              context,
-              url: widget.url,
+    return DefaultSelectionStyle(
+      selectionColor: Theme.of(context).colorScheme.tertiary,
+      mouseCursor: MouseCursor.defer,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        onHover: (_) {
+          setState(() {
+            _linkStyle = TextStyle(
+              decoration: widget.underlined ? TextDecoration.underline : null,
+              color: widget.hoverColor ?? Colors.blue,
             );
-          }
+          });
         },
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (widget.displayLeadingIcon)
-              Row(
-                children: [
-                  Icon(
-                    Icons.link,
-                    color: _linkStyle?.color,
-                  ),
-                  gapW4,
-                ],
+        onExit: (_) {
+          setState(() {
+            _linkStyle = TextStyle(
+              decoration: widget.underlined ? TextDecoration.underline : null,
+            );
+          });
+        },
+        child: GestureDetector(
+          onTap: () async {
+            try {
+              await LaunchUrlHelper.launchURL(widget.url);
+            } catch (e) {
+              if (!mounted) return;
+              ScaffoldMessengerHelper.showLaunchUrlError(
+                context,
+                url: widget.url,
+              );
+            }
+          },
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (widget.displayLeadingIcon)
+                Row(
+                  children: [
+                    Icon(
+                      Icons.link,
+                      color: _linkStyle?.color,
+                    ),
+                    gapW4,
+                  ],
+                ),
+              Flexible(
+                child: Text(
+                  widget.displayLink ?? widget.url,
+                  style: _linkStyle,
+                ),
               ),
-            Flexible(
-              child: Text(
-                widget.displayLink ?? widget.url,
-                style: _linkStyle,
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
