@@ -105,7 +105,6 @@ Here's the template of a JSON translation file:
   "downloadResume": "Download resume", // Title for the resume download dialog
 
   // Error Messages
-  "openResumeError": "Could not open the resume", // resume error
   "openUrlError": "Could not open the url", // url error
 }
 ```
