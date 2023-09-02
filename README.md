@@ -23,6 +23,8 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 
 ## Fork and deploy with Firebase 🚀
 
+If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
+
 Fork and clone this repository (see how to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
 
 **Navigate to your portfolio directory :**
@@ -36,8 +38,6 @@ $ flutter pub get
 ```
 
 ### Generator 🤖
-
-If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
 **1. Run the code generator:**
 ```bash
