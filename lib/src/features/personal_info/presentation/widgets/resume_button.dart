@@ -16,36 +16,38 @@ class ResumeButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return OutlinedButton(
-      style: OutlinedButton.styleFrom(
-        side: BorderSide(
-          width: 2,
-          color: Theme.of(context).colorScheme.tertiary,
+    return SelectionContainer.disabled(
+      child: OutlinedButton(
+        style: OutlinedButton.styleFrom(
+          side: BorderSide(
+            width: 2,
+            color: Theme.of(context).colorScheme.tertiary,
+          ),
+          elevation: 16,
+          shape: const StadiumBorder(),
+          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 12),
         ),
-        elevation: 16,
-        shape: const StadiumBorder(),
-        padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 12),
-      ),
-      onPressed: () => _onPressed(context, ref),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        textBaseline: TextBaseline.alphabetic,
-        children: [
-          Icon(
-            FontAwesomeIcons.filePdf,
-            color: Theme.of(context).colorScheme.inverseSurface,
-          ),
-          gapW12,
-          Text(
-            tr(LocaleKeys.resume),
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium
-                ?.copyWith(fontWeight: FontWeight.bold),
-          ),
-        ],
+        onPressed: () => _onPressed(context, ref),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          textBaseline: TextBaseline.alphabetic,
+          children: [
+            Icon(
+              FontAwesomeIcons.filePdf,
+              color: Theme.of(context).colorScheme.inverseSurface,
+            ),
+            gapW12,
+            Text(
+              tr(LocaleKeys.resume),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
       ),
     );
   }
