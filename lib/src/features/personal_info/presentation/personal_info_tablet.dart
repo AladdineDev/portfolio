@@ -5,7 +5,6 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/personal_info/data/personal_info_repository.dart';
 import 'package:portfolio/src/features/personal_info/domain/resume.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/contact_bar.dart';
-import 'package:portfolio/src/features/personal_info/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_button.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
@@ -30,15 +29,9 @@ class PersonalInfoTablet extends ConsumerWidget {
           style: Theme.of(context).textTheme.titleLarge,
         ),
         gapH8,
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "${tr(LocaleKeys.subDescription)} ",
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
-            const FavoriteIcon(),
-          ],
+        Text(
+          "${tr(LocaleKeys.subDescription)} ",
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         _buildResumeButton(ref, resumes: resumes.toList()),
         gapH8,
