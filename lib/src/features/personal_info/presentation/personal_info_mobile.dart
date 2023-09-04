@@ -26,18 +26,9 @@ class PersonalInfoMobile extends ConsumerWidget {
           style: Theme.of(context).textTheme.displayMedium,
         ),
         gapH4,
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "${tr(LocaleKeys.description)} ",
-              style: Theme.of(context)
-                  .textTheme
-                  .titleLarge
-                  ?.copyWith(fontSize: 20),
-            ),
-            const MagicIcon(),
-          ],
+        Text(
+          "${tr(LocaleKeys.description)} ",
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 20),
         ),
         gapH8,
         Row(

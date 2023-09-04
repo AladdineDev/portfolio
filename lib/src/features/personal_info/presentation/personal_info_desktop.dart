@@ -26,15 +26,9 @@ class PersonalInfoDesktop extends ConsumerWidget {
           style: Theme.of(context).textTheme.displayLarge,
         ),
         gapH4,
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "${tr(LocaleKeys.description)} ",
-              style: Theme.of(context).textTheme.titleLarge,
-            ),
-            const MagicIcon(),
-          ],
+        Text(
+          "${tr(LocaleKeys.description)} ",
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         gapH8,
         Row(
