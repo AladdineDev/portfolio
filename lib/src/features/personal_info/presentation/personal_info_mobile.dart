@@ -25,12 +25,12 @@ class PersonalInfoMobile extends ConsumerWidget {
         ),
         gapH4,
         Text(
-          "${tr(LocaleKeys.description)} ",
+          tr(LocaleKeys.description),
           style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 20),
         ),
         gapH8,
         Text(
-          "${tr(LocaleKeys.subDescription)} ",
+          tr(LocaleKeys.subDescription),
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         _buildResumeButton(ref, resumes: resumes.toList()),
