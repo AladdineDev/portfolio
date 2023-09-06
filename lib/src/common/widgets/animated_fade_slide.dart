@@ -19,11 +19,15 @@ class AnimatedFadeSlide extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = useAnimationController(duration: duration);
+    final curveAnimation = CurvedAnimation(
+      parent: controller,
+      curve: Curves.decelerate,
+    );
     final dxAnimation = useAnimation(
-      Tween(begin: offset.dx, end: 0.0).animate(controller),
+      Tween(begin: offset.dx, end: 0.0).animate(curveAnimation),
     );
     final dyAnimation = useAnimation(
-      Tween(begin: offset.dy, end: 0.0).animate(controller),
+      Tween(begin: offset.dy, end: 0.0).animate(curveAnimation),
     );
 
     useEffect(() {
