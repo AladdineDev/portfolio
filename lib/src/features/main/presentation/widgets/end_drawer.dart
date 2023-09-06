@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/data/language_repository.dart';
+import 'package:portfolio/src/common/widgets/animated_fade_slide.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switch.dart';
@@ -46,29 +47,53 @@ class EndDrawer extends ConsumerWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       gapH40,
-                      const DarkModeSwitch(),
-                      gapH80,
-                      MyDrawerButton(
-                        title: tr(LocaleKeys.homeSectionTitle),
-                        sectionKey: ref.watch(homeSectionKeyProvider),
-                      ),
-                      gapH40,
-                      MyDrawerButton(
-                        title: tr(LocaleKeys.aboutSectionTitle),
-                        sectionKey: ref.watch(aboutSectionKeyProvider),
-                      ),
-                      gapH40,
-                      MyDrawerButton(
-                        title: tr(LocaleKeys.experienceSectionTitle),
-                        sectionKey: ref.watch(experienceSectionKeyProvider),
-                      ),
-                      gapH40,
-                      MyDrawerButton(
-                        title: tr(LocaleKeys.projectsSectionTitle),
-                        sectionKey: ref.watch(projectSectionKeyProvider),
+                      const AnimatedFadeSlide(
+                        offset: Offset(0, -64),
+                        duration: Duration(milliseconds: 350),
+                        child: DarkModeSwitch(),
                       ),
                       gapH80,
-                      _buildLocaleButton(context, ref),
+                      AnimatedFadeSlide(
+                        offset: const Offset(128, 0),
+                        duration: const Duration(milliseconds: 300),
+                        child: MyDrawerButton(
+                          title: tr(LocaleKeys.homeSectionTitle),
+                          sectionKey: ref.watch(homeSectionKeyProvider),
+                        ),
+                      ),
+                      gapH40,
+                      AnimatedFadeSlide(
+                        offset: const Offset(112, 0),
+                        duration: const Duration(milliseconds: 350),
+                        child: MyDrawerButton(
+                          title: tr(LocaleKeys.aboutSectionTitle),
+                          sectionKey: ref.watch(aboutSectionKeyProvider),
+                        ),
+                      ),
+                      gapH40,
+                      AnimatedFadeSlide(
+                        offset: const Offset(96, 0),
+                        duration: const Duration(milliseconds: 375),
+                        child: MyDrawerButton(
+                          title: tr(LocaleKeys.experienceSectionTitle),
+                          sectionKey: ref.watch(experienceSectionKeyProvider),
+                        ),
+                      ),
+                      gapH40,
+                      AnimatedFadeSlide(
+                        offset: const Offset(80, 0),
+                        duration: const Duration(milliseconds: 400),
+                        child: MyDrawerButton(
+                          title: tr(LocaleKeys.projectsSectionTitle),
+                          sectionKey: ref.watch(projectSectionKeyProvider),
+                        ),
+                      ),
+                      gapH80,
+                      AnimatedFadeSlide(
+                        offset: const Offset(0, 64),
+                        duration: const Duration(milliseconds: 350),
+                        child: _buildLocaleButton(context, ref),
+                      ),
                       gapH40,
                     ],
                   ),

@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:portfolio/src/common/widgets/animated_fade_slide.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
@@ -38,7 +39,10 @@ class MainDesktop extends ConsumerWidget {
                       color: Theme.of(context).colorScheme.primary,
                       child: const Align(
                         alignment: Alignment.topRight,
-                        child: PersonalInfoSection(),
+                        child: AnimatedFadeSlide(
+                          offset: Offset(-128, 0),
+                          child: PersonalInfoSection(),
+                        ),
                       ),
                     ),
                   ),
@@ -59,25 +63,28 @@ class MainDesktop extends ConsumerWidget {
                         alignment: Alignment.topLeft,
                         child: SizedBox(
                           width: 520,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 12,
+                          child: AnimatedFadeSlide(
+                            offset: const Offset(128, 0),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                  ),
+                                  child: AboutSection(
+                                    key: ref.watch(aboutSectionKeyProvider),
+                                  ),
                                 ),
-                                child: AboutSection(
-                                  key: ref.watch(aboutSectionKeyProvider),
+                                const SizedBox(height: 120),
+                                ExperienceSection(
+                                  key: ref.watch(experienceSectionKeyProvider),
                                 ),
-                              ),
-                              const SizedBox(height: 120),
-                              ExperienceSection(
-                                key: ref.watch(experienceSectionKeyProvider),
-                              ),
-                              const SizedBox(height: 120),
-                              ProjectSection(
-                                key: ref.watch(projectSectionKeyProvider),
-                              ),
-                            ],
+                                const SizedBox(height: 120),
+                                ProjectSection(
+                                  key: ref.watch(projectSectionKeyProvider),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),

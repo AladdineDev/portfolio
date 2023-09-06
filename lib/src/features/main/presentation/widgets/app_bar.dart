@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/src/common/data/language_repository.dart';
+import 'package:portfolio/src/common/widgets/animated_fade_slide.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/app_bar_button.dart';
@@ -25,40 +26,48 @@ class MyAppBar extends ConsumerWidget {
         titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
               fontWeight: FontWeight.bold,
             ),
-        title: Row(
-          children: [
-            const Icon(FontAwesomeIcons.terminal),
-            const SizedBox(width: 12),
-            Text(tr(LocaleKeys.portfolio)),
-          ],
+        title: AnimatedFadeSlide(
+          offset: const Offset(-64, 0),
+          child: Row(
+            children: [
+              const Icon(FontAwesomeIcons.terminal),
+              const SizedBox(width: 12),
+              Text(tr(LocaleKeys.portfolio)),
+            ],
+          ),
         ),
         actions: [
           if (Responsive.isDesktop(context))
-            Row(
-              children: [
-                AppBarButton(
-                  title: tr(LocaleKeys.aboutSectionTitle),
-                  onPressed: () {
-                    _onAppBarButtonTap(ref.watch(aboutSectionKeyProvider));
-                  },
-                ),
-                AppBarButton(
-                  title: tr(LocaleKeys.experienceSectionTitle),
-                  onPressed: () {
-                    _onAppBarButtonTap(ref.watch(experienceSectionKeyProvider));
-                  },
-                ),
-                AppBarButton(
-                  title: tr(LocaleKeys.projectsSectionTitle),
-                  onPressed: () {
-                    _onAppBarButtonTap(ref.watch(projectSectionKeyProvider));
-                  },
-                ),
-                _buildLocaleButton(context, ref),
-                gapW8,
-                const DarkModeSwitch(),
-                gapW8,
-              ],
+            AnimatedFadeSlide(
+              offset: const Offset(64, 0),
+              child: Row(
+                children: [
+                  AppBarButton(
+                    title: tr(LocaleKeys.aboutSectionTitle),
+                    onPressed: () {
+                      _onAppBarButtonTap(ref.watch(aboutSectionKeyProvider));
+                    },
+                  ),
+                  AppBarButton(
+                    title: tr(LocaleKeys.experienceSectionTitle),
+                    onPressed: () {
+                      _onAppBarButtonTap(
+                        ref.watch(experienceSectionKeyProvider),
+                      );
+                    },
+                  ),
+                  AppBarButton(
+                    title: tr(LocaleKeys.projectsSectionTitle),
+                    onPressed: () {
+                      _onAppBarButtonTap(ref.watch(projectSectionKeyProvider));
+                    },
+                  ),
+                  _buildLocaleButton(context, ref),
+                  gapW8,
+                  const DarkModeSwitch(),
+                  gapW8,
+                ],
+              ),
             ),
         ],
       ),
