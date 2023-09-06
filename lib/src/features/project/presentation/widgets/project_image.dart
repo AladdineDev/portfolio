@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
+import 'package:portfolio/src/features/project/presentation/widgets/image_network_or_assets.dart';
 
 class ProjectImage extends ConsumerWidget {
   const ProjectImage({
@@ -90,19 +91,7 @@ class ProjectImage extends ConsumerWidget {
   Widget _buildScreenshotImage(BuildContext context) {
     final screenshotUrl = project.screenshotUrl;
     if (screenshotUrl == null) return const Icon(Icons.code);
-    return Image.network(
-      screenshotUrl,
-      fit: BoxFit.cover,
-      cacheWidth: 1920,
-      loadingBuilder: (context, child, loadingProgress) {
-        if (loadingProgress != null) {
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
-        }
-        return child;
-      },
-    );
+    return ImageNetworkOrAsset(screenshotUrl);
   }
 
   Widget _buildIcon() {

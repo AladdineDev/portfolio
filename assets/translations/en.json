@@ -114,7 +114,7 @@
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
+            "screenshotUrl": "assets/images/portfolio.png",
             "technologies": [
                 "Flutter",
                 "Dart",
@@ -134,7 +134,7 @@
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png",
+            "screenshotUrl": "assets/images/learnflow-api.png",
             "technologies": [
                 "Node.js",
                 "Express",
@@ -150,7 +150,7 @@
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png",
+            "screenshotUrl": "assets/images/learnflow-backoffice.png",
             "technologies": [
                 "Flutter",
                 "Dart"
@@ -163,7 +163,7 @@
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png",
+            "screenshotUrl": "assets/images/gsb-frais.png",
             "technologies": [
                 "Symfony",
                 "PHP",
@@ -179,7 +179,7 @@
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png",
+            "screenshotUrl": "assets/images/gsb-rv-visiteur-serveur.png",
             "technologies": [
                 "Flask",
                 "Python",
@@ -194,7 +194,7 @@
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png",
+            "screenshotUrl": "assets/images/gsb-rv-dr.png",
             "technologies": [
                 "JavaFX",
                 "Java",
