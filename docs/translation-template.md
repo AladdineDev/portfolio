@@ -64,8 +64,8 @@ Here's the template of a JSON translation file:
       "url": "https://github.com/Aaldn/portfolio#readme", // URL to open when the project card is tapped
       "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
       "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
-      "iconFontPackage": "font_awesome_flutter" // Name of the package providing the icon font (here, it's based on Font Awesome)
-      "screenshotUrl": "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png", // screenshot url of the project
+      "iconFontPackage": "font_awesome_flutter", // Name of the package providing the icon font (here, it's based on Font Awesome)
+      "screenshotUrl": "assets/images/portfolio.png", // screenshot url of the project, either from assets (assets/images/portfolio.png) or from network (https://cataas.com/cat)
       "technologies": [
         "Flutter" // Technologies used in this project
       ],
