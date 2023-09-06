@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/features/personal_info/domain/resume.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_language_dialog_tile.dart';

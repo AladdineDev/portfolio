@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';

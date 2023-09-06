@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_description.dart';

@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/data/experience_repository.dart';
 import 'package:portfolio/src/features/experience/presentation/widgets/experience_card.dart';

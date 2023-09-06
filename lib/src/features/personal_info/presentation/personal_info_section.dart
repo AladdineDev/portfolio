@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_desktop.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_mobile.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_tablet.dart';

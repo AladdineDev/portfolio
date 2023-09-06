@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/themes.dart' as themes;
 import 'package:portfolio/src/features/main/presentation/main_section.dart';
 import 'package:portfolio/src/features/main/provider/dark_mode_controller.dart';

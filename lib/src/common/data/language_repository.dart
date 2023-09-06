@@ -1,4 +1,4 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/domain/language.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/localization/json_list_translation.dart';
