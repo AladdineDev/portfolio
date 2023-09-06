@@ -7,7 +7,7 @@ class AnimatedFadeSlide extends HookConsumerWidget {
     super.key,
     this.delay = const Duration(milliseconds: 0),
     this.duration = const Duration(milliseconds: 500),
-    this.offset = const Offset(100, -64),
+    this.offset = const Offset(0, -64),
     required this.child,
   });
 
