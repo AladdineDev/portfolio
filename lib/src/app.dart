@@ -4,13 +4,25 @@ import 'package:portfolio/src/constants/themes.dart' as themes;
 import 'package:portfolio/src/features/main/presentation/main_section.dart';
 import 'package:portfolio/src/features/main/provider/dark_mode_controller.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:portfolio/src/features/project/data/project_repository.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 
-class MyApp extends ConsumerWidget {
+class MyApp extends ConsumerStatefulWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends ConsumerState<MyApp> {
+  @override
+  void didChangeDependencies() {
+    _preCacheProjectImages();
+    super.didChangeDependencies();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateTitle: (_) => tr(LocaleKeys.name),
@@ -25,5 +37,16 @@ class MyApp extends ConsumerWidget {
           ),
       home: const MainSection(),
     );
+  }
+
+  void _preCacheProjectImages() {
+    final projects = ref.read(projectRepositoryProvider).getProjects();
+    for (var project in projects) {
+      final projectScreenshotUrl = project.screenshotUrl;
+      if (projectScreenshotUrl != null) {
+        final projectImage = AssetImage(projectScreenshotUrl);
+        precacheImage(projectImage, context);
+      }
+    }
   }
 }
