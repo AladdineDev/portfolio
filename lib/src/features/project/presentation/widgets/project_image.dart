@@ -90,10 +90,9 @@ class ProjectImage extends ConsumerWidget {
   Widget _buildScreenshotImage(BuildContext context) {
     final screenshotUrl = project.screenshotUrl;
     if (screenshotUrl == null) return const Icon(Icons.code);
-    return Image(
-      image: AssetImage(screenshotUrl),
+    return Image.asset(
+      screenshotUrl,
       fit: BoxFit.cover,
-      width: 1920,
       errorBuilder: (_, __, ___) => const Placeholder(),
     );
   }
