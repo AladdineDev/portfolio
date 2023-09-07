@@ -33,7 +33,6 @@ class _MyDrawerButtonState extends ConsumerState<MyDrawerButton> {
     final isHovered = useState(false);
     final controller = useAnimationController(
       duration: const Duration(milliseconds: 200),
-      reverseDuration: const Duration(milliseconds: 150),
     );
     final colorAnimation = useAnimation(colorTween.animate(controller));
     useEffect(() => controller.dispose, []);
