@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class MyDrawerButton extends ConsumerStatefulWidget {
+class MyDrawerButton extends StatefulHookConsumerWidget {
   const MyDrawerButton({
     super.key,
     required this.title,
@@ -12,39 +13,53 @@ class MyDrawerButton extends ConsumerStatefulWidget {
   final GlobalKey sectionKey;
 
   @override
-  ConsumerState<MyDrawerButton> createState() => MyDrawerButtonsState();
+  ConsumerState<MyDrawerButton> createState() => _MyDrawerButtonState();
 }
 
-class MyDrawerButtonsState extends ConsumerState<MyDrawerButton> {
-  TextStyle? titleStyle;
+class _MyDrawerButtonState extends ConsumerState<MyDrawerButton> {
+  late ColorTween colorTween;
 
   @override
   void didChangeDependencies() {
-    titleStyle = Theme.of(context).textTheme.headlineMedium;
+    colorTween = ColorTween(
+      begin: Theme.of(context).colorScheme.inverseSurface,
+      end: Theme.of(context).colorScheme.onSecondary,
+    );
     super.didChangeDependencies();
   }
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onHover: (_) {
-        setState(() {
-          titleStyle = Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onSecondary,
-              );
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          titleStyle = Theme.of(context).textTheme.headlineMedium;
-        });
-      },
-      child: GestureDetector(
-        onTap: () => _onTap(context),
-        child: Text(
-          widget.title,
-          style: titleStyle,
+    final isHovered = useState(false);
+    final controller = useAnimationController(
+      duration: const Duration(milliseconds: 200),
+      reverseDuration: const Duration(milliseconds: 150),
+    );
+    final colorAnimation = useAnimation(colorTween.animate(controller));
+    useEffect(() => controller.dispose, []);
+
+    return DefaultTextStyle(
+      style: Theme.of(context).textTheme.headlineMedium!,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        onEnter: (_) {
+          if (!isHovered.value) {
+            isHovered.value = true;
+            controller.forward();
+          }
+        },
+        onExit: (_) {
+          if (isHovered.value) {
+            isHovered.value = false;
+            controller.reverse();
+          }
+        },
+        child: GestureDetector(
+          onTap: () => _onTap(context),
+          child: Text(
+            widget.title,
+            style: TextStyle(color: colorAnimation),
+          ),
         ),
       ),
     );

@@ -1,74 +1,71 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/utils/launch_url_helper.dart';
 import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
 
-class Link extends ConsumerStatefulWidget {
+class Link extends StatefulHookConsumerWidget {
   const Link({
     super.key,
     required this.url,
     this.displayLink,
     this.displayLeadingIcon = false,
     this.underlined = false,
-    this.hoverColor,
+    this.hoverColor = Colors.blue,
   });
 
   final String url;
   final String? displayLink;
   final bool displayLeadingIcon;
   final bool underlined;
-  final Color? hoverColor;
+  final Color hoverColor;
 
   @override
-  ConsumerState<Link> createState() => _LinksState();
+  ConsumerState<Link> createState() => _LinkState();
 }
 
-class _LinksState extends ConsumerState<Link> {
-  TextStyle? _linkStyle;
+class _LinkState extends ConsumerState<Link> {
+  late ColorTween colorTween;
 
   @override
   void didChangeDependencies() {
-    _linkStyle = TextStyle(
-      decoration: widget.underlined ? TextDecoration.underline : null,
+    colorTween = ColorTween(
+      begin: Theme.of(context).colorScheme.inverseSurface,
+      end: widget.hoverColor,
     );
     super.didChangeDependencies();
   }
 
   @override
   Widget build(BuildContext context) {
+    final isHovered = useState(false);
+    final controller = useAnimationController(
+      duration: const Duration(milliseconds: 200),
+      reverseDuration: const Duration(milliseconds: 150),
+    );
+    final colorAnimation = useAnimation(colorTween.animate(controller));
+    useEffect(() => controller.dispose, []);
+
     return DefaultSelectionStyle(
       selectionColor: Theme.of(context).colorScheme.tertiary,
       mouseCursor: MouseCursor.defer,
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
-        onHover: (_) {
-          setState(() {
-            _linkStyle = TextStyle(
-              decoration: widget.underlined ? TextDecoration.underline : null,
-              color: widget.hoverColor ?? Colors.blue,
-            );
-          });
+        onEnter: (_) {
+          if (!isHovered.value) {
+            isHovered.value = true;
+            controller.forward();
+          }
         },
         onExit: (_) {
-          setState(() {
-            _linkStyle = TextStyle(
-              decoration: widget.underlined ? TextDecoration.underline : null,
-            );
-          });
+          if (isHovered.value) {
+            isHovered.value = false;
+            controller.reverse();
+          }
         },
         child: GestureDetector(
-          onTap: () async {
-            try {
-              await LaunchUrlHelper.launchURL(widget.url);
-            } catch (e) {
-              if (!mounted) return;
-              ScaffoldMessengerHelper.showLaunchUrlError(
-                context,
-                url: widget.url,
-              );
-            }
-          },
+          onTap: () => _onTap(context),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -77,7 +74,7 @@ class _LinksState extends ConsumerState<Link> {
                   children: [
                     Icon(
                       Icons.link,
-                      color: _linkStyle?.color,
+                      color: colorAnimation,
                     ),
                     gapW4,
                   ],
@@ -85,7 +82,11 @@ class _LinksState extends ConsumerState<Link> {
               Flexible(
                 child: Text(
                   widget.displayLink ?? widget.url,
-                  style: _linkStyle,
+                  style: TextStyle(
+                    decoration:
+                        widget.underlined ? TextDecoration.underline : null,
+                    color: colorAnimation,
+                  ),
                 ),
               ),
             ],
@@ -93,5 +94,14 @@ class _LinksState extends ConsumerState<Link> {
         ),
       ),
     );
+  }
+
+  void _onTap(BuildContext context) async {
+    try {
+      await LaunchUrlHelper.launchURL(widget.url);
+    } catch (e) {
+      if (!context.mounted) return;
+      ScaffoldMessengerHelper.showLaunchUrlError(context, url: widget.url);
+    }
   }
 }
