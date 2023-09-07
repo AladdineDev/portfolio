@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/themes.dart' as themes;
+import 'package:portfolio/src/constants/transparent_image.dart';
 import 'package:portfolio/src/features/main/presentation/main_section.dart';
 import 'package:portfolio/src/features/main/provider/dark_mode_controller.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -17,7 +18,7 @@ class MyApp extends ConsumerStatefulWidget {
 class _MyAppState extends ConsumerState<MyApp> {
   @override
   void didChangeDependencies() {
-    _preCacheProjectImages();
+    _preCacheAllImages();
     super.didChangeDependencies();
   }
 
@@ -39,7 +40,8 @@ class _MyAppState extends ConsumerState<MyApp> {
     );
   }
 
-  void _preCacheProjectImages() {
+  void _preCacheAllImages() {
+    // Projects
     final projects = ref.read(projectRepositoryProvider).getProjects();
     for (var project in projects) {
       final projectScreenshotUrl = project.screenshotUrl;
@@ -48,5 +50,7 @@ class _MyAppState extends ConsumerState<MyApp> {
         precacheImage(projectImage, context);
       }
     }
+    // Placeholder
+    precacheImage(MemoryImage(transparentImage), context);
   }
 }

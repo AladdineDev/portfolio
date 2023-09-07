@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:portfolio/src/constants/transparent_image.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 
 class ProjectImage extends ConsumerWidget {
@@ -90,10 +91,11 @@ class ProjectImage extends ConsumerWidget {
   Widget _buildScreenshotImage(BuildContext context) {
     final screenshotUrl = project.screenshotUrl;
     if (screenshotUrl == null) return const Icon(Icons.code);
-    return Image.asset(
-      screenshotUrl,
+    return FadeInImage(
+      placeholder: MemoryImage(transparentImage),
+      image: AssetImage(screenshotUrl),
+      imageErrorBuilder: (_, __, ___) => const Placeholder(),
       fit: BoxFit.cover,
-      errorBuilder: (_, __, ___) => const Placeholder(),
     );
   }
 
