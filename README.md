@@ -41,7 +41,7 @@ $ flutter pub get
 
 **1. Run the code generator:**
 ```bash
-$ dart run build_runner build
+$ dart run build_runner watch --delete-conflicting-outputs
 ```
 
 > For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
