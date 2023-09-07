@@ -96,6 +96,7 @@ class ProjectImage extends ConsumerWidget {
       image: AssetImage(screenshotUrl),
       imageErrorBuilder: (_, __, ___) => const Placeholder(),
       fit: BoxFit.cover,
+      placeholderFit: BoxFit.cover,
     );
   }
 
