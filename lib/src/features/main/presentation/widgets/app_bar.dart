@@ -26,14 +26,26 @@ class MyAppBar extends ConsumerWidget {
         titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
               fontWeight: FontWeight.bold,
             ),
-        title: AnimatedFadeSlide(
-          offset: const Offset(-64, 0),
-          child: Row(
-            children: [
-              const Icon(FontAwesomeIcons.terminal),
-              const SizedBox(width: 12),
-              Text(tr(LocaleKeys.portfolio)),
-            ],
+        title: MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: () => _scrollToTop(context, ref),
+            child: SizedBox(
+              height: 56,
+              child: SelectionContainer.disabled(
+                child: AnimatedFadeSlide(
+                  offset: const Offset(-64, 0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(FontAwesomeIcons.terminal),
+                      const SizedBox(width: 12),
+                      Text(tr(LocaleKeys.portfolio)),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
         actions: [
@@ -72,6 +84,14 @@ class MyAppBar extends ConsumerWidget {
         ],
       ),
     );
+  }
+
+  void _scrollToTop(BuildContext context, WidgetRef ref) {
+    if (Responsive.isDesktop(context)) {
+      _onAppBarButtonTap(ref.watch(aboutSectionKeyProvider));
+    } else {
+      _onAppBarButtonTap(ref.watch(homeSectionKeyProvider));
+    }
   }
 
   void _onAppBarButtonTap(GlobalKey sectionKey) {
