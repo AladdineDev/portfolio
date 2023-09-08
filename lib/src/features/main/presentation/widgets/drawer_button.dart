@@ -35,7 +35,7 @@ class _MyDrawerButtonState extends ConsumerState<MyDrawerButton> {
       duration: const Duration(milliseconds: 200),
     );
     final colorAnimation = useAnimation(colorTween.animate(controller));
-    useEffect(() => controller.dispose, []);
+    useEffect(() => controller.dispose, const []);
 
     return DefaultTextStyle(
       style: Theme.of(context).textTheme.headlineMedium!,

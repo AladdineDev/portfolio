@@ -44,7 +44,7 @@ class _LinkState extends ConsumerState<Link> {
       duration: const Duration(milliseconds: 200),
     );
     final colorAnimation = useAnimation(colorTween.animate(controller));
-    useEffect(() => controller.dispose, []);
+    useEffect(() => controller.dispose, const []);
 
     return DefaultSelectionStyle(
       selectionColor: Theme.of(context).colorScheme.tertiary,
