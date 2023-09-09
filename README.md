@@ -25,7 +25,7 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 
 These are the main packages used in the app:
 
-- [Hooks Riverpod](https://pub.dev/packages/flutter_riverpod) for state-management
+- [Hooks Riverpod](https://pub.dev/packages/hooks_riverpod) for state-management
 - [Flutter Hooks](https://pub.dev/packages/flutter_hooks) to reduce boilerplate code of stateful widgets and increase code reusability
 - [Freezed](https://pub.dev/packages/freezed) to reduce boilerplate code in model classes
 - [Flex Color Scheme](https://pub.dev/packages/flex_color_scheme) to make AWESOME Flutter Material Design themes
