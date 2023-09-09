@@ -25,14 +25,14 @@ class ProjectImage extends ConsumerWidget {
             maxWidth: 600,
           ),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
+            borderRadius: BorderRadius.circular(12),
             border: Border.all(
               width: 4,
               color: Theme.of(context).colorScheme.tertiary.withAlpha(100),
             ),
           ),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(8),
             child: LayoutBuilder(
               builder: (context, constraints) {
                 final width = constraints.maxWidth;
