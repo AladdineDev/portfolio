@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-import 'package:portfolio/src/localization/localized_date_extension.dart';
+import 'package:portfolio/src/utils/localized_date_extension.dart';
 import 'package:portfolio/src/utils/string_extension.dart';
 
 class ExperienceDateText extends ConsumerWidget {
