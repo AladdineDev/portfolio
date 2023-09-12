@@ -87,11 +87,11 @@ Here's the template of a JSON translation file:
     }
   ],
 
-  // Credits (displayed in the bottom banner)
-  "credit": {
-    "message": "Inspired by", // Text at the beginning of the "to" part
-    "to": "Aladdine Abdou", // Text at the end of the "message" part
-    "url": "https://aladdine.dev" // URL to open when the "to" part is tapped
+  // Bottom banner
+  "bottomBanner": {
+    "message": "Open source portfolio -", // Text at the beginning of the "displayLink" part
+    "displayLink": "Fork it!", // Text at the end of the "message" part
+    "linkUrl": "https://github.com/aaldn/portfolio" // URL to open when the "displayLink" part is tapped
   },
 
   // Navigation and Section Titles
