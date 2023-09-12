@@ -99,8 +99,12 @@
             ],
             "links": [
                 {
-                    "url": "https://www.association-faire.fr",
-                    "display": "Association FAIRE"
+                    "url": "https://aladdine.dev",
+                    "display": "Inspiré par Aladdine Abdou"
+                },
+                {
+                    "url": "https://brittanychiang.com",
+                    "display": "Inspiré par Brittany Chiang"
                 }
             ]
         }
@@ -109,7 +113,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "Oui, il s'agit de CE portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
+            "description": "Oui, il s'agit de ce portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
             "url": "https://github.com/Aaldn/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
@@ -122,8 +126,12 @@
             ],
             "links": [
                 {
+                    "url": "https://aladdine.dev",
+                    "display": "Inspiré par Aladdine Abdou"
+                },
+                {
                     "url": "https://brittanychiang.com",
-                    "display": "Design inspiré par Brittany Chiang"
+                    "display": "Inspiré par Brittany Chiang"
                 }
             ]
         },
@@ -214,10 +222,10 @@
             "nativeName": "Français"
         }
     ],
-    "credit": {
-        "message": "Inspiré par",
-        "to": "Aladdine Abdou",
-        "url": "https://aladdine.dev"
+    "bottomBanner": {
+        "message": "Portfolio open source -",
+        "displayLink": "Forkez-le !",
+        "linkUrl": "https://github.com/aaldn/portfolio"
     },
     "portfolio": "Portfolio",
     "homeSectionTitle": "Accueil",

@@ -25,11 +25,11 @@ class BottomBanner extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "${tr(LocaleKeys.credit_message)} ",
+                "${tr(LocaleKeys.bottomBanner_message)} ",
               ),
               Link(
-                url: tr(LocaleKeys.credit_url),
-                displayLink: tr(LocaleKeys.credit_to),
+                url: tr(LocaleKeys.bottomBanner_linkUrl),
+                displayLink: tr(LocaleKeys.bottomBanner_displayLink),
                 underlined: true,
                 hoverColor: Theme.of(context).colorScheme.onSurface,
               ),

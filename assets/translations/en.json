@@ -109,7 +109,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
+            "description": "Yes, it's this portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
             "url": "https://github.com/Aaldn/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
@@ -122,8 +122,12 @@
             ],
             "links": [
                 {
+                    "url": "https://aladdine.dev",
+                    "display": "Inspired by Aladdine Abdou"
+                },
+                {
                     "url": "https://brittanychiang.com",
-                    "display": "Design inspired by Brittany Chiang"
+                    "display": "Inspired by Brittany Chiang"
                 }
             ]
         },
@@ -214,10 +218,10 @@
             "nativeName": "Français"
         }
     ],
-    "credit": {
-        "message": "Inspired by",
-        "to": "Aladdine Abdou",
-        "url": "https://aladdine.dev"
+    "bottomBanner": {
+        "message": "Open source portfolio -",
+        "displayLink": "Fork it!",
+        "linkUrl": "https://github.com/aaldn/portfolio"
     },
     "portfolio": "Portfolio",
     "homeSectionTitle": "Home",
