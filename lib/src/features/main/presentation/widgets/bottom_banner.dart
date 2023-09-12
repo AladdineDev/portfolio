@@ -27,7 +27,7 @@ class BottomBanner extends ConsumerWidget {
               Text(
                 "${tr(LocaleKeys.bottomBanner_message)} ",
               ),
-              Link(
+              LinkWidget(
                 url: tr(LocaleKeys.bottomBanner_linkUrl),
                 displayLink: tr(LocaleKeys.bottomBanner_displayLink),
                 underlined: true,

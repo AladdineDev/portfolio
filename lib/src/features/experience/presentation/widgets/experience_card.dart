@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:portfolio/src/common/widgets/technology_wrap_chips.dart';
+import 'package:portfolio/src/common/widgets/wrap_links.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
-import 'package:portfolio/src/common/widgets/link.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
-import 'package:portfolio/src/common/widgets/technology_chip.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/localization/localized_date_extension.dart';
 import 'package:portfolio/src/utils/launch_url_helper.dart';
@@ -133,31 +133,12 @@ class ExperienceCard extends ConsumerWidget {
   Widget _buildChips() {
     final experienceTechnologies = experience.technologies;
     if (experienceTechnologies == null) return const SizedBox.shrink();
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: experienceTechnologies.map((technology) {
-        return TechnologyChip(name: technology);
-      }).toList(),
-    );
+    return TechnologyWrapChips(titles: experienceTechnologies);
   }
 
   Widget _buildLinks() {
     final experienceLinks = experience.links;
     if (experienceLinks == null) return const SizedBox.shrink();
-    return Wrap(
-      spacing: 16,
-      runSpacing: 4,
-      children: experienceLinks.where((link) => link.url != null).map((link) {
-        final experienceLinkUrl = link.url;
-        final experienceLinkDisplay = link.display;
-        if (experienceLinkUrl == null) return const SizedBox.shrink();
-        return Link(
-          url: experienceLinkUrl,
-          displayLink: experienceLinkDisplay ?? experienceLinkUrl,
-          displayLeadingIcon: true,
-        );
-      }).toList(),
-    );
+    return WrapLinks(links: experienceLinks);
   }
 }

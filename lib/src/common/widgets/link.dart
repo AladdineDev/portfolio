@@ -5,8 +5,8 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/utils/launch_url_helper.dart';
 import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
 
-class Link extends StatefulHookConsumerWidget {
-  const Link({
+class LinkWidget extends StatefulHookConsumerWidget {
+  const LinkWidget({
     super.key,
     required this.url,
     this.displayLink,
@@ -22,10 +22,10 @@ class Link extends StatefulHookConsumerWidget {
   final Color hoverColor;
 
   @override
-  ConsumerState<Link> createState() => _LinkState();
+  ConsumerState<LinkWidget> createState() => _LinkState();
 }
 
-class _LinkState extends ConsumerState<Link> {
+class _LinkState extends ConsumerState<LinkWidget> {
   late ColorTween colorTween;
 
   @override

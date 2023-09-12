@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:portfolio/src/common/widgets/link.dart';
+import 'package:portfolio/src/common/widgets/technology_wrap_chips.dart';
+import 'package:portfolio/src/common/widgets/wrap_links.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
-import 'package:portfolio/src/common/widgets/technology_chip.dart';
 
 class ProjectDescription extends ConsumerWidget {
   const ProjectDescription({super.key, required this.project});
@@ -55,31 +55,12 @@ class ProjectDescription extends ConsumerWidget {
   Widget _buildChips() {
     final projectTechnologies = project.technologies;
     if (projectTechnologies == null) return const SizedBox.shrink();
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: projectTechnologies.map((technology) {
-        return TechnologyChip(name: technology);
-      }).toList(),
-    );
+    return TechnologyWrapChips(titles: projectTechnologies);
   }
 
   Widget _buildLinks(BuildContext context) {
     final projectLinks = project.links;
     if (projectLinks == null) return const SizedBox.shrink();
-    return Wrap(
-      spacing: 16,
-      runSpacing: 4,
-      children: projectLinks.where((link) => link.url != null).map((link) {
-        final projectLinkUrl = link.url;
-        final projectLinkDisplay = link.display;
-        if (projectLinkUrl == null) return const SizedBox.shrink();
-        return Link(
-          url: projectLinkUrl,
-          displayLink: projectLinkDisplay ?? projectLinkUrl,
-          displayLeadingIcon: true,
-        );
-      }).toList(),
-    );
+    return WrapLinks(links: projectLinks);
   }
 }
