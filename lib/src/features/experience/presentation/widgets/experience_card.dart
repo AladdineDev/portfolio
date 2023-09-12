@@ -87,7 +87,7 @@ class ExperienceCard extends ConsumerWidget {
                   children: [
                     _buildLinks(),
                     if (experience.links?.isNotEmpty == true) gapH12 else gapH4,
-                    _buildChips(context),
+                    _buildChips(),
                   ],
                 ),
               ],
@@ -130,7 +130,7 @@ class ExperienceCard extends ConsumerWidget {
     );
   }
 
-  Widget _buildChips(BuildContext context) {
+  Widget _buildChips() {
     final experienceTechnologies = experience.technologies;
     if (experienceTechnologies == null) return const SizedBox.shrink();
     return Wrap(
@@ -148,7 +148,7 @@ class ExperienceCard extends ConsumerWidget {
     return Wrap(
       spacing: 16,
       runSpacing: 4,
-      children: experienceLinks.map((link) {
+      children: experienceLinks.where((link) => link.url != null).map((link) {
         final experienceLinkUrl = link.url;
         final experienceLinkDisplay = link.display;
         if (experienceLinkUrl == null) return const SizedBox.shrink();

@@ -45,14 +45,14 @@ class ProjectDescription extends ConsumerWidget {
           children: [
             _buildLinks(context),
             if (project.links?.isNotEmpty == true) gapH12 else gapH4,
-            _buildChips(context),
+            _buildChips(),
           ],
         ),
       ],
     );
   }
 
-  Widget _buildChips(BuildContext context) {
+  Widget _buildChips() {
     final projectTechnologies = project.technologies;
     if (projectTechnologies == null) return const SizedBox.shrink();
     return Wrap(
@@ -70,7 +70,7 @@ class ProjectDescription extends ConsumerWidget {
     return Wrap(
       spacing: 16,
       runSpacing: 4,
-      children: projectLinks.map((link) {
+      children: projectLinks.where((link) => link.url != null).map((link) {
         final projectLinkUrl = link.url;
         final projectLinkDisplay = link.display;
         if (projectLinkUrl == null) return const SizedBox.shrink();
