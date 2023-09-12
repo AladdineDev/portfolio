@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/widgets/technology_wrap_chips.dart';
@@ -6,11 +5,9 @@ import 'package:portfolio/src/common/widgets/wrap_links.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
-import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
-import 'package:portfolio/src/localization/localized_date_extension.dart';
+import 'package:portfolio/src/features/experience/presentation/widgets/experience_date_text.dart';
 import 'package:portfolio/src/utils/launch_url_helper.dart';
 import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
-import 'package:portfolio/src/utils/string_extension.dart';
 
 class ExperienceCard extends ConsumerWidget {
   const ExperienceCard({super.key, required this.experience});
@@ -50,7 +47,7 @@ class ExperienceCard extends ConsumerWidget {
                     ),
                     gapW24,
                     if (!Responsive.isMobile(context))
-                      _buildExperienceDateText(context, ref),
+                      ExperienceDateText(experience: experience),
                   ],
                 ),
                 if (Responsive.isMobile(context))
@@ -62,7 +59,7 @@ class ExperienceCard extends ConsumerWidget {
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       gapH4,
-                      _buildExperienceDateText(context, ref),
+                      ExperienceDateText(experience: experience),
                     ],
                   )
                 else
@@ -108,26 +105,6 @@ class ExperienceCard extends ConsumerWidget {
         ScaffoldMessengerHelper.showLaunchUrlError(context, url: url);
       }
     }
-  }
-
-  Widget _buildExperienceDateText(BuildContext context, WidgetRef ref) {
-    final locale = context.locale;
-    final startMonth = experience.startMonth?.localizedMonth(locale) ?? "";
-    final startYear = experience.startYear?.localizedYear(locale);
-    final startDate = startMonth.isEmpty ? startYear : "$startMonth $startYear";
-    final endMonth = experience.endMonth?.localizedMonth(locale) ?? "";
-    final endYear = experience.endYear?.localizedYear(locale);
-    String? endDate;
-    if (experience.isPresent == true) {
-      endDate = tr(LocaleKeys.present);
-    } else {
-      endDate = endMonth.isEmpty ? endYear : "$endMonth $endYear";
-    }
-    if (startDate == null || endDate == null) return const Text("");
-    return Text(
-      "${startDate.capitalize()} - ${endDate.capitalize()}",
-      style: Theme.of(context).textTheme.bodyMedium,
-    );
   }
 
   Widget _buildChips() {
