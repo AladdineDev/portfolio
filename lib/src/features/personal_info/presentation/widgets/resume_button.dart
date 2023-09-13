@@ -9,60 +9,78 @@ import 'package:portfolio/src/utils/launch_url_helper.dart';
 import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class ResumeButton extends ConsumerWidget {
+class ResumeButton extends ConsumerStatefulWidget {
   const ResumeButton({super.key, required this.resumes});
 
   final List<Resume> resumes;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return SelectionContainer.disabled(
-      child: OutlinedButton(
-        style: OutlinedButton.styleFrom(
-          backgroundColor:
-              Theme.of(context).colorScheme.tertiary.withOpacity(0.1),
-          side: BorderSide(
-            width: 2,
-            color: Theme.of(context).colorScheme.tertiary,
+  ConsumerState<ResumeButton> createState() => _ResumeButtonState();
+}
+
+class _ResumeButtonState extends ConsumerState<ResumeButton> {
+  bool _isHovered = false;
+  void _hoverEffectOn() => setState(() => _isHovered = true);
+  void _hoverEffectOff() => setState(() => _isHovered = false);
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => _hoverEffectOn(),
+      onExit: (_) => _hoverEffectOff(),
+      child: GestureDetector(
+        onLongPress: _hoverEffectOn,
+        onLongPressUp: _hoverEffectOff,
+        child: SelectionContainer.disabled(
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              backgroundColor: _isHovered
+                  ? Theme.of(context).colorScheme.tertiary.withOpacity(0.1)
+                  : null,
+              side: BorderSide(
+                width: _isHovered ? 2 : 1,
+                color: Theme.of(context).colorScheme.tertiary,
+              ),
+              elevation: 16,
+              shape: const StadiumBorder(),
+              padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 12),
+            ),
+            onPressed: () => _onPressed(context, ref),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              textBaseline: TextBaseline.alphabetic,
+              children: [
+                Icon(
+                  FontAwesomeIcons.filePdf,
+                  color: Theme.of(context).colorScheme.inverseSurface,
+                ),
+                gapW12,
+                Text(
+                  tr(LocaleKeys.resume),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleMedium
+                      ?.copyWith(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ),
-          elevation: 16,
-          shape: const StadiumBorder(),
-          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 12),
-        ),
-        onPressed: () => _onPressed(context, ref),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          textBaseline: TextBaseline.alphabetic,
-          children: [
-            Icon(
-              FontAwesomeIcons.filePdf,
-              color: Theme.of(context).colorScheme.inverseSurface,
-            ),
-            gapW12,
-            Text(
-              tr(LocaleKeys.resume),
-              style: Theme.of(context)
-                  .textTheme
-                  .titleMedium
-                  ?.copyWith(fontWeight: FontWeight.bold),
-            ),
-          ],
         ),
       ),
     );
   }
 
   Future<void> _onPressed(BuildContext context, WidgetRef ref) async {
-    if (resumes.length > 1) {
+    if (widget.resumes.length > 1) {
       showAdaptiveDialog(
         barrierDismissible: true,
         context: context,
-        builder: (context) => ResumeLanguageDialog(resumes: resumes),
+        builder: (context) => ResumeLanguageDialog(resumes: widget.resumes),
       );
-    } else if (resumes.length == 1) {
-      final resumeFirstUrl = resumes.first.url;
+    } else if (widget.resumes.length == 1) {
+      final resumeFirstUrl = widget.resumes.first.url;
       if (resumeFirstUrl == null) {
         ScaffoldMessengerHelper.showLaunchUrlError(context);
       } else {
