@@ -68,7 +68,7 @@
             ]
         },
         {
-            "job": "Développeur Web Mobile",
+            "job": "Développeur Mobile",
             "company": "Solutions Multi Techniques",
             "description": "Développement d'une Progressive Web App à destination des techniciens en systèmes de sécurité, leur permettant de générer des devis complets au format PDF en y incluant des photos. Cela permet de délivrer les devis aux clients immédiatement après la visite.",
             "startYear": 2022,
@@ -98,10 +98,6 @@
                 "Apache"
             ],
             "links": [
-                {
-                    "url": "https://aladdine.dev",
-                    "display": "Inspiré par Aladdine Abdou"
-                },
                 {
                     "url": "https://brittanychiang.com",
                     "display": "Inspiré par Brittany Chiang"

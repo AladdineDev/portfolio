@@ -1,6 +1,6 @@
 {
     "name": "Aladdine Abdou",
-    "description": "Mobile Developer",
+    "description": "Mobile App Developer",
     "subDescription": "Flutter & Android Enthusiast",
     "contacts": [
         {
@@ -45,7 +45,7 @@
     "aboutDescription": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
     "experiences": [
         {
-            "job": "Mobile Developer",
+            "job": "Mobile App Developer",
             "company": "Walt Disney Imagineering",
             "description": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.",
             "isPresent": true,
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "job": "Mobile Web Developer",
+            "job": "Mobile App Developer",
             "company": "Solutions Multi Techniques",
             "description": "Development of a Progressive Web App for security systems technicians, that allows them to generate comprehensive quotes in PDF format including photos. This enables immediate delivery of quotes to customers after the visit.",
             "startYear": 2022,
@@ -121,10 +121,6 @@
                 "Firebase"
             ],
             "links": [
-                {
-                    "url": "https://aladdine.dev",
-                    "display": "Inspired by Aladdine Abdou"
-                },
                 {
                     "url": "https://brittanychiang.com",
                     "display": "Inspired by Brittany Chiang"
