@@ -10,8 +10,8 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 
 ## [Live Preview](https://aladdine.dev) 👀
 
-<img src="assets/screenshots/mockups-1.png">
-<img src="assets/screenshots/mockups-2.png">
+<img src="assets/images/mockups-1.png">
+<img src="assets/images/mockups-2.png">
 
 ## Features ✨
 
