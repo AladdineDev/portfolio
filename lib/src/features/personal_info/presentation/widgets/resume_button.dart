@@ -19,6 +19,8 @@ class ResumeButton extends ConsumerWidget {
     return SelectionContainer.disabled(
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
+          backgroundColor:
+              Theme.of(context).colorScheme.tertiary.withOpacity(0.1),
           side: BorderSide(
             width: 2,
             color: Theme.of(context).colorScheme.tertiary,
