@@ -99,6 +99,10 @@
             ],
             "links": [
                 {
+                    "url": "https://aladdine.dev",
+                    "display": "Inspiré par Aladdine Abdou"
+                },
+                {
                     "url": "https://brittanychiang.com",
                     "display": "Inspiré par Brittany Chiang"
                 }
@@ -221,7 +225,7 @@
     "bottomBanner": {
         "message": "Portfolio open source -",
         "displayLink": "Forkez-le !",
-        "linkUrl": "https://github.com/aaldn/portfolio"
+        "linkUrl": "https://github.com/Aaldn/portfolio#readme"
     },
     "portfolio": "Portfolio",
     "homeSectionTitle": "Accueil",
