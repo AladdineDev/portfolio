@@ -110,7 +110,7 @@ i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
 ? Which platforms should your configuration support (use arrow keys & space to select)? › 
 ✔ android                                                
 ✔ ios                                                    
-  macos                                                  
+✔ macos                                                  
 ✔ web                                                    
 ```
 
