@@ -19,7 +19,8 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 💙 Implements the [Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/) by [Andrea Bizzotto](https://github.com/bizz84)\
 💙 Implements a feature-first structure\
 💙 Supports multi languages\
-💙 Supports multi themes
+💙 Supports multi themes\
+💙 Supports multi-platform (Android, iOS, macOS, Web)
 
 ## Packages in use 📦
 
