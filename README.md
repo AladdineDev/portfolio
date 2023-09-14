@@ -35,7 +35,7 @@ These are the main packages used in the app:
 - [Easy Localization](https://pub.dev/packages/easy_localization) for... easy localization
 - [Intl](https://pub.dev/packages/intl) for date formatting
 - [Shared Preferences](https://pub.dev/packages/shared_preferences) for persistent storage (used to store theme state)
-- [Firebase Core](https://pub.dev/packages/firebase_core) to connect to a firebase app (used for hosting)
+- [Firebase Core](https://pub.dev/packages/firebase_core) and [Firebase Core Desktop](https://pub.dev/packages/firebase_core_desktop) to connect to a firebase app (used for hosting)
 
 See the [`pubspec.yaml`](pubspec.yaml) file for the complete list
 
