@@ -20,7 +20,7 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 💙 Implements a feature-first structure\
 💙 Supports multi languages\
 💙 Supports multi themes\
-💙 Supports multi-platform (Android, iOS, macOS, Web)
+💙 Supports multi-platform (Android, iOS, macOS, Windows, Linux, Web)
 
 ## Packages in use 📦
 
@@ -113,6 +113,8 @@ i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
 ✔ ios                                                    
 ✔ macos                                                  
 ✔ web                                                    
+✔ windows                                                
+✔ linux                                                  
 ```
 
 > For additional information, refer to the [Firebase setup](https://firebase.google.com/docs/flutter/setup?platform=ios) documentation
