@@ -16,16 +16,18 @@ class ExperienceCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+
     return Material(
-      color: Theme.of(context).colorScheme.primary,
+      color: theme.colorScheme.primary,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         mouseCursor: MaterialStateMouseCursor.textable,
         onTap: () => _onTap(context),
         borderRadius: BorderRadius.circular(20),
-        hoverColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
-        splashColor: Theme.of(context).colorScheme.tertiary.withAlpha(30),
-        highlightColor: Theme.of(context).colorScheme.tertiary.withAlpha(20),
+        hoverColor: theme.colorScheme.tertiary.withAlpha(40),
+        splashColor: theme.colorScheme.tertiary.withAlpha(30),
+        highlightColor: theme.colorScheme.tertiary.withAlpha(20),
         child: MouseRegion(
           cursor: SystemMouseCursors.basic,
           child: Padding(
@@ -39,9 +41,7 @@ class ExperienceCard extends ConsumerWidget {
                     Flexible(
                       child: Text(
                         experience.job ?? "",
-                        style: Theme.of(context)
-                            .textTheme
-                            .titleMedium
+                        style: theme.textTheme.titleMedium
                             ?.copyWith(fontWeight: FontWeight.bold),
                       ),
                     ),
@@ -56,7 +56,7 @@ class ExperienceCard extends ConsumerWidget {
                     children: [
                       Text(
                         experience.company ?? "",
-                        style: Theme.of(context).textTheme.titleMedium,
+                        style: theme.textTheme.titleMedium,
                       ),
                       gapH4,
                       ExperienceDateText(experience: experience),
@@ -65,7 +65,7 @@ class ExperienceCard extends ConsumerWidget {
                 else
                   Text(
                     experience.company ?? "",
-                    style: Theme.of(context).textTheme.titleMedium,
+                    style: theme.textTheme.titleMedium,
                   ),
                 gapH8,
                 Row(
@@ -73,7 +73,7 @@ class ExperienceCard extends ConsumerWidget {
                     Expanded(
                       child: Text(
                         experience.description ?? "",
-                        style: Theme.of(context).textTheme.bodyMedium,
+                        style: theme.textTheme.bodyMedium,
                       ),
                     ),
                   ],

@@ -25,6 +25,8 @@ class _ResumeButtonState extends ConsumerState<ResumeButton> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return MouseRegion(
       onEnter: (_) => _hoverEffectOn(),
       onExit: (_) => _hoverEffectOff(),
@@ -35,11 +37,11 @@ class _ResumeButtonState extends ConsumerState<ResumeButton> {
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
               backgroundColor: _isHovered
-                  ? Theme.of(context).colorScheme.tertiary.withOpacity(0.1)
+                  ? theme.colorScheme.tertiary.withOpacity(0.1)
                   : null,
               side: BorderSide(
                 width: _isHovered ? 2 : 1,
-                color: Theme.of(context).colorScheme.tertiary,
+                color: theme.colorScheme.tertiary,
               ),
               elevation: 16,
               shape: const StadiumBorder(),
@@ -54,14 +56,12 @@ class _ResumeButtonState extends ConsumerState<ResumeButton> {
               children: [
                 Icon(
                   FontAwesomeIcons.filePdf,
-                  color: Theme.of(context).colorScheme.inverseSurface,
+                  color: theme.colorScheme.inverseSurface,
                 ),
                 gapW12,
                 Text(
                   tr(LocaleKeys.resume),
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium
+                  style: theme.textTheme.titleMedium
                       ?.copyWith(fontWeight: FontWeight.bold),
                 ),
               ],
