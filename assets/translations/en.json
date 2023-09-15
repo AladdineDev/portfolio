@@ -42,13 +42,13 @@
             "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
         }
     ],
-    "aboutDescription": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+    "aboutDescription": "Hello! I'm Aladdine, an apprentice developer and fourth-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
     "experiences": [
         {
             "job": "Mobile App Developer",
             "company": "Walt Disney Imagineering",
             "description": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.",
-            "isPresent": true,
+            "isPresent": false,
             "startYear": 2022,
             "endYear": 2023,
             "technologies": [
@@ -121,7 +121,7 @@
                 "Firebase"
             ],
             "links": [
-                {
+{
                     "url": "https://aladdine.dev",
                     "display": "Inspired by Aladdine Abdou"
                 },

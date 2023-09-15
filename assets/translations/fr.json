@@ -42,13 +42,13 @@
             "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
         }
     ],
-    "aboutDescription": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en troisième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
+    "aboutDescription": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en quatrième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
     "experiences": [
         {
             "job": "Développeur Mobile",
             "company": "Walt Disney Imagineering",
             "description": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant aux experts techniques la prise d'informations sur le terrain et fluidifiant la communication avec les services de maintenance pour la résolution des problèmes.",
-            "isPresent": true,
+            "isPresent": false,
             "startYear": 2022,
             "endYear": 2023,
             "technologies": [
@@ -125,7 +125,7 @@
                 "Firebase"
             ],
             "links": [
-                {
+{
                     "url": "https://aladdine.dev",
                     "display": "Inspiré par Aladdine Abdou"
                 },
