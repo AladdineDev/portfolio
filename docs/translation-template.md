@@ -71,8 +71,8 @@ Here's the template of a JSON translation file:
       ],
       "links": [
         {
-          "url": "https://brittanychiang.com", // URL to open when the corresponding link is tapped
-          "display": "Design inspired by Brittany Chiang" // Displayed text for the link
+          "url": "https://aladdine.dev", // URL to open when the corresponding link is tapped
+          "display": "Inspired by Aladdine Abdou" // Displayed text for the link
         }
       ]
     }
