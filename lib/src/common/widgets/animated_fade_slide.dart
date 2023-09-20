@@ -36,7 +36,7 @@ class AnimatedFadeSlide extends HookConsumerWidget {
           controller.forward();
         }
       });
-      return controller.dispose;
+      return null;
     }, [controller]);
 
     return AnimatedBuilder(
