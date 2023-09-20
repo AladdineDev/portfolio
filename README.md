@@ -16,11 +16,11 @@ Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
 ## Features ✨
 
 💙 Responsive and adaptive design, inspired by [Brittany Chiang](https://brittanychiang.com)\
-💙 Implements the [Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/) by [Andrea Bizzotto](https://github.com/bizz84)\
-💙 Implements a feature-first structure\
-💙 Supports multi languages\
-💙 Supports multi themes\
-💙 Supports multi-platform (Android, iOS, macOS, Windows, Linux, Web)
+💙 [Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/) by [Andrea Bizzotto](https://github.com/bizz84)\
+💙 Feature-first structure\
+💙 Multiple languages\
+💙 Multiple themes\
+💙 Multi-platform (Android, iOS, macOS, Windows, Linux, Web)
 
 ## Packages in use 📦
 
