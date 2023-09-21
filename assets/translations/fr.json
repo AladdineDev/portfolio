@@ -70,7 +70,7 @@
         {
             "job": "Développeur Mobile",
             "company": "Solutions Multi Techniques",
-            "description": "Développement d'une Progressive Web App à destination des techniciens en systèmes de sécurité, leur permettant de générer des devis complets au format PDF en y incluant des photos. Cela permet de délivrer les devis aux clients immédiatement après la visite.",
+            "description": "Développement d'une Progressive Web App pour les techniciens en systèmes de sécurité, leur permettant de générer des devis PDF complets. Cela permet la remise immédiate des devis aux clients après leur visite, augmentant ainsi le taux de conversion.",
             "startYear": 2022,
             "startMonth": 1,
             "endYear": 2022,
