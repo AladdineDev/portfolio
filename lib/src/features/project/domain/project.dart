@@ -13,7 +13,7 @@ class Project with _$Project {
     String? iconCodePoint,
     String? iconFontFamily,
     String? iconFontPackage,
-    String? screenshotUrl,
+    String? screenshotPath,
     List<String>? technologies,
     List<Link>? links,
   }) = _Project;

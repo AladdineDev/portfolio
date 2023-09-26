@@ -65,7 +65,7 @@ Here's the template of a JSON translation file:
       "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
       "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
       "iconFontPackage": "font_awesome_flutter", // Name of the package providing the icon font (here, it's based on Font Awesome)
-      "screenshotUrl": "assets/images/portfolio.png", // screenshot url of the project, either from assets (assets/images/portfolio.png) or from network (https://cataas.com/cat)
+      "screenshotPath": "assets/images/portfolio.png", // screenshot asset path of the project
       "technologies": [
         "Flutter" // Technologies used in this project
       ],

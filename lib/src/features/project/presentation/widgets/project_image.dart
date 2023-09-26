@@ -89,11 +89,11 @@ class ProjectImage extends ConsumerWidget {
   }
 
   Widget _buildScreenshotImage(BuildContext context) {
-    final screenshotUrl = project.screenshotUrl;
-    if (screenshotUrl == null) return const Icon(Icons.code);
+    final screenshotPath = project.screenshotPath;
+    if (screenshotPath == null) return const Icon(Icons.code);
     return FadeInImage(
       placeholder: MemoryImage(transparentImage),
-      image: AssetImage(screenshotUrl),
+      image: AssetImage(screenshotPath),
       imageErrorBuilder: (_, __, ___) => const Placeholder(),
       fit: BoxFit.cover,
       placeholderFit: BoxFit.cover,
