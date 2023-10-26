@@ -159,7 +159,7 @@ Update your launcher icon and your splash screen in the [`flutter_launcher_icons
 
 Then, run:
 ```bash
-$ dart run flutter_launcher_icons -f flutter_launcher_icons-production.yaml
+$ dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
 $ dart run flutter_native_splash:create --path=flutter_native_splash-production.yaml
 ```
 
