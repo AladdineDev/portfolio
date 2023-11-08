@@ -1,7 +1,7 @@
 {
     "name": "Aladdine Abdou",
     "description": "Développeur Mobile",
-    "subDescription": "Passionné par Flutter & Android",
+    "subDescription": "Passionné par Flutter & Python",
     "contacts": [
         {
             "tooltip": "LinkedIn",
@@ -173,7 +173,8 @@
                 "PHP",
                 "Bootstrap",
                 "MariaDB",
-                "Apache"
+                "Apache",
+                "Docker"
             ]
         },
         {
