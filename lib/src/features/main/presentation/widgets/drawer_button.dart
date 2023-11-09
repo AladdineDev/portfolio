@@ -17,11 +17,11 @@ class MyDrawerButton extends StatefulHookConsumerWidget {
 }
 
 class _MyDrawerButtonState extends ConsumerState<MyDrawerButton> {
-  late ColorTween colorTween;
+  late ColorTween _colorTween;
 
   @override
   void didChangeDependencies() {
-    colorTween = ColorTween(
+    _colorTween = ColorTween(
       begin: Theme.of(context).colorScheme.inverseSurface,
       end: Theme.of(context).colorScheme.onSecondary,
     );
@@ -34,7 +34,7 @@ class _MyDrawerButtonState extends ConsumerState<MyDrawerButton> {
     final controller = useAnimationController(
       duration: const Duration(milliseconds: 200),
     );
-    final colorAnimation = useAnimation(colorTween.animate(controller));
+    final colorAnimation = useAnimation(_colorTween.animate(controller));
 
     return DefaultTextStyle(
       style: Theme.of(context).textTheme.headlineMedium!,

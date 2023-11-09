@@ -26,11 +26,11 @@ class LinkWidget extends StatefulHookConsumerWidget {
 }
 
 class _LinkState extends ConsumerState<LinkWidget> {
-  late ColorTween colorTween;
+  late ColorTween _colorTween;
 
   @override
   void didChangeDependencies() {
-    colorTween = ColorTween(
+    _colorTween = ColorTween(
       begin: Theme.of(context).colorScheme.inverseSurface,
       end: widget.hoverColor,
     );
@@ -43,7 +43,7 @@ class _LinkState extends ConsumerState<LinkWidget> {
     final controller = useAnimationController(
       duration: const Duration(milliseconds: 200),
     );
-    final colorAnimation = useAnimation(colorTween.animate(controller));
+    final colorAnimation = useAnimation(_colorTween.animate(controller));
 
     return DefaultSelectionStyle(
       selectionColor: Theme.of(context).colorScheme.tertiary,
