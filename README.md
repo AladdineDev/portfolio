@@ -59,7 +59,7 @@ $ flutter pub get
 
 **1. Run the code generator:**
 ```bash
-$ dart run build_runner build --delete-conflicting-outputs
+$ dart run build_runner build -d
 ```
 
 > For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
@@ -159,8 +159,8 @@ Update your launcher icon and your splash screen in the [`flutter_launcher_icons
 
 Then, run:
 ```bash
-$ dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
-$ dart run flutter_native_splash:create --path=flutter_native_splash-production.yaml
+$ dart run flutter_launcher_icons
+$ dart run flutter_native_splash:create
 ```
 
 > For additional information, refer to the [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) and [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) documentations
