@@ -40,6 +40,11 @@ class MainDesktop extends ConsumerWidget {
                           );
                         }
                       },
+                      onPointerPanZoomUpdate: (event) {
+                        scrollController.position.moveTo(
+                          scrollController.position.pixels + event.panDelta.dy,
+                        );
+                      },
                       child: MySelectionArea(
                         child: Container(
                           padding: const EdgeInsets.fromLTRB(100, 80, 100, 100),
