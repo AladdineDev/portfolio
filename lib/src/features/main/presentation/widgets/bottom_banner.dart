@@ -44,29 +44,31 @@ class _BottomBannerState extends ConsumerState<BottomBanner> {
       child: DefaultTextStyle(
         style: Theme.of(context).textTheme.titleSmall!,
         child: MySelectionArea(
-          child: Text.rich(
-            textAlign: TextAlign.center,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 2,
-            TextSpan(
-              children: [
-                TextSpan(
-                  text: "${tr(LocaleKeys.bottomBanner_message)} ",
-                ),
-                TextSpan(
-                  style: const TextStyle(
-                    decoration: TextDecoration.underline,
+          child: Center(
+            child: Text.rich(
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
+              maxLines: 2,
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: "${tr(LocaleKeys.bottomBanner_message)} ",
                   ),
-                  recognizer: TapGestureRecognizer()
-                    ..onTap = () {
-                      _onTap(
-                        context,
-                        url: tr(LocaleKeys.bottomBanner_linkUrl),
-                      );
-                    },
-                  text: tr(LocaleKeys.bottomBanner_displayLink),
-                ),
-              ],
+                  TextSpan(
+                    style: const TextStyle(
+                      decoration: TextDecoration.underline,
+                    ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        _onTap(
+                          context,
+                          url: tr(LocaleKeys.bottomBanner_linkUrl),
+                        );
+                      },
+                    text: tr(LocaleKeys.bottomBanner_displayLink),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
