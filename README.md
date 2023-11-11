@@ -155,7 +155,7 @@ Change the content of your description in the `build/web/index.html`:
 
 ### Theme 🎨
 **1. Launcher Icon and Splash Screen:**\
-Update your launcher icon and your splash screen in the [`flutter_launcher_icons-production.yaml`](flutter_launcher_icons-production.yaml) and the [`flutter_native_splash-production.yaml`](flutter_native_splash-production.yaml)
+Update your launcher icon and your splash screen in the [`pubspec.yaml`](pubspec.yaml)
 
 Then, run:
 ```bash
