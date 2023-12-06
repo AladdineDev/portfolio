@@ -43,7 +43,7 @@ See the [`pubspec.yaml`](pubspec.yaml) file for the complete list
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-Fork and clone this repository (see how to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
+[Fork](https://github.com/Aaldn/portfolio/fork) and clone this repository (see how to [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
 
 **Navigate to your portfolio directory :**
 ```bash
