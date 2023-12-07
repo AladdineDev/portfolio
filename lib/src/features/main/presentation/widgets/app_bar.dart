@@ -31,7 +31,7 @@ class MyAppBar extends ConsumerWidget {
           child: GestureDetector(
             onTap: () => _scrollToTop(context, ref),
             child: SizedBox(
-              height: 56,
+              height: kToolbarHeight,
               child: SelectionContainer.disabled(
                 child: AnimatedFadeSlide(
                   offset: const Offset(-64, 0),

@@ -22,7 +22,7 @@ class _BottomBannerState extends ConsumerState<BottomBanner> {
     final scrollController = ref.watch(scrollControllerProvider);
     final scrollPosition = scrollController.position;
     if (scrollPosition.pixels >= scrollPosition.maxScrollExtent - 64) {
-      setState(() => _height = 56);
+      setState(() => _height = kBottomNavigationBarHeight);
     } else {
       setState(() => _height = 0);
     }

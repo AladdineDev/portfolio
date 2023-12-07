@@ -15,7 +15,7 @@ class AppBarButton extends ConsumerWidget {
       shape: const Border(),
       onPressed: onPressed,
       child: SizedBox(
-        height: 56,
+        height: kToolbarHeight,
         child: Center(
           child: Text(
             title,
