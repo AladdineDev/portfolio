@@ -37,7 +37,7 @@ These are the main packages used in the app:
 
 See the [`pubspec.yaml`](pubspec.yaml) file for the complete list
 
-## Get started 🚀
+## Getting started 🚀
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
