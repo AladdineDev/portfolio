@@ -46,15 +46,3 @@ app.*.map.json
 # Dart generated files
 *.g.dart
 *.freezed.dart
-
-# Firebase configuration files
-.firebaserc
-lib/firebase_options.dart
-ios/Runner/GoogleService-Info.plist
-ios/firebase_app_id_file.json
-android/app/google-services.json
-macos/Runner/GoogleService-Info.plist
-macos/firebase_app_id_file.json
-
-# Firebase hosting
-.firebase/
