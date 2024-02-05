@@ -1,0 +1,232 @@
+{
+    "name": "Aladdine Abdou",
+    "description": "Développeur Mobile",
+    "subDescription": "Passionné par Flutter & Python",
+    "contacts": [
+        {
+            "tooltip": "LinkedIn",
+            "url": "https://www.linkedin.com/in/aladdine-abdou/",
+            "iconCodePoint": "0xf08c",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "Github",
+            "url": "https://github.com/AladdineDev",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "aladdine.abdou@gmail.com",
+            "url": "mailto:aladdine.abdou@gmail.com",
+            "iconCodePoint": "0xf0e0",
+            "iconFontFamily": "FontAwesomeSolid",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "+33 7 82 54 34 70",
+            "url": "tel:+33782543470",
+            "iconCodePoint": "0xf095",
+            "iconFontFamily": "FontAwesomeSolid",
+            "iconFontPackage": "font_awesome_flutter"
+        }
+    ],
+    "resumes": [
+        {
+            "languageCode": "en",
+            "url": "https://drive.google.com/file/d/1pVg6EjpZvixMcOkgRMGrhrkmAeIaSn3t/view?usp=sharing"
+        },
+        {
+            "languageCode": "fr",
+            "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
+        }
+    ],
+    "aboutDescription": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en quatrième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
+    "experiences": [
+        {
+            "job": "Développeur Mobile",
+            "company": "Walt Disney Imagineering",
+            "description": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant aux experts techniques la prise d'informations sur le terrain et fluidifiant la communication avec les services de maintenance pour la résolution des problèmes.",
+            "isPresent": false,
+            "startYear": 2022,
+            "endYear": 2023,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Django",
+                "Python",
+                "PostgreSQL",
+                "SQLite",
+                "Docker"
+            ],
+            "links": [
+                {
+                    "url": "https://sites.disney.com/waltdisneyimagineering/",
+                    "display": "Walt Disney Imagineering"
+                }
+            ]
+        },
+        {
+            "job": "Développeur Mobile",
+            "company": "Solutions Multi Techniques",
+            "description": "Développement d'une Progressive Web App pour les techniciens en systèmes de sécurité, leur permettant de générer des devis PDF complets. Cela permet la remise immédiate des devis aux clients après leur visite, augmentant ainsi le taux de conversion.",
+            "startYear": 2022,
+            "startMonth": 1,
+            "endYear": 2022,
+            "endMonth": 2,
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ]
+        },
+        {
+            "job": "Développeur Web",
+            "company": "Association FAIRE",
+            "description": "Développement du site web de l'association, en collaboration au sein d'un groupe de développeurs. Ce site web offre à ses visiteurs la possibilité d'en savoir plus sur l'association et de la rejoindre en tant que membres.\nÀ ce jour, le site web a attiré plus de 10 000 visites.",
+            "startYear": 2021,
+            "startMonth": 5,
+            "endYear": 2021,
+            "endMonth": 6,
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "MariaDB",
+                "Apache"
+            ],
+            "links": [
+                {
+                    "url": "https://www.association-faire.fr",
+                    "display": "Association FAIRE"
+                }
+            ]
+        }
+    ],
+    "present": "Présent",
+    "projects": [
+        {
+            "name": "Portfolio",
+            "description": "Oui, il s'agit de ce portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
+            "url": "https://github.com/AladdineDev/portfolio#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotPath": "assets/images/portfolio.png",
+            "technologies": [
+                "Flutter",
+                "Dart"
+            ],
+            "links": [
+                {
+                    "url": "https://aladdine.dev",
+                    "display": "Inspiré par Aladdine Abdou"
+                }
+            ]
+        },
+        {
+            "name": "Learn Flow API",
+            "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification (JWT).",
+            "url": "https://github.com/AladdineDev/learnflow-api#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotPath": "assets/images/learnflow-api.png",
+            "technologies": [
+                "Node.js",
+                "Express",
+                "TypeScript",
+                "MongoDB",
+                "Docker"
+            ]
+        },
+        {
+            "name": "Learn Flow Backoffice",
+            "description": "Il s'agit du back-office conçu pour les managers du projet Learn Flow. Cette Single-Page App leur permet de surveiller l'activité de leurs applications et utilisateurs (trafic, factures...).",
+            "url": "https://github.com/AladdineDev/learnflow_backoffice#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotPath": "assets/images/learnflow-backoffice.png",
+            "technologies": [
+                "Flutter",
+                "Dart"
+            ]
+        },
+        {
+            "name": "GSB-Frais",
+            "description": "GSB-Frais est une application web de gestion des frais, développée pour les délégués médicaux et les comptables de l'entreprise fictive GSB. Elle facilite la saisie et la vérification des rapports mensuels des délégués médicaux, tout en permettant aux comptables de les traiter.",
+            "url": "https://github.com/AladdineDev/GSB-Frais#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotPath": "assets/images/gsb-frais.png",
+            "technologies": [
+                "Symfony",
+                "PHP",
+                "Bootstrap",
+                "MariaDB",
+                "Apache",
+                "Docker"
+            ]
+        },
+        {
+            "name": "GSB-RV-Visiteur-Serveur",
+            "description": "L'API REST du projet GSB sert d'interface pour les différents clients du projet (Android, Desktop et Web).",
+            "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
+            "technologies": [
+                "Flask",
+                "Python",
+                "MariaDB",
+                "Docker"
+            ]
+        },
+        {
+            "name": "GSB-RV-DR",
+            "description": "GSB-RV-DR est une application de bureau conçue pour les délégués régionaux de l'entreprise fictive GSB. Elle permet de suivre les rapports de visite et de monitorer les activités des délégués médicaux. Les délégués régionaux peuvent accéder à la liste des rapports et y appliquer des filtres ou les trier.",
+            "url": "https://github.com/AladdineDev/GSB-RV-DR#readme",
+            "iconCodePoint": "0xf09b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter",
+            "screenshotPath": "assets/images/gsb-rv-dr.png",
+            "technologies": [
+                "JavaFX",
+                "Java",
+                "MariaDB"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "code": "en",
+            "name": "Anglais",
+            "nativeName": "English"
+        },
+        {
+            "code": "fr",
+            "name": "Français",
+            "nativeName": "Français"
+        }
+    ],
+    "bottomBanner": {
+        "message": "Portfolio open source -",
+        "displayLink": "Forkez-le !",
+        "linkUrl": "https://github.com/AladdineDev/portfolio#readme"
+    },
+    "portfolio": "Portfolio",
+    "homeSectionTitle": "Accueil",
+    "aboutSectionTitle": "À propos",
+    "aboutSectionTitleAlt": "À propos de moi",
+    "experienceSectionTitle": "Expériences",
+    "projectsSectionTitle": "Projets",
+    "resume": "CV",
+    "downloadResume": "Télécharger le CV",
+    "openUrlError": "Impossible d'ouvrir l'url",
+    "unknownLanguageError": "Langue inconnue"
+}

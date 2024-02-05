@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<svg width="640" height="480.00000000000006" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <symbol height="480" id="svg_6" width="640" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+   <defs>
+    <symbol id="svg_3" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+     <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+     <path d="m9.4,86.6c-12.5,-12.5 -12.5,-32.7 0,-45.2s32.8,-12.5 45.3,0l192,192c12.5,12.5 12.5,32.8 0,45.3l-192,192c-12.5,12.5 -32.8,12.5 -45.3,0s-12.5,-32.8 0,-45.3l169.3,-169.4l-169.3,-169.4zm246.6,329.4l288,0c17.7,0 32,14.3 32,32s-14.3,32 -32,32l-288,0c-17.7,0 -32,-14.3 -32,-32s14.3,-32 32,-32z" id="svg_5"/>
+    </symbol>
+   </defs>
+   <g class="layer" id="svg_9">
+    <title>Layer 1</title>
+    <rect fill="#274472" height="525" id="svg_4" stroke="#ff0000" transform="matrix(1, 0, 0, 1, 0, 0)" width="673" x="-20" y="-12"/>
+    <use fill="#e3e2e6" id="svg_2" transform="matrix(1.17686, 0, 0, 1.13217, -1.63975, -3.06458)" x="-46.8" xlink:href="#svg_3" y="-25.2"/>
+    <rect fill="#ff0000" height="0" id="svg_1" stroke="#ff0000" width="0" x="-264" y="11"/>
+   </g>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#274472" height="600" id="svg_8" stroke="#000000" transform="matrix(1, 0, 0, 1, 669, -140)" width="740" x="-727.86" y="79.14"/>
+  <use fill="#274472" id="svg_7" transform="matrix(0.519404, 0, 0, 0.549446, -346.752, -292.751)" x="960" xlink:href="#svg_6" y="723.31"/>
+ </g>
+</svg>
