@@ -13,7 +13,7 @@ Here's the template of a JSON translation file:
   "contacts": [
     {
       "tooltip": "Github", // Tooltip displayed when hovering or long-pressing the contact icon button
-      "url": "https://github.com/Aaldn", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
+      "url": "https://github.com/AladdineDev", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
       "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
       "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
       "iconFontPackage": "font_awesome_flutter" // Name of the package providing the icon font (here, it's based on Font Awesome)
@@ -61,7 +61,7 @@ Here's the template of a JSON translation file:
     {
       "name": "Portfolio", // Name of the project
       "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.", // Description of the project
-      "url": "https://github.com/Aaldn/portfolio#readme", // URL to open when the project card is tapped
+      "url": "https://github.com/AladdineDev/portfolio#readme", // URL to open when the project card is tapped
       "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
       "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
       "iconFontPackage": "font_awesome_flutter", // Name of the package providing the icon font (here, it's based on Font Awesome)
@@ -91,7 +91,7 @@ Here's the template of a JSON translation file:
   "bottomBanner": {
     "message": "Open source portfolio -", // Text at the beginning of the "displayLink" part
     "displayLink": "Fork it!", // Text at the end of the "message" part
-    "linkUrl": "https://github.com/aaldn/portfolio" // URL to open when the "displayLink" part is tapped
+    "linkUrl": "https://github.com/AladdineDev/portfolio" // URL to open when the "displayLink" part is tapped
   },
 
   // Navigation and Section Titles

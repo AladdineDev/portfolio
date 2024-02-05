@@ -1,8 +1,8 @@
 <img src="assets/images/logo.png" align="right" width="60px"/>
 
-# Portfolio 💙 [![Licence](https://img.shields.io/github/license/Aaldn/portfolio?color=a51931&style=flat-square)](https://github.com/Aaldn/portfolio/blob/master/LICENSE.md) [![Stars](https://img.shields.io/github/stars/Aaldn/portfolio?style=flat-square)](https://github.com/Aaldn/portfolio/stargazers) [![Forks](https://img.shields.io/github/forks/Aaldn/portfolio?style=flat-square)](https://github.com/Aaldn/portfolio/forks?include=active&page=1&period=&sort_by=stargazer_counts)
+# Portfolio 💙 [![Licence](https://img.shields.io/github/license/AladdineDev/portfolio?color=a51931&style=flat-square)](https://github.com/AladdineDev/portfolio/blob/master/LICENSE.md) [![Stars](https://img.shields.io/github/stars/AladdineDev/portfolio?style=flat-square)](https://github.com/AladdineDev/portfolio/stargazers) [![Forks](https://img.shields.io/github/forks/AladdineDev/portfolio?style=flat-square)](https://github.com/AladdineDev/portfolio/forks?include=active&page=1&period=&sort_by=stargazer_counts)
 
-Flutter Portfolio – by [@Aaldn](https://github.com/Aaldn)
+Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 [![Flutter 3](https://img.shields.io/badge/Flutter-3.16-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
 [![Dart 3](https://img.shields.io/badge/Dart-3.2-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
@@ -43,7 +43,7 @@ See the [`pubspec.yaml`](pubspec.yaml) file for the complete list
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-[Fork](https://github.com/Aaldn/portfolio/fork) and clone this repository (see how to [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
+[Fork](https://github.com/AladdineDev/portfolio/fork) and clone this repository (see how to [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
 
 **Navigate to your portfolio directory :**
 ```bash
@@ -167,4 +167,4 @@ $ dart run flutter_native_splash:create
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Aaldn/portfolio/blob/main/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/AladdineDev/portfolio/blob/main/LICENSE.md) file for details

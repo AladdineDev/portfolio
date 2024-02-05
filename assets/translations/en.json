@@ -12,7 +12,7 @@
         },
         {
             "tooltip": "Github",
-            "url": "https://github.com/Aaldn",
+            "url": "https://github.com/AladdineDev",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter"
@@ -110,7 +110,7 @@
         {
             "name": "Portfolio",
             "description": "Yes, it's this portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
-            "url": "https://github.com/Aaldn/portfolio#readme",
+            "url": "https://github.com/AladdineDev/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
@@ -130,7 +130,7 @@
         {
             "name": "Learn Flow API",
             "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
-            "url": "https://github.com/Aaldn/learnflow-api#readme",
+            "url": "https://github.com/AladdineDev/learnflow-api#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
@@ -146,7 +146,7 @@
         {
             "name": "Learn Flow Backoffice",
             "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
-            "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
+            "url": "https://github.com/AladdineDev/learnflow_backoffice#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
@@ -159,7 +159,7 @@
         {
             "name": "GSB-Frais",
             "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
-            "url": "https://github.com/Aaldn/GSB-Frais#readme",
+            "url": "https://github.com/AladdineDev/GSB-Frais#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
@@ -176,7 +176,7 @@
         {
             "name": "GSB-RV-Visiteur-Serveur",
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
-            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
+            "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
@@ -191,7 +191,7 @@
         {
             "name": "GSB-RV-DR",
             "description": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
-            "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
+            "url": "https://github.com/AladdineDev/GSB-RV-DR#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
@@ -218,7 +218,7 @@
     "bottomBanner": {
         "message": "Open source portfolio -",
         "displayLink": "Fork it!",
-        "linkUrl": "https://github.com/Aaldn/portfolio#readme"
+        "linkUrl": "https://github.com/AladdineDev/portfolio#readme"
     },
     "portfolio": "Portfolio",
     "homeSectionTitle": "Home",
