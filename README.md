@@ -7,14 +7,14 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 [![Flutter 3](https://img.shields.io/badge/Flutter-3.16-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
 [![Dart 3](https://img.shields.io/badge/Dart-3.2-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
 
-## [Live Preview](https://aladdine.dev) 👀
+## [Live Preview](https://aladdinedev.github.io/portfolio) 👀
 
-<img src="assets/images/mockups-1.png">
-<img src="assets/images/mockups-2.png">
+<img src="docs/images/mockups-1.png">
+<img src="docs/images/mockups-2.png">
 
 ## Features ✨
 
-💙 Responsive and adaptive design, inspired by [Brittany Chiang](https://brittanychiang.com)\
+💙 Responsive and adaptive design inspired by [Brittany Chiang](https://brittanychiang.com)\
 💙 [Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/) by [Andrea Bizzotto](https://github.com/bizz84)\
 💙 Feature-first structure\
 💙 Multiple languages\
@@ -37,18 +37,20 @@ These are the main packages used in the app:
 
 See the [`pubspec.yaml`](pubspec.yaml) file for the complete list
 
-## Fork and deploy with Firebase 🚀
+## Get started 🚀
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-[Fork](https://github.com/AladdineDev/portfolio/fork) and clone this repository (see how to [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) a repo) 
+[Fork](https://github.com/AladdineDev/portfolio/fork) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) this repository
 
-**Navigate to your portfolio directory :**
+**1. Navigate to your portfolio directory :**
 ```bash
 $ cd portfolio
 ```
 
-**Install dependencies:**
+> From here, you're all set to [deploy](#deploy) your portfolio. To build it locally, continue with the instructions below.
+
+**2. Install dependencies:**
 ```bash
 $ flutter pub get
 ```
@@ -62,91 +64,40 @@ $ dart run build_runner build -d
 
 > For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
 
-
 <a id="generate-localization-files">**2. Generate localization files:**</a>
 ```bash
 $ dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
 $ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
 ```
 
-### Firebase 🔥
+### Deploy
 
-If you haven't already, install [Firebase CLI](https://firebase.google.com/docs/cli#install_the_firebase_cli)
-
-**1. Log into Firebase:**
+<a id="deploy">**Automatically deploy your portfolio to GitHub Pages with GitHub Actions:**</a>
 ```bash
-$ firebase login
+$ git push -u origin main
 ```
 
-**2. Install the FlutterFire CLI:**
-```bash
-$ dart pub global activate flutterfire_cli
-```
+Whenever you want to redeploy your portfolio, simply push your changes as you did.
 
-**3. Create a new Firebase project:**
-```bash
-$ firebase projects:create
+Additionally for your initial deployment, you'll need to select the proper GitHub Pages branch.
 
-? Please specify a unique project id (warning: cannot be modified afterward) [6-30 characters]:
- <my-unique-project-id>
-? What would you like to call your project? (defaults to your project ID) <my-unique-project-id>
-```
-
-**4. Set the Firebase project for your portfolio:**
-```bash
-$ firebase use --add
-
-? Which project do you want to add? (Use arrow keys)
-❯ <my-unique-project-id>
-? What alias do you want to use for this project? (e.g. staging) default
-```
-
-**5. Configure your apps to use Firebase:**
-```bash
-$ flutterfire configure
-
-i Found 1 Firebase projects. Selecting project <my-unique-project-id>.
-? Which platforms should your configuration support (use arrow keys & space to select)? › 
-✔ android                                                
-✔ ios                                                    
-✔ macos                                                  
-✔ web                                                    
-✔ windows                                                
-✔ linux                                                  
-```
-
-> For additional information, refer to the [Firebase setup](https://firebase.google.com/docs/flutter/setup?platform=ios) documentation
-
-**6. Initialize Firebase Hosting:**
-```bash
-$ firebase init hosting
-
-? What do you want to use as your public directory? (public) build/web
-? Configure as a single-page app (rewrite all urls to /index.html)? (y/N) y
-? Set up automatic builds and deploys with GitHub? (y/N) N
-```
-
-<a id="deploy">**7. Deploy:**</a>
-```bash
-$ flutter build web --web-renderer canvaskit --release --no-tree-shake-icons
-$ firebase deploy --only hosting
-```
+| Go to the Settings tab and then click Pages. The branch is currently set to _None_. | Set the branch to _gh-pages_ and save to redeploy. |
+|---|---|
+| ![](./docs/images/github-pages-branch-none.png) | ![](./docs/images/github-pages-branch-gh-pages.png) |
 
 ## Personalization 🛠️
-
-_Note: After making changes, ensure to [re-deploy your online portfolio](#deploy)_
 
 ### Content 🖋
 
 **1. Portfolio Content:**\
-Modify or add JSON translation files within [`assets/translations`](assets/translations) folder to customize the portfolio content. Don't forget to [re-generate your localization files](#generate-localization-files). For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
+Customize the portfolio content by modifying or adding JSON translation files within the [`assets/translations`](assets/translations) folder. Don't forget to [re-generate your localization files](#generate-localization-files) to see your changes when working locally. For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
 
 If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
 **2. Your description:**\
-Change the content of your description in the `build/web/index.html`:
+Update your description content in the `build/web/index.html`:
 ```html
 <meta name="description" content="...">
 ```
