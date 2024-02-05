@@ -117,8 +117,7 @@
             "screenshotPath": "assets/images/portfolio.png",
             "technologies": [
                 "Flutter",
-                "Dart",
-                "Firebase"
+                "Dart"
             ],
             "links": [
                 {

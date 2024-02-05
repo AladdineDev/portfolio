@@ -6,7 +6,6 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 [![Flutter 3](https://img.shields.io/badge/Flutter-3.16-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
 [![Dart 3](https://img.shields.io/badge/Dart-3.2-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
-[![Firebase](https://img.shields.io/badge/Firebase--ffcc30.svg?style=flat-square&logo=firebase)](https://firebase.google.com/)
 
 ## [Live Preview](https://aladdine.dev) 👀
 
@@ -35,7 +34,6 @@ These are the main packages used in the app:
 - [Easy Localization](https://pub.dev/packages/easy_localization) for... easy localization
 - [Intl](https://pub.dev/packages/intl) for date formatting
 - [Shared Preferences](https://pub.dev/packages/shared_preferences) for persistent storage (used to store theme state)
-- [Firebase Core](https://pub.dev/packages/firebase_core) and [Firebase Core Desktop](https://pub.dev/packages/firebase_core_desktop) to connect to a firebase app (used for hosting)
 
 See the [`pubspec.yaml`](pubspec.yaml) file for the complete list
 
