@@ -43,7 +43,7 @@ If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/i
 
 [Fork](https://github.com/AladdineDev/portfolio/fork) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) this repository
 
-**1. Navigate to your portfolio directory :**
+**1. Navigate to your portfolio directory:**
 ```bash
 $ cd portfolio
 ```
