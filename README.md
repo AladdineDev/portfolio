@@ -7,7 +7,7 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 [![Flutter 3](https://img.shields.io/badge/Flutter-3.16-02569b.svg?style=flat-square&logo=flutter&logoColor=13b9fd)](https://flutter.dev/)
 [![Dart 3](https://img.shields.io/badge/Dart-3.2-0175c2.svg?style=flat-square&logo=dart&logoColor=13b9fd)](https://dart.dev/)
 
-## [Live Preview](https://aladdinedev.github.io/portfolio) 👀
+## [Live Preview](https://aladdine.dev) 👀
 
 <img src="docs/images/mockups-1.png">
 <img src="docs/images/mockups-2.png">
