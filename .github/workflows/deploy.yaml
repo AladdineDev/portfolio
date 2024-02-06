@@ -34,9 +34,9 @@ jobs:
         id: set_base_href
         run: |
           if [[ -z "${{ vars.CNAME }}" ]]; then
-            echo "::set-output name=base_href::/"
-          else
             echo "::set-output name=base_href::/portfolio/"
+          else
+            echo "::set-output name=base_href::/"
           fi
 
       - name: Build
