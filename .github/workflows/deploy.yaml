@@ -32,8 +32,17 @@ jobs:
           dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
           dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
 
+      - name: Set Base Href
+        id: set_base_href
+        run: |
+          if [[ -z "${{ vars.CNAME }}" ]]; then
+            echo "::set-output name=base_href::/"
+          else
+            echo "::set-output name=base_href::/portfolio/"
+          fi
+
       - name: Build
-        run: flutter build web --web-renderer canvaskit --release --no-tree-shake-icons --base-href /
+        run: flutter build web --web-renderer canvaskit --release --no-tree-shake-icons --base-href "${{ steps.set_base_href.outputs.base_href }}"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
