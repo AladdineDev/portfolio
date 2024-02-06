@@ -33,7 +33,7 @@ jobs:
           dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
 
       - name: Build
-        run: flutter build web --web-renderer canvaskit --release --no-tree-shake-icons --base-href /${{github.event.repository.name}}/
+        run: flutter build web --web-renderer canvaskit --release --no-tree-shake-icons --base-href /
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
