@@ -16,15 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Flutter
-        run: |
-          git clone https://github.com/flutter/flutter.git --depth 1 -b stable _flutter
-          echo "${GITHUB_WORKSPACE}/_flutter/bin" >> ${GITHUB_PATH}
-
-      - name: Install
-        run: |
-          flutter config --enable-web
-          flutter pub get
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+          
+      - name: Install dependencies
+        run: flutter pub get
 
       - name: Code generation
         run: |
@@ -32,7 +30,7 @@ jobs:
           dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
           dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
 
-      - name: Set Base Href
+      - name: Set base-href
         id: set_base_href
         run: |
           if [[ -z "${{ vars.CNAME }}" ]]; then
