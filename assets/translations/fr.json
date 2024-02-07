@@ -42,7 +42,7 @@
             "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
         }
     ],
-    "aboutDescription": "Bonjour ! Je m'appelle Aladdine, et je suis apprenti développeur en quatrième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
+    "aboutDescription": "Salut ! Je m'appelle Aladdine, et je suis apprenti développeur en quatrième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
     "experiences": [
         {
             "job": "Développeur Mobile",
@@ -109,7 +109,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "Oui, il s'agit de ce portfolio ! \nCe projet adopte une architecture basée sur Riverpod en suivant une approche orientée fonctionnalités pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
+            "description": "Ce projet open source permet à toute personne de disposer d’un portfolio en ligne en moins de 10 minutes. Il adopte une architecture basée sur Riverpod en suivant une approche feature-first pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
@@ -121,14 +121,14 @@
             ],
             "links": [
                 {
-                    "url": "https://aladdine.dev",
-                    "display": "Inspiré par Aladdine Abdou"
+                    "url": "https://brittanychiang.com",
+                    "display": "Inspiré par Brittany Chiang"
                 }
             ]
         },
         {
             "name": "Learn Flow API",
-            "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification (JWT).",
+            "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification avec JWT.",
             "url": "https://github.com/AladdineDev/learnflow-api#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
@@ -186,20 +186,6 @@
                 "MariaDB",
                 "Docker"
             ]
-        },
-        {
-            "name": "GSB-RV-DR",
-            "description": "GSB-RV-DR est une application de bureau conçue pour les délégués régionaux de l'entreprise fictive GSB. Elle permet de suivre les rapports de visite et de monitorer les activités des délégués médicaux. Les délégués régionaux peuvent accéder à la liste des rapports et y appliquer des filtres ou les trier.",
-            "url": "https://github.com/AladdineDev/GSB-RV-DR#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/gsb-rv-dr.png",
-            "technologies": [
-                "JavaFX",
-                "Java",
-                "MariaDB"
-            ]
         }
     ],
     "languages": [
@@ -216,7 +202,7 @@
     ],
     "bottomBanner": {
         "message": "Portfolio open source -",
-        "displayLink": "Forkez-le !",
+        "displayLink": "Forkez-le",
         "linkUrl": "https://github.com/AladdineDev/portfolio#readme"
     },
     "portfolio": "Portfolio",
