@@ -25,25 +25,21 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-**1. Clone the repository and set your remote URL**
+[Fork](https://github.com/AladdineDev/portfolio/fork) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) this repository
 
-```bash
-$ git clone https://github.com/AladdineDev/portfolio
-$ cd portfolio
-$ git remote set-url origin https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY>
-```
+| Enable your workflows to allow deployment |
+| -----------------------------------------------|
+| ![](./docs/images/github-actions-enable-workflows.png)|
 
-> From here, you're all set to [deploy](#deploy) your portfolio online. To build it locally and customize it, continue with the instructions below.
+From here, you're all set to [deploy](#deploy) your portfolio online. To build it locally and make customizations, follow the instructions below.
 
-**2. Install dependencies:**
+**1. Install dependencies:**
 
 ```bash
 $ flutter pub get
 ```
 
-### Generator 🤖
-
-**1. Run the code generator:**
+**2. Run the code generator:**
 
 ```bash
 $ dart run build_runner build -d
@@ -51,7 +47,7 @@ $ dart run build_runner build -d
 
 > For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
 
-<a id="generate-localization-files" style="text-decoration:none">**2. Generate localization files:**</a>
+<a id="generate-localization-files" style="text-decoration:none">**3. Generate localization files:**</a>
 
 ```bash
 $ dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
