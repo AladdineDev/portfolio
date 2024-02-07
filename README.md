@@ -25,7 +25,7 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-**1. [Fork](https://github.com/AladdineDev/portfolio/fork) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) this repository**
+**1. [Fork](https://github.com/AladdineDev/portfolio/fork) and [clone](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) this repository**
 
 **2. Enable your workflows**
 
