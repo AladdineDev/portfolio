@@ -86,7 +86,7 @@ If you add or remove a JSON translation file, remember to update the `languages`
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
 **2. Your description:**\
-Update your description content in the `build/web/index.html`:
+Update your description content in the [`build/web/index.html`](build/web/index.html):
 
 ```html
 <meta name="description" content="..." />
