@@ -25,16 +25,18 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/install)
 
-[Fork](https://github.com/AladdineDev/portfolio/fork) and [clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) this repository
+**1. Clone the repository and set your remote URL**
 
-**1. Navigate to your portfolio directory:**
 ```bash
+$ git clone https://github.com/AladdineDev/portfolio
 $ cd portfolio
+$ git remote set-url origin https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY>
 ```
 
-> From here, you're all set to [deploy](#deploy) your portfolio. To build it locally, continue with the instructions below.
+> From here, you're all set to [deploy](#deploy) your portfolio online. To build it locally and customize it, continue with the instructions below.
 
 **2. Install dependencies:**
+
 ```bash
 $ flutter pub get
 ```
@@ -42,13 +44,15 @@ $ flutter pub get
 ### Generator 🤖
 
 **1. Run the code generator:**
+
 ```bash
 $ dart run build_runner build -d
 ```
 
 > For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
 
-<a id="generate-localization-files">**2. Generate localization files:**</a>
+<a id="generate-localization-files" style="text-decoration:none">**2. Generate localization files:**</a>
+
 ```bash
 $ dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
 $ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
@@ -56,25 +60,27 @@ $ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/
 
 ### Deploy
 
-<a id="deploy">**Automatically deploy your portfolio to GitHub Pages with GitHub Actions:**</a>
+<a id="deploy" style="text-decoration:none">**Automatically deploy your portfolio to GitHub Pages with GitHub Actions:**</a>
+
 ```bash
-$ git push -u origin main
+$ git push
 ```
 
+Your deployment will be available in few minutes at this URL: https://<YOUR_USERNAME>.github.io/portfolio
 Whenever you want to redeploy your portfolio, simply push your changes as you did.
 
-Additionally for your initial deployment, you'll need to select the proper GitHub Pages branch.
+Additionally for your first deployment, you'll need to select the proper GitHub Pages branch.
 
-| Go to the Settings tab and then click Pages. The branch is currently set to _None_. | Set the branch to _gh-pages_ and save to redeploy. |
-|---|---|
-| ![](./docs/images/github-pages-branch-none.png) | ![](./docs/images/github-pages-branch-gh-pages.png) |
+| Go to the Settings tab and then click Pages. The branch is currently set to _None_. | Set the branch to _gh-pages_ and save to redeploy.  |
+| ----------------------------------------------------------------------------------- | --------------------------------------------------- |
+| ![](./docs/images/github-pages-branch-none.png)                                     | ![](./docs/images/github-pages-branch-gh-pages.png) |
 
 ## Personalization 🛠️
 
 ### Content 🖋
 
 **1. Portfolio Content:**\
-Customize the portfolio content by modifying or adding JSON translation files within the [`assets/translations`](assets/translations) folder. Don't forget to [re-generate your localization files](#generate-localization-files) to see your changes when working locally. For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
+Customize the portfolio content by modifying or adding JSON translation files within the [`assets/translations`](assets/translations) folder. Don't forget to [re-generate your localization files](#generate-localization-files) when working locally. For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
 
 If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
 
@@ -82,15 +88,18 @@ If you add or remove a JSON translation file, remember to update the `languages`
 
 **2. Your description:**\
 Update your description content in the `build/web/index.html`:
+
 ```html
-<meta name="description" content="...">
+<meta name="description" content="..." />
 ```
 
 ### Theme 🎨
+
 **1. Launcher Icon and Splash Screen:**\
 Update your launcher icon and your splash screen in the [`pubspec.yaml`](pubspec.yaml)
 
 Then, run:
+
 ```bash
 $ dart run flutter_launcher_icons
 $ dart run flutter_native_splash:create
