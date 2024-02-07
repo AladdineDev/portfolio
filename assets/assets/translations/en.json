@@ -42,7 +42,7 @@
             "url": "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing"
         }
     ],
-    "aboutDescription": "Hello! I'm Aladdine, an apprentice developer and fourth-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+    "aboutDescription": "Hi! I'm Aladdine, an apprentice developer and fourth-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
     "experiences": [
         {
             "job": "Mobile App Developer",
@@ -109,7 +109,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "Yes, it's this portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
+            "description": "This open source project allows anyone to have an online portfolio in less than 10 minutes. It follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive and supports multiple themes as well as multiple languages.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
@@ -121,14 +121,14 @@
             ],
             "links": [
                 {
-                    "url": "https://aladdine.dev",
-                    "display": "Inspired by Aladdine Abdou"
+                    "url": "https://brittanychiang.com",
+                    "display": "Inspired by Brittany Chiang"
                 }
             ]
         },
         {
             "name": "Learn Flow API",
-            "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
+            "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities with JWT.",
             "url": "https://github.com/AladdineDev/learnflow-api#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
@@ -186,20 +186,6 @@
                 "MariaDB",
                 "Docker"
             ]
-        },
-        {
-            "name": "GSB-RV-DR",
-            "description": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
-            "url": "https://github.com/AladdineDev/GSB-RV-DR#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/gsb-rv-dr.png",
-            "technologies": [
-                "JavaFX",
-                "Java",
-                "MariaDB"
-            ]
         }
     ],
     "languages": [
@@ -216,7 +202,7 @@
     ],
     "bottomBanner": {
         "message": "Open source portfolio -",
-        "displayLink": "Fork it!",
+        "displayLink": "Fork it",
         "linkUrl": "https://github.com/AladdineDev/portfolio#readme"
     },
     "portfolio": "Portfolio",
