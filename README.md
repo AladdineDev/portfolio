@@ -65,7 +65,7 @@ $ git commit --allow-empty -m "trigger deploy" # if you have nothing to commit
 $ git push
 ```
 
-Your deployment will be available in few minutes at this URL: https://<YOUR_USERNAME>.github.io/portfolio
+Your deployment will be available in few minutes at this URL: `https://<YOUR_USERNAME>.github.io/portfolio`
 Whenever you want to redeploy your portfolio, simply push your changes as you did.
 
 Additionally for your first deployment, you'll need to select the proper GitHub Pages branch.
