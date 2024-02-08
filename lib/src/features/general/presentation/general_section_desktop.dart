@@ -6,13 +6,13 @@ import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_section.dart';
-import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
+import 'package:portfolio/src/features/general/presentation/widgets/app_bar.dart';
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
-import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
-import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
+import 'package:portfolio/src/features/general/provider/scroll_controller.dart';
+import 'package:portfolio/src/features/general/provider/section_key_provider.dart';
 
-class MainDesktop extends ConsumerWidget {
-  const MainDesktop({super.key});
+class GeneralDesktop extends ConsumerWidget {
+  const GeneralDesktop({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

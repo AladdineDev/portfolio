@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:portfolio/src/features/main/provider/brightness_controller.dart';
+import 'package:portfolio/src/features/general/provider/brightness_controller.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'dark_mode_controller.g.dart';

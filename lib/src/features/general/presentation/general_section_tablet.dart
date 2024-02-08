@@ -6,20 +6,20 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_section.dart';
-import 'package:portfolio/src/features/main/presentation/widgets/sliver_app_bar.dart';
+import 'package:portfolio/src/features/general/presentation/widgets/sliver_app_bar.dart';
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
-import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
-import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
+import 'package:portfolio/src/features/general/provider/scroll_controller.dart';
+import 'package:portfolio/src/features/general/provider/section_key_provider.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
 
-class MainTablet extends ConsumerStatefulWidget {
-  const MainTablet({super.key});
+class GeneralTablet extends ConsumerStatefulWidget {
+  const GeneralTablet({super.key});
 
   @override
-  ConsumerState<MainTablet> createState() => _MainTabletState();
+  ConsumerState<GeneralTablet> createState() => _MainTabletState();
 }
 
-class _MainTabletState extends ConsumerState<MainTablet> {
+class _MainTabletState extends ConsumerState<GeneralTablet> {
   @override
   Widget build(BuildContext context) {
     final scrollController = ref.watch(scrollControllerProvider);

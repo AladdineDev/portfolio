@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
+import 'package:portfolio/src/features/general/presentation/widgets/app_bar.dart';
 
 class MySliverAppBar extends ConsumerWidget {
   const MySliverAppBar({super.key});
