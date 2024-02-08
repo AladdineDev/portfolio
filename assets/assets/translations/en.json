@@ -109,7 +109,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "This open source project allows anyone to have an online portfolio in less than 10 minutes. It follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive and supports multiple themes as well as multiple languages.",
+            "description": "This open source project allows anyone to have an online portfolio in less than 10 minutes. It follows a riverpod-based architecture, using a feature-first approach for its structure. It is fully responsive and supports multiple themes as well as multiple languages.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
