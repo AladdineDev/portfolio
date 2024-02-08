@@ -32,7 +32,7 @@ If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/i
 | ------------------------------------------------------ |
 | ![](./docs/images/github-actions-enable-workflows.png) |
 
-From here, you're all set to [deploy](#deploy) your portfolio online. To build it locally and make customizations, follow the instructions below.
+Now you're all set to [deploy](#deploy) your portfolio online. To build it locally and make customizations, follow the steps below.
 
 **3. Install dependencies:**
 
