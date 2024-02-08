@@ -37,13 +37,13 @@ Now you're all set to [deploy](#deploy) your portfolio online. To build it local
 **3. Install dependencies:**
 
 ```bash
-$ flutter pub get
+flutter pub get
 ```
 
 **4. Run the code generator:**
 
 ```bash
-$ dart run build_runner build -d
+dart run build_runner build -d
 ```
 
 > For additional information, refer to the [build_runner](https://pub.dev/packages/build_runner) documentation
@@ -51,8 +51,8 @@ $ dart run build_runner build -d
 <a id="generate-localization-files" style="text-decoration:none">**5. Generate localization files:**</a>
 
 ```bash
-$ dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
-$ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
+dart run easy_localization:generate -S assets/translations -f json -O lib/src/localization/generated -o locale_json.g.dart
+dart run easy_localization:generate -S assets/translations -f keys -O lib/src/localization/generated -o locale_keys.g.dart
 ```
 
 ### Deploy
@@ -60,8 +60,8 @@ $ dart run easy_localization:generate -S assets/translations -f keys -O lib/src/
 <a id="deploy" style="text-decoration:none">**Automatically deploy your portfolio to GitHub Pages with GitHub Actions:**</a>
 
 ```bash
-$ git commit --allow-empty -m "trigger deploy" # if you have nothing to commit
-$ git push
+git commit --allow-empty -m "trigger deploy" # if you have nothing to commit
+git push
 ```
 
 Your deployment will be available in few minutes at this URL: `https://<YOUR_USERNAME>.github.io/portfolio`
@@ -103,8 +103,8 @@ Update your launcher icon and your splash screen in the [`pubspec.yaml`](pubspec
 Then, run:
 
 ```bash
-$ dart run flutter_launcher_icons
-$ dart run flutter_native_splash:create
+dart run flutter_launcher_icons
+dart run flutter_native_splash:create
 ```
 
 > For additional information, refer to the [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) and [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) documentations
