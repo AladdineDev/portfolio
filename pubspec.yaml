@@ -13,12 +13,12 @@ dependencies:
 
   flex_color_scheme: ^7.3.1
   google_fonts: ^6.1.0
-  font_awesome_flutter: ^10.6.0
-  riverpod_annotation: ^2.3.3
-  hooks_riverpod: ^2.4.9
-  flutter_hooks: ^0.20.3
+  font_awesome_flutter: ^10.7.0
+  riverpod_annotation: ^2.3.4
+  hooks_riverpod: ^2.4.10
+  flutter_hooks: ^0.20.5
   collection: ^1.18.0
-  url_launcher: ^6.2.1
+  url_launcher: ^6.2.4
   url_strategy: ^0.2.0
   intl: ^0.18.1
   easy_localization: ^3.0.3
@@ -31,14 +31,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
-  custom_lint: ^0.5.5
+  flutter_lints: ^3.0.1
+  custom_lint: ^0.5.11
   riverpod_lint: ^2.3.2
   riverpod_generator: ^2.3.5
-  build_runner: ^2.4.6
-  freezed: ^2.4.5
+  build_runner: ^2.4.8
+  freezed: ^2.4.7
   json_serializable: ^6.7.1
-  flutter_native_splash: ^2.3.4
+  flutter_native_splash: ^2.3.10
   flutter_launcher_icons: ^0.13.1
 
 flutter:
