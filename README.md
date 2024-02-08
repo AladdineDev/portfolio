@@ -11,7 +11,6 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 <img src="docs/images/mockups-1.png" width="72%"></img> <img src="docs/images/mockups-2.png" width="27%"></img>
 
-
 ## Features ✨
 
 💙 Responsive and adaptive design inspired by [Brittany Chiang](https://brittanychiang.com)\
@@ -29,9 +28,9 @@ If you haven't already, install [Flutter](https://docs.flutter.dev/get-started/i
 
 **2. Enable your workflows**
 
-| Go to the Actions tab and enable your workflows.|
-| -----------------------------------------------|
-| ![](./docs/images/github-actions-enable-workflows.png)|
+| Go to the Actions tab and enable your workflows.       |
+| ------------------------------------------------------ |
+| ![](./docs/images/github-actions-enable-workflows.png) |
 
 From here, you're all set to [deploy](#deploy) your portfolio online. To build it locally and make customizations, follow the instructions below.
 
@@ -76,7 +75,8 @@ Additionally for your first deployment, you'll need to select the proper GitHub 
 
 ## Personalization 🛠️
 
-### Content 🖋
+<details>
+  <summary><h3>Content 🖋</h3></summary>
 
 **1. Portfolio Content:**\
 Customize the portfolio content by modifying or adding JSON translation files within the [`assets/translations`](assets/translations) folder. Don't forget to [re-generate your localization files](#generate-localization-files) when working locally. For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
@@ -92,7 +92,10 @@ Update your description content in the `build/web/index.html`:
 <meta name="description" content="..." />
 ```
 
-### Theme 🎨
+</details>
+
+<details>
+  <summary><h3>Theme 🎨</h3></summary>
 
 **1. Launcher Icon and Splash Screen:**\
 Update your launcher icon and your splash screen in the [`pubspec.yaml`](pubspec.yaml)
@@ -105,6 +108,8 @@ $ dart run flutter_native_splash:create
 ```
 
 > For additional information, refer to the [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) and [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) documentations
+
+</details>
 
 ## License 📄
 
