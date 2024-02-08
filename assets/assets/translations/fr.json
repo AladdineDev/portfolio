@@ -4,16 +4,23 @@
     "subDescription": "Passionné par Flutter & Python",
     "contacts": [
         {
-            "tooltip": "LinkedIn",
-            "url": "https://www.linkedin.com/in/aladdine-abdou/",
-            "iconCodePoint": "0xf08c",
+            "tooltip": "Github",
+            "url": "https://github.com/AladdineDev",
+            "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter"
         },
         {
-            "tooltip": "Github",
-            "url": "https://github.com/AladdineDev",
-            "iconCodePoint": "0xf09b",
+            "tooltip": "Twitter",
+            "url": "https://twitter.com/AladdineDev",
+            "iconCodePoint": "0xe61b",
+            "iconFontFamily": "FontAwesomeBrands",
+            "iconFontPackage": "font_awesome_flutter"
+        },
+        {
+            "tooltip": "LinkedIn",
+            "url": "https://www.linkedin.com/in/aladdine-abdou",
+            "iconCodePoint": "0xf08c",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter"
         },
