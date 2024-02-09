@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:portfolio/src/common/domain/icon.dart';
 import 'package:portfolio/src/common/domain/link.dart';
 
 part 'project.freezed.dart';
@@ -10,9 +11,7 @@ class Project with _$Project {
     String? name,
     String? description,
     String? url,
-    String? iconCodePoint,
-    String? iconFontFamily,
-    String? iconFontPackage,
+    IconModel? icon,
     String? screenshotPath,
     List<String>? technologies,
     List<Link>? links,

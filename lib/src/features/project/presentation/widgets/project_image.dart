@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/transparent_image.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
+import 'package:portfolio/src/common/widgets/icon.dart';
 
 class ProjectImage extends ConsumerWidget {
   const ProjectImage({
@@ -80,7 +81,11 @@ class ProjectImage extends ConsumerWidget {
               duration: const Duration(seconds: 1),
               reverseDuration: const Duration(milliseconds: 500),
               firstChild: const SizedBox.shrink(),
-              secondChild: _buildIcon(),
+              secondChild: MyIcon(
+                icon: project.icon,
+                color: Colors.white,
+                size: 32,
+              ),
             ),
           ),
         ),
@@ -98,29 +103,5 @@ class ProjectImage extends ConsumerWidget {
       fit: BoxFit.cover,
       placeholderFit: BoxFit.cover,
     );
-  }
-
-  Widget _buildIcon() {
-    final projectIconCodePoint = project.iconCodePoint;
-    final projectIconFontFamily = project.iconFontFamily;
-    final projectIconFontPackage = project.iconFontPackage;
-    if (projectIconCodePoint != null &&
-        projectIconFontFamily != null &&
-        projectIconFontPackage != null) {
-      final projectIconCodePointHexa = int.tryParse(projectIconCodePoint);
-      if (projectIconCodePointHexa != null) {
-        final iconData = IconData(
-          projectIconCodePointHexa,
-          fontFamily: projectIconFontFamily,
-          fontPackage: projectIconFontPackage,
-        );
-        return Icon(
-          color: Colors.white,
-          size: 32,
-          iconData,
-        );
-      }
-    }
-    return const SizedBox.shrink();
   }
 }

@@ -6,37 +6,47 @@
         {
             "tooltip": "Github",
             "url": "https://github.com/AladdineDev",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter"
+            "icon": {
+                "iconCodePoint": "0xefb7",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            }
         },
         {
             "tooltip": "Twitter",
             "url": "https://twitter.com/AladdineDev",
-            "iconCodePoint": "0xe61b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter"
+            "icon": {
+                "iconCodePoint": "0xf0ea",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            }
         },
         {
             "tooltip": "LinkedIn",
             "url": "https://www.linkedin.com/in/aladdine-dev",
-            "iconCodePoint": "0xf08c",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter"
+            "icon": {
+                "iconCodePoint": "0xeffb",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            }
         },
         {
             "tooltip": "aladdine.abdou@gmail.com",
             "url": "mailto:aladdine.abdou@gmail.com",
-            "iconCodePoint": "0xf0e0",
-            "iconFontFamily": "FontAwesomeSolid",
-            "iconFontPackage": "font_awesome_flutter"
+            "icon": {
+                "iconCodePoint": "0xeaad",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            }
         },
         {
             "tooltip": "+33 7 82 54 34 70",
             "url": "tel:+33782543470",
-            "iconCodePoint": "0xf095",
-            "iconFontFamily": "FontAwesomeSolid",
-            "iconFontPackage": "font_awesome_flutter"
+            "icon": {
+                "iconCodePoint": "0xecbb",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            }
         }
     ],
     "resumes": [
@@ -118,9 +128,11 @@
             "name": "Portfolio",
             "description": "This open source project allows anyone to have an online portfolio in less than 10 minutes. It follows a riverpod-based architecture, using a feature-first approach for its structure. It is fully responsive and supports multiple themes as well as multiple languages.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
+            "icon": {
+                "iconCodePoint": "0xefb7",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            },
             "screenshotPath": "assets/images/portfolio.png",
             "technologies": [
                 "Flutter",
@@ -137,9 +149,11 @@
             "name": "Learn Flow API",
             "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities with JWT.",
             "url": "https://github.com/AladdineDev/learnflow-api#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
+            "icon": {
+                "iconCodePoint": "0xefb7",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            },
             "screenshotPath": "assets/images/learnflow-api.png",
             "technologies": [
                 "Node.js",
@@ -153,9 +167,11 @@
             "name": "Learn Flow Backoffice",
             "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
             "url": "https://github.com/AladdineDev/learnflow_backoffice#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
+            "icon": {
+                "iconCodePoint": "0xefb7",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            },
             "screenshotPath": "assets/images/learnflow-backoffice.png",
             "technologies": [
                 "Flutter",
@@ -166,9 +182,11 @@
             "name": "GSB-Frais",
             "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
             "url": "https://github.com/AladdineDev/GSB-Frais#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
+            "icon": {
+                "iconCodePoint": "0xefb7",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            },
             "screenshotPath": "assets/images/gsb-frais.png",
             "technologies": [
                 "Symfony",
@@ -183,9 +201,11 @@
             "name": "GSB-RV-Visiteur-Serveur",
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
             "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
+            "icon": {
+                "iconCodePoint": "0xefb7",
+                "iconFontFamily": "FontAwesome",
+                "iconFontPackage": "icons_plus"
+            },
             "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
             "technologies": [
                 "Flask",
