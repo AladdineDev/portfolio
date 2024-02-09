@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:portfolio/src/common/data/language_repository.dart';
 import 'package:portfolio/src/common/widgets/animated_fade_slide.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
@@ -38,7 +38,7 @@ class MyAppBar extends ConsumerWidget {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Icon(FontAwesomeIcons.terminal),
+                      const Icon(FontAwesome.terminal_solid),
                       const SizedBox(width: 12),
                       Text(tr(LocaleKeys.portfolio)),
                     ],

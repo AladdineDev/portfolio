@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/personal_info/domain/resume.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_language_dialog.dart';
@@ -55,7 +55,7 @@ class _ResumeButtonState extends ConsumerState<ResumeButton> {
               textBaseline: TextBaseline.alphabetic,
               children: [
                 Icon(
-                  FontAwesomeIcons.filePdf,
+                  FontAwesome.file_pdf,
                   color: theme.colorScheme.inverseSurface,
                 ),
                 gapW12,
