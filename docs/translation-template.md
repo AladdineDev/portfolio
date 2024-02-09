@@ -14,9 +14,12 @@ Here's the template of a JSON translation file:
     {
       "tooltip": "Github", // Tooltip displayed when hovering or long-pressing the contact icon button
       "url": "https://github.com/AladdineDev", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
-      "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
-      "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
-      "iconFontPackage": "font_awesome_flutter" // Name of the package providing the icon font (here, it's based on Font Awesome)
+      "icon": {
+        "iconAssetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconCodePoint and the iconFontFamily are used, this property must be null.
+        "iconCodePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
+        "iconFontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
+        "iconFontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+      }
     }
   ],
 
@@ -62,9 +65,12 @@ Here's the template of a JSON translation file:
       "name": "Portfolio", // Name of the project
       "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.", // Description of the project
       "url": "https://github.com/AladdineDev/portfolio#readme", // URL to open when the project card is tapped
-      "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
-      "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
-      "iconFontPackage": "font_awesome_flutter", // Name of the package providing the icon font (here, it's based on Font Awesome)
+      "icon": {
+        "iconAssetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconCodePoint and the iconFontFamily are used, this property must be null.
+        "iconCodePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
+        "iconFontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
+        "iconFontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+      },
       "screenshotPath": "assets/images/portfolio.png", // screenshot asset path of the project
       "technologies": [
         "Flutter" // Technologies used in this project
@@ -105,6 +111,6 @@ Here's the template of a JSON translation file:
   "downloadResume": "Download resume", // Title for the resume download dialog
 
   // Error Messages
-  "openUrlError": "Could not open the url", // url error
+  "openUrlError": "Could not open the url" // url error
 }
 ```
