@@ -7,7 +7,7 @@ These are the main packages used in the app:
 - [Freezed](https://pub.dev/packages/freezed) to reduce boilerplate code in model classes
 - [Flex Color Scheme](https://pub.dev/packages/flex_color_scheme) to make AWESOME Flutter Material Design themes
 - [Google Fonts](https://pub.dev/packages/google_fonts) to use fonts from https://fonts.google.com
-- [Font Awesome Flutter](https://pub.dev/packages/font_awesome_flutter) to use icons from https://fontawesome.com/icons
+- [Icons Plus](https://pub.dev/packages/icons_plus) to use a collection of attractive icons from different packs
 - [Easy Localization](https://pub.dev/packages/easy_localization) for... easy localization
 - [Intl](https://pub.dev/packages/intl) for date formatting
 - [Shared Preferences](https://pub.dev/packages/shared_preferences) for persistent storage (used to store theme state)
