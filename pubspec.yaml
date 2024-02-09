@@ -14,6 +14,7 @@ dependencies:
   flex_color_scheme: ^7.3.1
   google_fonts: ^6.1.0
   font_awesome_flutter: ^10.7.0
+  icons_plus: ^5.0.0
   riverpod_annotation: ^2.3.4
   hooks_riverpod: ^2.4.10
   flutter_hooks: ^0.20.5
@@ -26,6 +27,7 @@ dependencies:
   freezed_annotation: ^2.4.1
   json_annotation: ^4.8.1
   shared_preferences: ^2.2.2
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:
