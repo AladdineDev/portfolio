@@ -18,7 +18,8 @@ Here's the template of a JSON translation file:
         "iconAssetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconCodePoint and the iconFontFamily are used, this property must be null.
         "iconCodePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
         "iconFontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
-        "iconFontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "iconFontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "color": "0xffffffff" // Hexadecimal color for the icon.
       }
     }
   ],
@@ -69,7 +70,8 @@ Here's the template of a JSON translation file:
         "iconAssetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconCodePoint and the iconFontFamily are used, this property must be null.
         "iconCodePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
         "iconFontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
-        "iconFontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "iconFontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "color": "0xffffffff" // Hexadecimal color for the icon.
       },
       "screenshotPath": "assets/images/portfolio.png", // screenshot asset path of the project
       "technologies": [
