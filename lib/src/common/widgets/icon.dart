@@ -8,24 +8,29 @@ class MyIcon extends ConsumerWidget {
     super.key,
     this.icon,
     this.placeholder = const SizedBox.shrink(),
-    this.color,
-    this.size,
+    this.size = 24,
+    this.padding,
   });
 
   final IconModel? icon;
-  final Color? color;
   final double? size;
   final Widget placeholder;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final color = this.color ??
-        Theme.of(context).iconTheme.color ??
-        Theme.of(context).colorScheme.tertiary;
     final iconAssetName = icon?.iconAssetName;
     final iconCodePoint = icon?.iconCodePoint;
     final iconFontFamily = icon?.iconFontFamily;
     final iconFontPackage = icon?.iconFontPackage;
+    final iconColor = icon?.color;
+    Color? color;
+    if (iconColor != null) {
+      final colorHex = int.tryParse(iconColor);
+      if (colorHex != null) {
+        color = Color(colorHex);
+      }
+    }
     if (iconCodePoint != null &&
         iconFontFamily != null &&
         iconFontPackage != null) {
@@ -36,20 +41,24 @@ class MyIcon extends ConsumerWidget {
           fontFamily: iconFontFamily,
           fontPackage: iconFontPackage,
         );
-        return Icon(
-          color: color,
-          size: size,
-          iconData,
+        return Padding(
+          padding: const EdgeInsets.all(2),
+          child: FittedBox(
+            child: Icon(
+              iconData,
+              color: color,
+              size: size,
+            ),
+          ),
         );
       }
     } else if (iconAssetName != null && iconFontPackage != null) {
       return SvgPicture.asset(
         iconAssetName,
         package: iconFontPackage,
-        width: 32,
-        theme: SvgTheme(
-          currentColor: color,
-        ),
+        width: size,
+        colorFilter:
+            color == null ? null : ColorFilter.mode(color, BlendMode.srcIn),
       );
     }
     return placeholder;
