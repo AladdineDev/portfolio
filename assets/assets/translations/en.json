@@ -7,45 +7,50 @@
             "tooltip": "Github",
             "url": "https://github.com/AladdineDev",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
             "tooltip": "Twitter",
             "url": "https://twitter.com/AladdineDev",
             "icon": {
-                "iconCodePoint": "0xf0ea",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xf0ea",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
             "tooltip": "LinkedIn",
             "url": "https://www.linkedin.com/in/aladdine-dev",
             "icon": {
-                "iconCodePoint": "0xeffb",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xeffb",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
             "tooltip": "aladdine.abdou@gmail.com",
             "url": "mailto:aladdine.abdou@gmail.com",
             "icon": {
-                "iconCodePoint": "0xeaad",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xeaad",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
             "tooltip": "+33 7 82 54 34 70",
             "url": "tel:+33782543470",
             "icon": {
-                "iconCodePoint": "0xecbb",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xecbb",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         }
     ],
@@ -62,20 +67,72 @@
     "aboutDescription": "Hi! I'm Aladdine, an apprentice developer and fourth-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical experience to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
     "experiences": [
         {
-            "job": "Mobile App Developer",
+            "role": "Mobile App Developer",
             "company": "Walt Disney Imagineering",
             "description": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.",
             "isPresent": false,
             "startYear": 2022,
             "endYear": 2023,
             "technologies": [
-                "Flutter",
-                "Dart",
-                "Django",
-                "Python",
-                "PostgreSQL",
-                "SQLite",
-                "Docker"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Django",
+                    "icon": {
+                        "codePoint": "0xeee7",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Python",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/python.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/postgresql.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "SQLite",
+                    "icon": {
+                        "codePoint": "0xe944",
+                        "fontFamily": "OctIcons",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "AWS",
+                    "icon": {
+                        "codePoint": "0xeed1",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ],
             "links": [
                 {
@@ -85,7 +142,7 @@
             ]
         },
         {
-            "job": "Mobile App Developer",
+            "role": "Mobile App Developer",
             "company": "Solutions Multi Techniques",
             "description": "Development of a Progressive Web App for security system technicians, enabling them to generate comprehensive PDF quotes. This allows for the immediate delivery of quotes to clients after their visit, thereby increasing the conversion rate.",
             "startYear": 2022,
@@ -93,13 +150,31 @@
             "endYear": 2022,
             "endMonth": 2,
             "technologies": [
-                "Flutter",
-                "Dart",
-                "Firebase"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Firebase",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/firebase.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
-            "job": "Web Developer",
+            "role": "Web Developer",
             "company": "Association FAIRE",
             "description": "Development of the association's website, in collaboration with a group of developers. It provides visitors with the opportunity to learn more about the association and become members.\nTo date, the website has attracted over 10,000 visits.",
             "startYear": 2021,
@@ -107,12 +182,42 @@
             "endYear": 2021,
             "endMonth": 6,
             "technologies": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "PHP",
-                "MariaDB",
-                "Apache"
+                {
+                    "name": "HTML",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/html-5.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "CSS",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/css3.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Javascript",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/javascript.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "PHP",
+                    "icon": {
+                        "codePoint": "0xef29",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MariaDB",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/mariadb.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ],
             "links": [
                 {
@@ -129,14 +234,27 @@
             "description": "This open source project allows anyone to have an online portfolio in less than 10 minutes. It follows a riverpod-based architecture, using a feature-first approach for its structure. It is fully responsive and supports multiple themes as well as multiple languages.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/portfolio.png",
             "technologies": [
-                "Flutter",
-                "Dart"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ],
             "links": [
                 {
@@ -150,17 +268,49 @@
             "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities with JWT.",
             "url": "https://github.com/AladdineDev/learnflow-api#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/learnflow-api.png",
             "technologies": [
-                "Node.js",
-                "Express",
-                "TypeScript",
-                "MongoDB",
-                "Docker"
+                {
+                    "name": "Node.js",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/nodejs.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Express",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/express-js.svg",
+                        "fontPackage": "icons_plus",
+                        "color": "0xffffffff"
+                    }
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/typescript.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/mongodb.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -168,14 +318,27 @@
             "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
             "url": "https://github.com/AladdineDev/learnflow_backoffice#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/learnflow-backoffice.png",
             "technologies": [
-                "Flutter",
-                "Dart"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -183,18 +346,50 @@
             "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
             "url": "https://github.com/AladdineDev/GSB-Frais#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/gsb-frais.png",
             "technologies": [
-                "Symfony",
-                "PHP",
-                "Bootstrap",
-                "MariaDB",
-                "Apache",
-                "Docker"
+                {
+                    "name": "Symfony",
+                    "icon": {
+                        "codePoint": "0xf0ab",
+                        "fontFamily": "FontAwesome",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "PHP",
+                    "icon": {
+                        "codePoint": "0xef29",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": {
+                        "assetName": "assets/images/logos/other/bootstrap.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MariaDB",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/mariadb.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -202,16 +397,42 @@
             "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
             "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
             "technologies": [
-                "Flask",
-                "Python",
-                "MariaDB",
-                "Docker"
+                {
+                    "name": "Flask",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/flask.svg",
+                        "fontPackage": "icons_plus",
+                        "color": "0xffffffff"
+                    }
+                },
+                {
+                    "name": "Python",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/python.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MariaDB",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/mariadb.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
+                    }
+                }
             ]
         }
     ],
