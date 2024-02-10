@@ -9,8 +9,7 @@
             "icon": {
                 "codePoint": "0xefb7",
                 "fontFamily": "FontAwesome",
-                "fontPackage": "icons_plus",
-                "color": "0xffffffff"
+                "fontPackage": "icons_plus"
             }
         },
         {
@@ -19,8 +18,7 @@
             "icon": {
                 "codePoint": "0xf0ea",
                 "fontFamily": "FontAwesome",
-                "fontPackage": "icons_plus",
-                "color": "0xffffffff"
+                "fontPackage": "icons_plus"
             }
         },
         {
@@ -29,8 +27,7 @@
             "icon": {
                 "codePoint": "0xeffb",
                 "fontFamily": "FontAwesome",
-                "fontPackage": "icons_plus",
-                "color": "0xffffffff"
+                "fontPackage": "icons_plus"
             }
         },
         {
@@ -39,8 +36,7 @@
             "icon": {
                 "codePoint": "0xeaad",
                 "fontFamily": "FontAwesome",
-                "fontPackage": "icons_plus",
-                "color": "0xffffffff"
+                "fontPackage": "icons_plus"
             }
         },
         {
@@ -49,8 +45,7 @@
             "icon": {
                 "codePoint": "0xecbb",
                 "fontFamily": "FontAwesome",
-                "fontPackage": "icons_plus",
-                "color": "0xffffffff"
+                "fontPackage": "icons_plus"
             }
         }
     ],
