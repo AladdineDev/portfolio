@@ -55,7 +55,7 @@ class ProjectDescription extends ConsumerWidget {
   Widget _buildChips() {
     final projectTechnologies = project.technologies;
     if (projectTechnologies == null) return const SizedBox.shrink();
-    return TechnologyWrapChips(titles: projectTechnologies);
+    return TechnologyWrapChips(technologies: projectTechnologies);
   }
 
   Widget _buildLinks(BuildContext context) {

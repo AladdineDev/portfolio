@@ -110,7 +110,7 @@ class ExperienceCard extends ConsumerWidget {
   Widget _buildChips() {
     final experienceTechnologies = experience.technologies;
     if (experienceTechnologies == null) return const SizedBox.shrink();
-    return TechnologyWrapChips(titles: experienceTechnologies);
+    return TechnologyWrapChips(technologies: experienceTechnologies);
   }
 
   Widget _buildLinks() {

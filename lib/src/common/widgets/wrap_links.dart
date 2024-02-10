@@ -20,7 +20,7 @@ class WrapLinks extends ConsumerWidget {
         final projectLinkUrl = link.url;
         final projectLinkDisplay = link.display;
         if (projectLinkUrl == null) return const SizedBox.shrink();
-        return LinkWidget(
+        return MyLink(
           url: projectLinkUrl,
           displayLink: projectLinkDisplay ?? projectLinkUrl,
           displayLeadingIcon: true,

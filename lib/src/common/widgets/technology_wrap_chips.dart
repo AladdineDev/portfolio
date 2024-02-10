@@ -6,17 +6,17 @@ import 'package:portfolio/src/common/widgets/technology_chip.dart';
 class TechnologyWrapChips extends ConsumerWidget {
   const TechnologyWrapChips({
     super.key,
-    required this.titles,
+    required this.technologies,
   });
 
-  final List<Technology> titles;
+  final List<Technology> technologies;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Wrap(
       spacing: 8,
       runSpacing: 8,
-      children: titles.map((technology) {
+      children: technologies.map((technology) {
         return TechnologyChip(technology: technology);
       }).toList(),
     );
