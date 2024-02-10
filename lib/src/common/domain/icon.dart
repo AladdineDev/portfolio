@@ -10,6 +10,7 @@ class IconModel with _$IconModel {
     String? iconCodePoint,
     String? iconFontFamily,
     String? iconFontPackage,
+    String? color,
   }) = _IconModel;
 
   factory IconModel.fromJson(Map<String, dynamic> json) =>
