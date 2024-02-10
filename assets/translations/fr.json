@@ -9,7 +9,8 @@
             "icon": {
                 "iconCodePoint": "0xefb7",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
@@ -18,7 +19,8 @@
             "icon": {
                 "iconCodePoint": "0xf0ea",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
@@ -27,7 +29,8 @@
             "icon": {
                 "iconCodePoint": "0xeffb",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
@@ -36,7 +39,8 @@
             "icon": {
                 "iconCodePoint": "0xeaad",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         },
         {
@@ -45,7 +49,8 @@
             "icon": {
                 "iconCodePoint": "0xecbb",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             }
         }
     ],
@@ -69,13 +74,65 @@
             "startYear": 2022,
             "endYear": 2023,
             "technologies": [
-                "Flutter",
-                "Dart",
-                "Django",
-                "Python",
-                "PostgreSQL",
-                "SQLite",
-                "Docker"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/dart.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Django",
+                    "icon": {
+                        "iconCodePoint": "0xeee7",
+                        "iconFontFamily": "BoxIcons",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Python",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/python.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/postgresql.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "SQLite",
+                    "icon": {
+                        "iconCodePoint": "0xe944",
+                        "iconFontFamily": "OctIcons",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "AWS",
+                    "icon": {
+                        "iconCodePoint": "0xeed1",
+                        "iconFontFamily": "BoxIcons",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ],
             "links": [
                 {
@@ -93,9 +150,27 @@
             "endYear": 2022,
             "endMonth": 2,
             "technologies": [
-                "Flutter",
-                "Dart",
-                "Firebase"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/dart.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Firebase",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/firebase.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -107,12 +182,42 @@
             "endYear": 2021,
             "endMonth": 6,
             "technologies": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "PHP",
-                "MariaDB",
-                "Apache"
+                {
+                    "name": "HTML",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/html-5.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "CSS",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/css3.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Javascript",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/javascript.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "PHP",
+                    "icon": {
+                        "iconCodePoint": "0xef29",
+                        "iconFontFamily": "BoxIcons",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MariaDB",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/mariadb.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ],
             "links": [
                 {
@@ -131,12 +236,25 @@
             "icon": {
                 "iconCodePoint": "0xefb7",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/portfolio.png",
             "technologies": [
-                "Flutter",
-                "Dart"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/dart.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ],
             "links": [
                 {
@@ -152,15 +270,47 @@
             "icon": {
                 "iconCodePoint": "0xefb7",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/learnflow-api.png",
             "technologies": [
-                "Node.js",
-                "Express",
-                "TypeScript",
-                "MongoDB",
-                "Docker"
+                {
+                    "name": "Node.js",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/nodejs.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Express",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/express-js.svg",
+                        "iconFontPackage": "icons_plus",
+                        "color": "0xffffffff"
+                    }
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/typescript.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/mongodb.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -170,12 +320,25 @@
             "icon": {
                 "iconCodePoint": "0xefb7",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/learnflow-backoffice.png",
             "technologies": [
-                "Flutter",
-                "Dart"
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/dart.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -185,16 +348,48 @@
             "icon": {
                 "iconCodePoint": "0xefb7",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/gsb-frais.png",
             "technologies": [
-                "Symfony",
-                "PHP",
-                "Bootstrap",
-                "MariaDB",
-                "Apache",
-                "Docker"
+                {
+                    "name": "Symfony",
+                    "icon": {
+                        "iconCodePoint": "0xf0ab",
+                        "iconFontFamily": "FontAwesome",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "PHP",
+                    "icon": {
+                        "iconCodePoint": "0xef29",
+                        "iconFontFamily": "BoxIcons",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/other/bootstrap.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MariaDB",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/mariadb.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ]
         },
         {
@@ -204,14 +399,40 @@
             "icon": {
                 "iconCodePoint": "0xefb7",
                 "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus"
+                "iconFontPackage": "icons_plus",
+                "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
             "technologies": [
-                "Flask",
-                "Python",
-                "MariaDB",
-                "Docker"
+                {
+                    "name": "Flask",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/flask.svg",
+                        "iconFontPackage": "icons_plus",
+                        "color": "0xffffffff"
+                    }
+                },
+                {
+                    "name": "Python",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/python.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "MariaDB",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/mariadb.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
+                        "iconFontPackage": "icons_plus"
+                    }
+                }
             ]
         }
     ],

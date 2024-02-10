@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:portfolio/src/common/domain/icon.dart';
 import 'package:portfolio/src/common/domain/link.dart';
+import 'package:portfolio/src/common/domain/technology.dart';
 
 part 'project.freezed.dart';
 part 'project.g.dart';
@@ -13,7 +14,7 @@ class Project with _$Project {
     String? url,
     IconModel? icon,
     String? screenshotPath,
-    List<String>? technologies,
+    List<Technology>? technologies,
     List<Link>? links,
   }) = _Project;
 

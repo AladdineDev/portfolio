@@ -14,7 +14,7 @@ class ProjectImage extends ConsumerWidget {
   final Project project;
   final bool isHovered;
 
-  static const double _iconSize = 32;
+  static const double _iconSize = 36;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

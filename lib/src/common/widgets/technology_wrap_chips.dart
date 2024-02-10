@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:portfolio/src/common/domain/technology.dart';
 import 'package:portfolio/src/common/widgets/technology_chip.dart';
 
 class TechnologyWrapChips extends ConsumerWidget {
@@ -8,7 +9,7 @@ class TechnologyWrapChips extends ConsumerWidget {
     required this.titles,
   });
 
-  final List<String> titles;
+  final List<Technology> titles;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -16,7 +17,7 @@ class TechnologyWrapChips extends ConsumerWidget {
       spacing: 8,
       runSpacing: 8,
       children: titles.map((technology) {
-        return TechnologyChip(name: technology);
+        return TechnologyChip(technology: technology);
       }).toList(),
     );
   }
