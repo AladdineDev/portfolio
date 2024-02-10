@@ -6,10 +6,10 @@ part 'icon.g.dart';
 @freezed
 class IconModel with _$IconModel {
   const factory IconModel({
-    String? iconAssetName,
-    String? iconCodePoint,
-    String? iconFontFamily,
-    String? iconFontPackage,
+    String? assetName,
+    String? codePoint,
+    String? fontFamily,
+    String? fontPackage,
     String? color,
   }) = _IconModel;
 

@@ -19,10 +19,10 @@ class MyIcon extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final iconAssetName = icon?.iconAssetName;
-    final iconCodePoint = icon?.iconCodePoint;
-    final iconFontFamily = icon?.iconFontFamily;
-    final iconFontPackage = icon?.iconFontPackage;
+    final iconAssetName = icon?.assetName;
+    final iconCodePoint = icon?.codePoint;
+    final iconFontFamily = icon?.fontFamily;
+    final iconFontPackage = icon?.fontPackage;
     final iconColor = icon?.color;
     Color? color;
     if (iconColor != null) {

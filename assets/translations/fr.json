@@ -7,9 +7,9 @@
             "tooltip": "Github",
             "url": "https://github.com/AladdineDev",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             }
         },
@@ -17,9 +17,9 @@
             "tooltip": "Twitter",
             "url": "https://twitter.com/AladdineDev",
             "icon": {
-                "iconCodePoint": "0xf0ea",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xf0ea",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             }
         },
@@ -27,9 +27,9 @@
             "tooltip": "LinkedIn",
             "url": "https://www.linkedin.com/in/aladdine-dev",
             "icon": {
-                "iconCodePoint": "0xeffb",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xeffb",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             }
         },
@@ -37,9 +37,9 @@
             "tooltip": "aladdine.abdou@gmail.com",
             "url": "mailto:aladdine.abdou@gmail.com",
             "icon": {
-                "iconCodePoint": "0xeaad",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xeaad",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             }
         },
@@ -47,9 +47,9 @@
             "tooltip": "+33 7 82 54 34 70",
             "url": "tel:+33782543470",
             "icon": {
-                "iconCodePoint": "0xecbb",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xecbb",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             }
         }
@@ -67,7 +67,7 @@
     "aboutDescription": "Salut ! Je m'appelle Aladdine, et je suis apprenti développeur en quatrième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
     "experiences": [
         {
-            "job": "Développeur Mobile",
+            "role": "Développeur Mobile",
             "company": "Walt Disney Imagineering",
             "description": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant aux experts techniques la prise d'informations sur le terrain et fluidifiant la communication avec les services de maintenance pour la résolution des problèmes.",
             "isPresent": false,
@@ -77,60 +77,60 @@
                 {
                     "name": "Flutter",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Dart",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/dart.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Django",
                     "icon": {
-                        "iconCodePoint": "0xeee7",
-                        "iconFontFamily": "BoxIcons",
-                        "iconFontPackage": "icons_plus"
+                        "codePoint": "0xeee7",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Python",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/python.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/python.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "PostgreSQL",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/postgresql.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/postgresql.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "SQLite",
                     "icon": {
-                        "iconCodePoint": "0xe944",
-                        "iconFontFamily": "OctIcons",
-                        "iconFontPackage": "icons_plus"
+                        "codePoint": "0xe944",
+                        "fontFamily": "OctIcons",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Docker",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "AWS",
                     "icon": {
-                        "iconCodePoint": "0xeed1",
-                        "iconFontFamily": "BoxIcons",
-                        "iconFontPackage": "icons_plus"
+                        "codePoint": "0xeed1",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ],
@@ -142,7 +142,7 @@
             ]
         },
         {
-            "job": "Développeur Mobile",
+            "role": "Développeur Mobile",
             "company": "Solutions Multi Techniques",
             "description": "Développement d'une Progressive Web App pour les techniciens en systèmes de sécurité, leur permettant de générer des devis PDF complets. Cela permet la remise immédiate des devis aux clients après leur visite, augmentant ainsi le taux de conversion.",
             "startYear": 2022,
@@ -153,28 +153,28 @@
                 {
                     "name": "Flutter",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Dart",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/dart.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Firebase",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/firebase.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/other/firebase.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ]
         },
         {
-            "job": "Développeur Web",
+            "role": "Développeur Web",
             "company": "Association FAIRE",
             "description": "Développement du site web de l'association, en collaboration au sein d'un groupe de développeurs. Ce site web offre à ses visiteurs la possibilité d'en savoir plus sur l'association et de la rejoindre en tant que membres.\nÀ ce jour, le site web a attiré plus de 10 000 visites.",
             "startYear": 2021,
@@ -185,37 +185,37 @@
                 {
                     "name": "HTML",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/html-5.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/html-5.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "CSS",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/css3.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/css3.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Javascript",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/javascript.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/javascript.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "PHP",
                     "icon": {
-                        "iconCodePoint": "0xef29",
-                        "iconFontFamily": "BoxIcons",
-                        "iconFontPackage": "icons_plus"
+                        "codePoint": "0xef29",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "MariaDB",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/mariadb.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/mariadb.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ],
@@ -234,9 +234,9 @@
             "description": "Ce projet open source permet à toute personne de disposer d’un portfolio en ligne en moins de 10 minutes. Il adopte une architecture basée sur Riverpod en suivant une approche feature-first pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/portfolio.png",
@@ -244,15 +244,15 @@
                 {
                     "name": "Flutter",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Dart",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/dart.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ],
@@ -268,9 +268,9 @@
             "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification avec JWT.",
             "url": "https://github.com/AladdineDev/learnflow-api#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/learnflow-api.png",
@@ -278,37 +278,37 @@
                 {
                     "name": "Node.js",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/nodejs.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/nodejs.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Express",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/express-js.svg",
-                        "iconFontPackage": "icons_plus",
+                        "assetName": "assets/images/logos/other/express-js.svg",
+                        "fontPackage": "icons_plus",
                         "color": "0xffffffff"
                     }
                 },
                 {
                     "name": "TypeScript",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/typescript.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/typescript.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "MongoDB",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/mongodb.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/mongodb.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Docker",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ]
@@ -318,9 +318,9 @@
             "description": "Il s'agit du back-office conçu pour les managers du projet Learn Flow. Cette Single-Page App leur permet de surveiller l'activité de leurs applications et utilisateurs (trafic, factures...).",
             "url": "https://github.com/AladdineDev/learnflow_backoffice#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/learnflow-backoffice.png",
@@ -328,15 +328,15 @@
                 {
                     "name": "Flutter",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/flutter.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/flutter.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Dart",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/dart.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/other/dart.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ]
@@ -346,9 +346,9 @@
             "description": "GSB-Frais est une application web de gestion des frais, développée pour les délégués médicaux et les comptables de l'entreprise fictive GSB. Elle facilite la saisie et la vérification des rapports mensuels des délégués médicaux, tout en permettant aux comptables de les traiter.",
             "url": "https://github.com/AladdineDev/GSB-Frais#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/gsb-frais.png",
@@ -356,38 +356,38 @@
                 {
                     "name": "Symfony",
                     "icon": {
-                        "iconCodePoint": "0xf0ab",
-                        "iconFontFamily": "FontAwesome",
-                        "iconFontPackage": "icons_plus"
+                        "codePoint": "0xf0ab",
+                        "fontFamily": "FontAwesome",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "PHP",
                     "icon": {
-                        "iconCodePoint": "0xef29",
-                        "iconFontFamily": "BoxIcons",
-                        "iconFontPackage": "icons_plus"
+                        "codePoint": "0xef29",
+                        "fontFamily": "BoxIcons",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Bootstrap",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/other/bootstrap.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/other/bootstrap.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "MariaDB",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/mariadb.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/mariadb.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Docker",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ]
@@ -397,9 +397,9 @@
             "description": "L'API REST du projet GSB sert d'interface pour les différents clients du projet (Android, Desktop et Web).",
             "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
             "icon": {
-                "iconCodePoint": "0xefb7",
-                "iconFontFamily": "FontAwesome",
-                "iconFontPackage": "icons_plus",
+                "codePoint": "0xefb7",
+                "fontFamily": "FontAwesome",
+                "fontPackage": "icons_plus",
                 "color": "0xffffffff"
             },
             "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
@@ -407,30 +407,30 @@
                 {
                     "name": "Flask",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/flask.svg",
-                        "iconFontPackage": "icons_plus",
+                        "assetName": "assets/images/logos/software-development/flask.svg",
+                        "fontPackage": "icons_plus",
                         "color": "0xffffffff"
                     }
                 },
                 {
                     "name": "Python",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/python.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/python.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "MariaDB",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/mariadb.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/mariadb.svg",
+                        "fontPackage": "icons_plus"
                     }
                 },
                 {
                     "name": "Docker",
                     "icon": {
-                        "iconAssetName": "assets/images/logos/software-development/docker.svg",
-                        "iconFontPackage": "icons_plus"
+                        "assetName": "assets/images/logos/software-development/docker.svg",
+                        "fontPackage": "icons_plus"
                     }
                 }
             ]

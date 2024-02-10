@@ -15,10 +15,10 @@ Here's the template of a JSON translation file:
       "tooltip": "Github", // Tooltip displayed when hovering or long-pressing the contact icon button
       "url": "https://github.com/AladdineDev", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
       "icon": {
-        "iconAssetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconCodePoint and the iconFontFamily are used, this property must be null.
-        "iconCodePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
-        "iconFontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
-        "iconFontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "assetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
+        "codePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
+        "fontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
+        "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
         "color": "0xffffffff" // Hexadecimal color for the icon.
       }
     }
@@ -38,17 +38,17 @@ Here's the template of a JSON translation file:
   // Experiences
   "experiences": [
     {
-      "job": "Mobile Developer", // Your job title or role
+      "role": "Mobile Developer", // Your role title or role
       "company": "Walt Disney Imagineering", // Name of the company you worked at
-      "description": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.", // Description of your job
+      "description": "Development of an offline-first mobile snagging application for Disneyland Paris, streamlining information gathering for technical experts in the field and enhancing communication with maintenance services for problem-solving.", // Description of your role
       "url": "https://sites.disney.com/waltdisneyimagineering/", // URL to open when the experience card is tapped
-      "isPresent": true, // Indicates whether the job is your current position
-      "startYear": 2022, // Starting year of the job
-      "startMonth": 9, // Starting month of the job
-      "endYear": 2023, // Ending year of the job (if applicable)
-      "endMonth": 8, // Ending month of the job (if applicable)
+      "isPresent": true, // Indicates whether the role is your current position
+      "startYear": 2022, // Starting year of the role
+      "startMonth": 9, // Starting month of the role
+      "endYear": 2023, // Ending year of the role (if applicable)
+      "endMonth": 8, // Ending month of the role (if applicable)
       "technologies": [
-        "Flutter" // Technologies used in this job experience
+        "Flutter" // Technologies used in this role experience
       ],
       "links": [
         {
@@ -67,10 +67,10 @@ Here's the template of a JSON translation file:
       "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.", // Description of the project
       "url": "https://github.com/AladdineDev/portfolio#readme", // URL to open when the project card is tapped
       "icon": {
-        "iconAssetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconCodePoint and the iconFontFamily are used, this property must be null.
-        "iconCodePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
-        "iconFontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the iconAssetName is used, this property must be null.
-        "iconFontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "assetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
+        "codePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
+        "fontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
+        "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
         "color": "0xffffffff" // Hexadecimal color for the icon.
       },
       "screenshotPath": "assets/images/portfolio.png", // screenshot asset path of the project

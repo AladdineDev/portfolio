@@ -8,7 +8,7 @@ part 'experience.g.dart';
 @freezed
 class Experience with _$Experience {
   const factory Experience({
-    String? job,
+    String? role,
     String? company,
     String? description,
     String? url,

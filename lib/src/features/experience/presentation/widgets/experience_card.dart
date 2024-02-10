@@ -40,7 +40,7 @@ class ExperienceCard extends ConsumerWidget {
                   children: [
                     Flexible(
                       child: Text(
-                        experience.job ?? "",
+                        experience.role ?? "",
                         style: theme.textTheme.titleMedium
                             ?.copyWith(fontWeight: FontWeight.bold),
                       ),
