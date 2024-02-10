@@ -14,6 +14,8 @@ class ProjectImage extends ConsumerWidget {
   final Project project;
   final bool isHovered;
 
+  static const double _iconSize = 32;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Stack(
@@ -69,7 +71,7 @@ class ProjectImage extends ConsumerWidget {
           bottom: 20,
           right: 20,
           child: SizedBox.square(
-            dimension: 32,
+            dimension: _iconSize,
             child: AnimatedCrossFade(
               alignment: Alignment.center,
               firstCurve: Curves.decelerate,
@@ -83,8 +85,7 @@ class ProjectImage extends ConsumerWidget {
               firstChild: const SizedBox.shrink(),
               secondChild: MyIcon(
                 icon: project.icon,
-                color: Colors.white,
-                size: 32,
+                size: _iconSize,
               ),
             ),
           ),
