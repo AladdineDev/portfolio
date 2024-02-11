@@ -9,7 +9,7 @@ Flutter Portfolio – by [@AladdineDev](https://github.com/AladdineDev)
 
 ## [Live Preview](https://aladdine.dev) 👀
 
-<img src="docs/images/mockups-1.png" width="72%"></img> <img src="docs/images/mockups-2.png" width="27%"></img>
+<img src="docs/images/mockups-1.png" width="70%"></img> <img src="docs/images/mockups-2.png" width="25%"></img>
 
 ## Features ✨
 
