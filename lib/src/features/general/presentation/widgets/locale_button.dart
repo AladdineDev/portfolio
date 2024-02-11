@@ -22,17 +22,7 @@ class LocaleButton extends ConsumerWidget {
       dropdownColor: Theme.of(context).colorScheme.primary,
       focusNode: FocusNode(canRequestFocus: false),
       focusColor: Colors.transparent,
-      underline: Container(
-        height: 1,
-        decoration: BoxDecoration(
-          border: Border(
-            bottom: BorderSide(
-              color: Theme.of(context).colorScheme.onSurface,
-              width: 0,
-            ),
-          ),
-        ),
-      ),
+      underline: const SizedBox.shrink(),
       items: languages.mapIndexed((index, language) {
         return DropdownMenuItem<Locale>(
           value: Locale(language.code ?? ""),
