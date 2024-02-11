@@ -435,12 +435,20 @@
         {
             "code": "en",
             "name": "English",
-            "nativeName": "English"
+            "nativeName": "English",
+            "icon": {
+                "assetName": "assets/images/logos/flags/united-states-of-america.svg",
+                "fontPackage": "icons_plus"
+            }
         },
         {
             "code": "fr",
             "name": "French",
-            "nativeName": "Français"
+            "nativeName": "Français",
+            "icon": {
+                "assetName": "assets/images/logos/flags/france.svg",
+                "fontPackage": "icons_plus"
+            }
         }
     ],
     "bottomBanner": {
