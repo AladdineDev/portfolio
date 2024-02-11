@@ -15,7 +15,7 @@ Here's the template of a JSON translation file:
       "tooltip": "Github", // Tooltip displayed when hovering or long-pressing the contact icon button
       "url": "https://github.com/AladdineDev", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
       "icon": {
-        "assetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
+        "assetName": "assets/images/logos/software-development/github.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
         "codePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
         "fontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
         "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
@@ -67,7 +67,7 @@ Here's the template of a JSON translation file:
       "description": "Yes, it's THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.", // Description of the project
       "url": "https://github.com/AladdineDev/portfolio#readme", // URL to open when the project card is tapped
       "icon": {
-        "assetName": "assets/images/logos/software-development/github.svg", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
+        "assetName": "assets/images/logos/software-development/github.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
         "codePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
         "fontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
         "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
@@ -91,7 +91,11 @@ Here's the template of a JSON translation file:
     {
       "code": "en", // Language code
       "name": "English", // Display name of the language
-      "nativeName": "English" // Native name of the language
+      "nativeName": "English", // Native name of the language
+      "icon": { // Country flag
+        "assetName": "assets/images/logos/flags/united-states-of-america.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/blob/main/lib/src/flag.dart. If the codePoint and the fontFamily are used, this property must be null.
+        "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
+      }
     }
   ],
 
