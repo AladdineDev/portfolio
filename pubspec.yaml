@@ -28,6 +28,7 @@ dependencies:
   json_annotation: ^4.8.1
   shared_preferences: ^2.2.2
   flutter_svg: ^2.0.9
+  animated_toggle_switch: ^0.8.1
 
 dev_dependencies:
   flutter_test:
