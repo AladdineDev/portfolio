@@ -3,6 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/data/language_repository.dart';
+import 'package:portfolio/src/common/widgets/icon.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/common/domain/language.dart';
@@ -21,14 +22,18 @@ class LocaleButton extends ConsumerWidget {
       dropdownColor: Theme.of(context).colorScheme.primary,
       focusNode: FocusNode(canRequestFocus: false),
       focusColor: Colors.transparent,
+      underline: const SizedBox.shrink(),
       items: languages.mapIndexed((index, language) {
         return DropdownMenuItem<Locale>(
           value: Locale(language.code ?? ""),
           child: Row(
             children: [
-              const Icon(Icons.translate),
+              MyIcon(
+                icon: language.icon,
+                placeholder: const Icon(Icons.translate),
+              ),
               gapW8,
-              _buildLanguageNameText(language),
+              Text(_getLanguageName(language)),
             ],
           ),
         );
@@ -50,11 +55,11 @@ class LocaleButton extends ConsumerWidget {
     }
   }
 
-  Text _buildLanguageNameText(Language language) {
+  String _getLanguageName(Language language) {
     final languageName = language.name;
     final languageNativeName = language.nativeName;
-    if (languageNativeName != null) return Text(languageNativeName);
-    if (languageName != null) return Text(languageName);
-    return Text(tr(LocaleKeys.unknownLanguageError));
+    if (languageNativeName != null) return languageNativeName;
+    if (languageName != null) return languageName;
+    return tr(LocaleKeys.unknownLanguageError);
   }
 }
