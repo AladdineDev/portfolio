@@ -17,6 +17,7 @@ class DarkModeSwitch extends ConsumerWidget {
         spacing: 8,
         height: 36,
         indicatorSize: const Size.square(32),
+        animationCurve: Curves.decelerate,
         style: ToggleStyle(
           backgroundColor: Theme.of(context).colorScheme.primary,
           borderColor: Colors.transparent,
