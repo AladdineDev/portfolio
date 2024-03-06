@@ -48,7 +48,13 @@ Here's the template of a JSON translation file:
       "endYear": 2023, // Ending year of the role (if applicable)
       "endMonth": 8, // Ending month of the role (if applicable)
       "technologies": [
-        "Flutter" // Technologies used in this role experience
+        {
+          "name": "Flutter", // Name of the technology used in this role experience
+          "icon": {
+            "assetName": "assets/images/logos/software-development/flutter.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
+            "fontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+          }
+        }
       ],
       "links": [
         {
@@ -92,9 +98,10 @@ Here's the template of a JSON translation file:
       "code": "en", // Language code
       "name": "English", // Display name of the language
       "nativeName": "English", // Native name of the language
-      "icon": { // Country flag
+      "icon": {
+        // Country flag
         "assetName": "assets/images/logos/flags/united-states-of-america.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/blob/main/lib/src/flag.dart. If the codePoint and the fontFamily are used, this property must be null.
-        "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "fontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
       }
     }
   ],
