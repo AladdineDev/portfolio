@@ -33,7 +33,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(20),
           child: InkWell(
-            onTap: _onTap,
+            onTap: () => _onTap(context: context),
             borderRadius: BorderRadius.circular(20),
             hoverColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
             splashColor: Theme.of(context).colorScheme.tertiary.withAlpha(30),
@@ -49,7 +49,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
     );
   }
 
-  void _onTap() async {
+  void _onTap({required BuildContext context}) async {
     final url = widget.project.url;
     if (url == null) return;
     try {
