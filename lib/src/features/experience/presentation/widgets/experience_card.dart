@@ -22,7 +22,7 @@ class ExperienceCard extends ConsumerWidget {
       color: theme.colorScheme.primary,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
-        mouseCursor: MaterialStateMouseCursor.textable,
+        mouseCursor: WidgetStateMouseCursor.textable,
         onTap: () => _onTap(context),
         borderRadius: BorderRadius.circular(20),
         hoverColor: theme.colorScheme.tertiary.withAlpha(40),

@@ -39,7 +39,7 @@ class EndDrawer extends ConsumerWidget {
           ),
           Expanded(
             child: MySelectionArea(
-              mouseCursor: MaterialStateMouseCursor.clickable,
+              mouseCursor: WidgetStateMouseCursor.clickable,
               child: ListView(
                 children: [
                   Column(
