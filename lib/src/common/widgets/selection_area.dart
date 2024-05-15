@@ -5,7 +5,7 @@ class MySelectionArea extends ConsumerWidget {
   const MySelectionArea({
     super.key,
     required this.child,
-    this.mouseCursor = MaterialStateMouseCursor.textable,
+    this.mouseCursor = WidgetStateMouseCursor.textable,
   });
 
   final Widget child;
