@@ -18,7 +18,7 @@ class LanguageRepository {
   final Ref _ref;
 
   List<Language> getLanguages() {
-    final locale = _ref.watch(localeControllerProvider).locale;
+    final locale = _ref.watch(localeControllerProvider).requireValue.locale;
     final jsonLanguages = trList(locale, LocaleKeys.languages);
     final languages = jsonLanguages.map((jsonLanguage) {
       return Language.fromJson(jsonLanguage);

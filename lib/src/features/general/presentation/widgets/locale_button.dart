@@ -51,7 +51,7 @@ class LocaleButton extends ConsumerWidget {
   }) async {
     if (locale != null) {
       await context.setLocale(locale);
-      await ref.read(localeControllerProvider).setLocale(locale);
+      await ref.read(localeControllerProvider).requireValue.setLocale(locale);
     }
   }
 

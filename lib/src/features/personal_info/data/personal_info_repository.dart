@@ -19,7 +19,7 @@ class PersonalInfoRepository {
   final Ref _ref;
 
   List<Resume> getResumes() {
-    final locale = _ref.watch(localeControllerProvider).locale;
+    final locale = _ref.watch(localeControllerProvider).requireValue.locale;
     final jsonResumes = trList(locale, LocaleKeys.resumes);
     final resumes = jsonResumes.map((jsonResume) {
       return Resume.fromJson(jsonResume);
@@ -28,7 +28,7 @@ class PersonalInfoRepository {
   }
 
   List<Contact> getContacts() {
-    final locale = _ref.watch(localeControllerProvider).locale;
+    final locale = _ref.watch(localeControllerProvider).requireValue.locale;
     final jsonContacts = trList(locale, LocaleKeys.contacts);
     final contacts = jsonContacts.map((jsonContact) {
       return Contact.fromJson(jsonContact);

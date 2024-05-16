@@ -18,7 +18,7 @@ class ProjectRepository {
   final Ref _ref;
 
   List<Project> getProjects() {
-    final locale = _ref.watch(localeControllerProvider).locale;
+    final locale = _ref.watch(localeControllerProvider).requireValue.locale;
     final jsonProjects = trList(locale, LocaleKeys.projects);
     final projects = jsonProjects.map((jsonProject) {
       return Project.fromJson(jsonProject);

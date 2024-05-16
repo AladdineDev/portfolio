@@ -18,7 +18,7 @@ class ExperienceRepository {
   final Ref _ref;
 
   List<Experience> getExperiences() {
-    final locale = _ref.watch(localeControllerProvider).locale;
+    final locale = _ref.watch(localeControllerProvider).requireValue.locale;
     final jsonExperiences = trList(locale, LocaleKeys.experiences);
     final experiences = jsonExperiences.map((jsonExperience) {
       return Experience.fromJson(jsonExperience);
