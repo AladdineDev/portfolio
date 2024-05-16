@@ -81,7 +81,7 @@ Additionally for your first deployment, you'll need to select the proper GitHub 
 **1. Portfolio Content:**\
 Customize the portfolio content by modifying or adding JSON translation files within the [`assets/translations`](assets/translations) folder. Don't forget to [re-generate your localization files](#generate-localization-files) when working locally. For an understanding of how JSON translation files are structured, refer to the [translation template](docs/translation-template.md)
 
-If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files. Also, update the supported locales in the [`lib/src/localization/app_localizations.dart`](lib/src/localization/app_localizations.dart)
+If you add or remove a JSON translation file, remember to update the `languages` key in your other translation files.
 
 > For additional information, refer to the [easy_localization](https://pub.dev/packages/easy_localization) documentation
 
