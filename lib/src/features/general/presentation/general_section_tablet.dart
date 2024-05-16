@@ -12,16 +12,11 @@ import 'package:portfolio/src/features/general/provider/scroll_controller.dart';
 import 'package:portfolio/src/features/general/provider/section_key_provider.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
 
-class GeneralTablet extends ConsumerStatefulWidget {
+class GeneralTablet extends ConsumerWidget {
   const GeneralTablet({super.key});
 
   @override
-  ConsumerState<GeneralTablet> createState() => _MainTabletState();
-}
-
-class _MainTabletState extends ConsumerState<GeneralTablet> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final scrollController = ref.watch(scrollControllerProvider);
 
     return Column(
@@ -37,7 +32,7 @@ class _MainTabletState extends ConsumerState<GeneralTablet> {
                   SliverList.list(
                     children: [
                       Padding(
-                        padding: _buildResponsivePadding(),
+                        padding: _buildResponsivePadding(context: context),
                         child: Align(
                           alignment: Alignment.topLeft,
                           child: AnimatedFadeSlide(
@@ -86,7 +81,7 @@ class _MainTabletState extends ConsumerState<GeneralTablet> {
     );
   }
 
-  EdgeInsetsGeometry _buildResponsivePadding() {
+  EdgeInsetsGeometry _buildResponsivePadding({required BuildContext context}) {
     if (Responsive.isTablet(context)) {
       return const EdgeInsets.fromLTRB(48, 60, 48, 88);
     } else if (Responsive.isMobile(context)) {

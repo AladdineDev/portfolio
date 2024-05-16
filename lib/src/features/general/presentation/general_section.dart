@@ -7,16 +7,11 @@ import 'package:portfolio/src/features/general/presentation/widgets/end_drawer.d
 import 'package:portfolio/src/features/general/presentation/widgets/safe_area.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
 
-class GeneralSection extends ConsumerStatefulWidget {
+class GeneralSection extends ConsumerWidget {
   const GeneralSection({super.key});
 
   @override
-  ConsumerState<GeneralSection> createState() => _MainSectionState();
-}
-
-class _MainSectionState extends ConsumerState<GeneralSection> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.secondary,
       endDrawer: const MySafeArea(
