@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/features/general/presentation/general_section_desktop.dart';
 import 'package:portfolio/src/features/general/presentation/general_section_tablet.dart';
@@ -8,22 +7,11 @@ import 'package:portfolio/src/features/general/presentation/widgets/end_drawer.d
 import 'package:portfolio/src/features/general/presentation/widgets/safe_area.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
 
-class GeneralSection extends ConsumerStatefulWidget {
+class GeneralSection extends ConsumerWidget {
   const GeneralSection({super.key});
 
   @override
-  ConsumerState<GeneralSection> createState() => _GeneralSectionState();
-}
-
-class _GeneralSectionState extends ConsumerState<GeneralSection> {
-  @override
-  void initState() {
-    FlutterNativeSplash.remove();
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.secondary,
       endDrawer: const MySafeArea(

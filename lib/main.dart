@@ -7,11 +7,9 @@ import 'package:portfolio/src/app_startup.dart';
 import 'package:portfolio/src/localization/app_localizations.dart';
 import 'package:portfolio/src/localization/locale_controller.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() async {
-  final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  WidgetsFlutterBinding.ensureInitialized();
   EasyLocalization.logger.enableBuildModes = [];
   setPathUrlStrategy();
   GoogleFonts.config.allowRuntimeFetching = false;
