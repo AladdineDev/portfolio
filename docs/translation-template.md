@@ -18,7 +18,6 @@ Here's the template of a JSON translation file:
         "assetName": "assets/images/logos/software-development/github.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
         "codePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
         "fontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
-        "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
         "color": "0xffffffff" // Hexadecimal color for the icon.
       }
     }
@@ -51,8 +50,7 @@ Here's the template of a JSON translation file:
         {
           "name": "Flutter", // Name of the technology used in this role experience
           "icon": {
-            "assetName": "assets/images/logos/software-development/flutter.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
-            "fontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+            "assetName": "assets/images/logos/software-development/flutter.svg" // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
           }
         }
       ],
@@ -76,7 +74,6 @@ Here's the template of a JSON translation file:
         "assetName": "assets/images/logos/software-development/github.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the codePoint and the fontFamily are used, this property must be null.
         "codePoint": "0xefb7", // Unicode code point for the icon prefixed with "0x" for hexadecimal, can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
         "fontFamily": "FontAwesome", // Font family for the icon (e.g., FontAwesome), can be obtained from https://github.com/chouhan-rahul/icons_plus/tree/main/lib/src. If the assetName is used, this property must be null.
-        "fontPackage": "icons_plus", // Name of the package providing the icon font (here, it's based on Icons Plus)
         "color": "0xffffffff" // Hexadecimal color for the icon.
       },
       "screenshotPath": "assets/images/portfolio.png", // screenshot asset path of the project
@@ -100,8 +97,7 @@ Here's the template of a JSON translation file:
       "nativeName": "English", // Native name of the language
       "icon": {
         // Country flag
-        "assetName": "assets/images/logos/flags/united-states-of-america.svg", // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/blob/main/lib/src/flag.dart. If the codePoint and the fontFamily are used, this property must be null.
-        "fontPackage": "icons_plus" // Name of the package providing the icon font (here, it's based on Icons Plus)
+        "assetName": "assets/images/logos/flags/united-states-of-america.svg" // SVG asset path, can be obtained from https://github.com/chouhan-rahul/icons_plus/blob/main/lib/src/flag.dart. If the codePoint and the fontFamily are used, this property must be null.
       }
     }
   ],
