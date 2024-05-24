@@ -22,7 +22,6 @@ class MyIcon extends ConsumerWidget {
     final iconAssetName = icon?.assetName;
     final iconCodePoint = icon?.codePoint;
     final iconFontFamily = icon?.fontFamily;
-    final iconFontPackage = icon?.fontPackage;
     final iconColor = icon?.color;
     Color? color;
     if (iconColor != null) {
@@ -31,15 +30,12 @@ class MyIcon extends ConsumerWidget {
         color = Color(colorHex);
       }
     }
-    if (iconCodePoint != null &&
-        iconFontFamily != null &&
-        iconFontPackage != null) {
+    if (iconCodePoint != null && iconFontFamily != null) {
       final iconCodePointHexa = int.tryParse(iconCodePoint);
       if (iconCodePointHexa != null) {
         final iconData = IconData(
           iconCodePointHexa,
           fontFamily: iconFontFamily,
-          fontPackage: iconFontPackage,
         );
         return Padding(
           padding: const EdgeInsets.all(2),
@@ -52,10 +48,9 @@ class MyIcon extends ConsumerWidget {
           ),
         );
       }
-    } else if (iconAssetName != null && iconFontPackage != null) {
+    } else if (iconAssetName != null) {
       return SvgPicture.asset(
         iconAssetName,
-        package: iconFontPackage,
         width: size,
         colorFilter:
             color == null ? null : ColorFilter.mode(color, BlendMode.srcIn),

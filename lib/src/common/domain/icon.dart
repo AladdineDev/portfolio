@@ -9,7 +9,6 @@ class IconModel with _$IconModel {
     String? assetName,
     String? codePoint,
     String? fontFamily,
-    String? fontPackage,
     String? color,
   }) = _IconModel;
 
