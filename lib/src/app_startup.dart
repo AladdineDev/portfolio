@@ -42,11 +42,7 @@ class AppStartupLoadingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.primary,
-      ),
-    );
+    return const SizedBox.shrink();
   }
 }
 
