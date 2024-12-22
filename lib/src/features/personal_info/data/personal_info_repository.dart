@@ -9,7 +9,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'personal_info_repository.g.dart';
 
 @riverpod
-PersonalInfoRepository personalInfoRepository(PersonalInfoRepositoryRef ref) {
+PersonalInfoRepository personalInfoRepository(Ref ref) {
   return PersonalInfoRepository(ref);
 }
 

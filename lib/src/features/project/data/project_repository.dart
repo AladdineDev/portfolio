@@ -8,7 +8,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'project_repository.g.dart';
 
 @riverpod
-ProjectRepository projectRepository(ProjectRepositoryRef ref) {
+ProjectRepository projectRepository(Ref ref) {
   return ProjectRepository(ref);
 }
 

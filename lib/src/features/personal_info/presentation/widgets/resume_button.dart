@@ -36,7 +36,7 @@ class _ResumeButtonState extends ConsumerState<ResumeButton> {
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
               backgroundColor: _isHovered
-                  ? theme.colorScheme.tertiary.withOpacity(0.1)
+                  ? theme.colorScheme.tertiary.withValues(alpha: 0.1)
                   : null,
               side: BorderSide(
                 width: _isHovered ? 2 : 1,

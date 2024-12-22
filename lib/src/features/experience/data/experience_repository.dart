@@ -8,7 +8,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'experience_repository.g.dart';
 
 @riverpod
-ExperienceRepository experienceRepository(ExperienceRepositoryRef ref) {
+ExperienceRepository experienceRepository(Ref ref) {
   return ExperienceRepository(ref);
 }
 
