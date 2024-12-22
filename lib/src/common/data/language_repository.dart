@@ -8,7 +8,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'language_repository.g.dart';
 
 @riverpod
-LanguageRepository languageRepository(LanguageRepositoryRef ref) {
+LanguageRepository languageRepository(Ref ref) {
   return LanguageRepository(ref);
 }
 

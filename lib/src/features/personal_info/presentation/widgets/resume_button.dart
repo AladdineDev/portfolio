@@ -58,6 +58,7 @@ class _ResumeButtonState extends ConsumerState<ResumeButton> {
                     0xeec7,
                     fontFamily: "FontAwesome",
                   ),
+                  size: 24,
                   color: theme.colorScheme.inverseSurface,
                 ),
                 gapW12,
