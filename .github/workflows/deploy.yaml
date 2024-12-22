@@ -37,9 +37,9 @@ jobs:
         id: set_base_href
         run: |
           if [[ -z "${{ vars.CNAME }}" ]]; then
-            echo "::set-output name=base_href::/${{ github.event.repository.name }}/"
+            echo "base_href=/${{ github.event.repository.name }}/" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=base_href::/"
+            echo "base_href=/" >> $GITHUB_OUTPUT
           fi
 
       - name: Build
