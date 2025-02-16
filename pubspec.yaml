@@ -10,38 +10,38 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  flex_color_scheme: ^7.3.1
+  flutter_web_plugins:
+    sdk: flutter
+  flex_color_scheme: ^8.1.1
   google_fonts: ^6.2.1
-  riverpod_annotation: ^2.3.5
-  hooks_riverpod: ^2.5.1
+  riverpod_annotation: ^2.6.1
+  hooks_riverpod: ^2.6.1
   flutter_hooks: ^0.20.5
   collection: ^1.18.0
   url_launcher: ^6.2.6
-  url_strategy: ^0.2.0
   intl: ^0.19.0
-  easy_localization: ^3.0.7
+  easy_localization: ^3.0.7+1
   easy_logger: ^0.0.2
-  freezed_annotation: ^2.4.1
+  freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
-  shared_preferences: ^2.2.3
-  flutter_svg: ^2.0.10
-  animated_toggle_switch: ^0.8.2
-  path: ^1.9.0
+  shared_preferences: ^2.5.2
+  flutter_svg: ^2.0.17
+  animated_toggle_switch: ^0.8.4
+  path: ^1.9.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^4.0.0
-  custom_lint: ^0.6.4
-  riverpod_lint: ^2.3.2
-  riverpod_generator: ^2.3.5
-  build_runner: ^2.4.10
-  freezed: ^2.4.7
-  json_serializable: ^6.8.0
+  flutter_lints: ^5.0.0
+  custom_lint: ^0.7.3
+  riverpod_lint: ^2.6.4
+  riverpod_generator: ^2.6.4
+  build_runner: ^2.4.15
+  freezed: ^2.5.8
+  json_serializable: ^6.9.4
   flutter_native_splash: ^2.4.0
-  flutter_launcher_icons: ^0.13.1
+  flutter_launcher_icons: ^0.14.3
 
 flutter:
 
