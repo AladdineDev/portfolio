@@ -19,8 +19,44 @@ class ExperienceRepository {
   List<Experience> fetchExperiences() {
     return [
       const Experience(
-        startDate: 'Apr 2022',
+        startDate: 'Feb 2025',
         endDate: 'Present',
+        job: 'Software Engineer',
+        company: 'Ibadan Electricity Distribution Company',
+        description: 'Building enterprise and business applications for the '
+            'company. I work with a team of engineers to build applications '
+            'that help the company manage its operations and customer relations.',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'React Native'
+              'Android',
+          'iOS',
+          'REST API',
+          'MSSQL',
+        ],
+      ),
+      const Experience(
+        startDate: 'Feb 2020',
+        endDate: 'Aug 2024',
+        job: 'Project Manager & Flutter Developer',
+        company: 'Monarch Technologies',
+        description: 'At Monarch Technologies, I developed and managed '
+            'application systems for enterprises, including power distribution '
+            'companies. I managed team of developers and product designers to build'
+            'different solutions.',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'REST',
+          'SQFLITE',
+        ],
+      ),
+      const Experience(
+        startDate: 'Apr 2022',
+        endDate: 'Jul 2024',
         job: 'Flutter Developer',
         company: 'Better Than That',
         description:
@@ -43,7 +79,7 @@ class ExperienceRepository {
       ),
       const Experience(
           startDate: 'May 2022',
-          endDate: 'July 2023',
+          endDate: 'Jul 2023',
           job: 'Flutter Developer',
           company: 'Dota Hub Limited',
           description:
@@ -63,7 +99,7 @@ class ExperienceRepository {
           url: 'https://beereapp.com'),
       const Experience(
           startDate: 'Jan 2023',
-          endDate: 'June 2023',
+          endDate: 'Jun 2023',
           job: 'Flutter Developer',
           company: 'Twinku',
           description: 'Twinku is a solution that simplifies the process '
@@ -82,24 +118,6 @@ class ExperienceRepository {
             'AppsFlyer',
           ],
           url: 'https://twinku.co'),
-      const Experience(
-        startDate: 'Feb 2020',
-        endDate: 'Dec 2022',
-        job: 'Flutter Developer',
-        company: 'Monarch Technologies',
-        description: 'At Monarch Technologies, I contributed to building '
-            'and managing application systems for enterprises, including '
-            'power distribution companies. I managed and upgraded legacy '
-            'codebase to run on latest Flutter SDK with sound null safety.',
-        technologies: [
-          'Flutter',
-          'Dart',
-          'Android',
-          'iOS',
-          'REST',
-          'SQFLITE',
-        ],
-      ),
       const Experience(
         startDate: 'Feb 2019',
         endDate: 'Jun 2022',

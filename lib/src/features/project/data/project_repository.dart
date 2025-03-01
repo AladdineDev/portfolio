@@ -19,6 +19,24 @@ class ProjectRepository {
   List<Project> fetchProjects() {
     return [
       const Project(
+        title: 'Nearpays',
+        description: 'A finance application that offers virtual USD cards for '
+            'international payment, virtual accounts to businesses and individuals, '
+            'savings platform with high a interest yield, and many more.',
+        url: 'https://apps.apple.com/ng/app/nearpays/id6446233465',
+        photoUrl: 'assets/screenshots/nearpays.png',
+        technologies: [
+          'Flutter',
+          'Dart',
+          'Android',
+          'iOS',
+          'REST',
+          'Firebase',
+          'Shorebird',
+          'NFC',
+        ],
+      ),
+      const Project(
         title: 'Manyactive',
         description: 'A fitness app allowing users to create and join various '
             'fitness challenges. It includes features such as mood tracking, '
@@ -61,8 +79,7 @@ class ProjectRepository {
             'a list of vendors based on proximity, allowing vendors to upload '
             'products, make promotions, and view performance statistics. '
             'Buyers can search for and request products.',
-        url:
-            'https://play.google.com/store/apps/details?id=com.squirrellabs.beere.beere_mobile',
+        url: 'https://apps.apple.com/us/app/beere/id6450223083',
         photoUrl: 'assets/screenshots/beere.png',
         technologies: [
           'Flutter',
@@ -91,40 +108,6 @@ class ProjectRepository {
           'SumSub',
           'Firebase',
           'Web3',
-        ],
-      ),
-      const Project(
-        title: 'OpsManager',
-        description: 'An application used by the technical staff of '
-            'Ibadan Electricity Distribution Company (IBEDC) to perform '
-            'various functions like customer enumeration, evaluation, bill '
-            'distribution, meter reading, disconnection/reconnection, etc.',
-        url:
-            'https://play.google.com/store/apps/details?id=com.monarchtechnologies.opsmanagerapp',
-        photoUrl: 'assets/screenshots/ops_manager.png',
-        technologies: [
-          'Flutter',
-          'Dart',
-          'Android',
-          'iOS',
-          'REST',
-          'SQFLITE',
-        ],
-      ),
-      const Project(
-        title: 'Power Supply Monitoring System (PSMS)',
-        description: 'Developed for IBEDC to monitor power supply on injection '
-            'substations and feeders across different regions and business hubs.',
-        url:
-            'https://play.google.com/store/apps/details?id=com.monarchtechnologies.tcn1',
-        photoUrl: 'assets/screenshots/psms.png',
-        technologies: [
-          'Flutter',
-          'Dart',
-          'Android',
-          'iOS',
-          'REST',
-          'SQFLITE',
         ],
       ),
     ];
