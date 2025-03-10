@@ -58,6 +58,63 @@
     "experiences": [
         {
             "role": "Développeur Mobile",
+            "company": "Linnovlab",
+            "description": "Développement d’applications pour les restaurants (POS, kiosks, dashboards...) implémentant des fonctionnalités en temps réel et hors-ligne pour une expérience utilisateur fluide.",
+            "isPresent": true,
+            "startYear": 2023,
+            "endYear": 2025,
+            "technologies": [
+                {
+                    "name": "Flutter",
+                    "icon": {
+                        "assetName": "assets/icons/software-development/flutter.svg"
+                    }
+                },
+                {
+                    "name": "Dart",
+                    "icon": {
+                        "assetName": "assets/icons/other/dart.svg"
+                    }
+                },
+                {
+                    "name": "GraphQL",
+                    "icon": {
+                        "assetName": "assets/icons/software-development/graphql.svg"
+                    }
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": {
+                        "assetName": "assets/icons/software-development/postgresql.svg"
+                    }
+                },
+                {
+                    "name": "Docker",
+                    "icon": {
+                        "assetName": "assets/icons/software-development/docker.svg"
+                    }
+                },
+                {
+                    "name": "AWS",
+                    "icon": {
+                        "codePoint": "0xeed1",
+                        "fontFamily": "BoxIcons"
+                    }
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://linnovlab.com",
+                    "display": "Linnovlab"
+                },
+                {
+                    "url": "https://apps.apple.com/fr/app/caisse-digital-foody/id6664054501",
+                    "display": "Caisse Digital Foody - iOS"
+                }
+            ]
+        },
+        {
+            "role": "Développeur Mobile",
             "company": "Walt Disney Imagineering",
             "description": "Développement d'une application mobile offline-first de levée des réserves pour Disneyland Paris, facilitant aux experts techniques la prise d'informations sur le terrain et fluidifiant la communication avec les services de maintenance pour la résolution des problèmes.",
             "isPresent": false,
@@ -149,6 +206,12 @@
                     "icon": {
                         "assetName": "assets/icons/other/firebase.svg"
                     }
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://www.smt-alarme-videosurveillance.com",
+                    "display": "Solutions Multi Techniques"
                 }
             ]
         },
