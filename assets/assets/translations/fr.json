@@ -54,12 +54,12 @@
             "url": "https://drive.google.com/file/d/1SEDu-wdXXsYXX48Ee3EKLg7YhdKyt72U/view?usp=sharing"
         }
     ],
-    "aboutDescription": "Salut, je m'appelle Aladdine et je suis apprenti développeur en cinquième année de Mobilité et Objets Connectés à l'ESGI Paris. Passionné par l'écosystème mobile, je combine mes études et mon expérience professionnelle pour créer des applications intuitives et riches en fonctionnalités.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeant.",
+    "aboutDescription": "Salut, je m'appelle Aladdine, développeur mobile passionné avec plus de 3 ans d'expérience dans la transformation d'idées en applications centrées sur l'utilisateur.\nSpécialisé en Flutter, j'ai développé et mis en production des applications dans divers domaines, allant de la qualité scénographique et au suivi de chantier, en passant par la restauration et la vente en gros.\nJe m'intéresse également beaucoup aux systèmes embarqués, à la cybersécurité et au game design, où j'explore les intersections créatives entre ces différents secteurs.\nJ'aspire à mettre mes compétences au service de projets inspirants et challengeants.",
     "experiences": [
         {
             "role": "Développeur Mobile",
             "company": "Linnovlab",
-            "description": "Développement d’applications pour les restaurants (POS, kiosks, dashboards...) implémentant des fonctionnalités en temps réel et hors-ligne pour une expérience utilisateur fluide.",
+            "description": "Développement d'applications pour les restaurants (POS, kiosks, dashboards...) implémentant des fonctionnalités en temps réel et hors-ligne pour une expérience utilisateur fluide.",
             "isPresent": true,
             "startYear": 2023,
             "endYear": 2025,
@@ -268,7 +268,7 @@
     "projects": [
         {
             "name": "Portfolio",
-            "description": "Ce projet open source permet à toute personne de disposer d’un portfolio en ligne en moins de 10 minutes. Il adopte une architecture basée sur Riverpod en suivant une approche feature-first pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
+            "description": "Ce projet open source permet à toute personne de disposer d'un portfolio en ligne en moins de 10 minutes. Il adopte une architecture basée sur Riverpod en suivant une approche feature-first pour sa structure. Il est entièrement responsive, et prend en charge plusieurs thèmes ainsi que plusieurs langues.",
             "url": "https://github.com/AladdineDev/portfolio#readme",
             "icon": {
                 "codePoint": "0xefb7",
@@ -294,50 +294,6 @@
                 {
                     "url": "https://brittanychiang.com",
                     "display": "Inspiré par Brittany Chiang"
-                }
-            ]
-        },
-        {
-            "name": "Learn Flow API",
-            "description": "Learn Flow est un projet de groupe visant à créer une solution de mise en relation d'élèves et d'enseignants. Cette API REST sert d'interface pour les différents clients du projet (Android, iOS et Web). Elle offre notamment des fonctionnalités d'authentification avec JWT.",
-            "url": "https://github.com/AladdineDev/learnflow-api#readme",
-            "icon": {
-                "codePoint": "0xefb7",
-                "fontFamily": "FontAwesome",
-                "color": "0xffffffff"
-            },
-            "screenshotPath": "assets/images/learnflow-api.png",
-            "technologies": [
-                {
-                    "name": "Node.js",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/nodejs.svg"
-                    }
-                },
-                {
-                    "name": "Express",
-                    "icon": {
-                        "assetName": "assets/icons/other/express-js.svg",
-                        "color": "0xffffffff"
-                    }
-                },
-                {
-                    "name": "TypeScript",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/typescript.svg"
-                    }
-                },
-                {
-                    "name": "MongoDB",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/mongodb.svg"
-                    }
-                },
-                {
-                    "name": "Docker",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/docker.svg"
-                    }
                 }
             ]
         },
@@ -395,44 +351,6 @@
                     "name": "Bootstrap",
                     "icon": {
                         "assetName": "assets/icons/other/bootstrap.svg"
-                    }
-                },
-                {
-                    "name": "MariaDB",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/mariadb.svg"
-                    }
-                },
-                {
-                    "name": "Docker",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/docker.svg"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "GSB-RV-Visiteur-Serveur",
-            "description": "L'API REST du projet GSB sert d'interface pour les différents clients du projet (Android, Desktop et Web).",
-            "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
-            "icon": {
-                "codePoint": "0xefb7",
-                "fontFamily": "FontAwesome",
-                "color": "0xffffffff"
-            },
-            "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
-            "technologies": [
-                {
-                    "name": "Flask",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/flask.svg",
-                        "color": "0xffffffff"
-                    }
-                },
-                {
-                    "name": "Python",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/python.svg"
                     }
                 },
                 {

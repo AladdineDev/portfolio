@@ -54,7 +54,7 @@
             "url": "https://drive.google.com/file/d/1SEDu-wdXXsYXX48Ee3EKLg7YhdKyt72U/view?usp=sharing"
         }
     ],
-    "aboutDescription": "Hi, I'm Aladdine, an apprentice developer and fifth-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical experience to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+    "aboutDescription": "Hi, I'm Aladdine — a passionate mobile app developer with 3+ years of experience turning ideas into user-centric applications.\nSpecialized in Flutter, I've built and shipped apps across diverse fields — from show quality and field operations to food technology and wholesale.\nI'm also deeply interested in embedded systems, cybersecurity, and game design, where I explore the creative intersections between these areas.\nI'm driven by building meaningful products and contributing to innovative, challenging projects.",
     "experiences": [
         {
             "role": "Mobile App Developer",
@@ -298,50 +298,6 @@
             ]
         },
         {
-            "name": "Learn Flow API",
-            "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities with JWT.",
-            "url": "https://github.com/AladdineDev/learnflow-api#readme",
-            "icon": {
-                "codePoint": "0xefb7",
-                "fontFamily": "FontAwesome",
-                "color": "0xffffffff"
-            },
-            "screenshotPath": "assets/images/learnflow-api.png",
-            "technologies": [
-                {
-                    "name": "Node.js",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/nodejs.svg"
-                    }
-                },
-                {
-                    "name": "Express",
-                    "icon": {
-                        "assetName": "assets/icons/other/express-js.svg",
-                        "color": "0xffffffff"
-                    }
-                },
-                {
-                    "name": "TypeScript",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/typescript.svg"
-                    }
-                },
-                {
-                    "name": "MongoDB",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/mongodb.svg"
-                    }
-                },
-                {
-                    "name": "Docker",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/docker.svg"
-                    }
-                }
-            ]
-        },
-        {
             "name": "Learn Flow Backoffice",
             "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
             "url": "https://github.com/AladdineDev/learnflow_backoffice#readme",
@@ -395,44 +351,6 @@
                     "name": "Bootstrap",
                     "icon": {
                         "assetName": "assets/icons/other/bootstrap.svg"
-                    }
-                },
-                {
-                    "name": "MariaDB",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/mariadb.svg"
-                    }
-                },
-                {
-                    "name": "Docker",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/docker.svg"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "GSB-RV-Visiteur-Serveur",
-            "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
-            "url": "https://github.com/AladdineDev/GSB-RV-Visiteur-Serveur#readme",
-            "icon": {
-                "codePoint": "0xefb7",
-                "fontFamily": "FontAwesome",
-                "color": "0xffffffff"
-            },
-            "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
-            "technologies": [
-                {
-                    "name": "Flask",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/flask.svg",
-                        "color": "0xffffffff"
-                    }
-                },
-                {
-                    "name": "Python",
-                    "icon": {
-                        "assetName": "assets/icons/software-development/python.svg"
                     }
                 },
                 {
